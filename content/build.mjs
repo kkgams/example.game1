@@ -11,7 +11,8 @@ const generatedDir = join(here, 'generated')
 const schemaPath = join(here, 'director.rspk.json')
 const compilerPlugin = join(projectRoot, 'plugins/director-compiler.comp.wasm')
 const respackPlugin = join(projectRoot, 'plugins/respack.comp.wasm')
-const cargoTargetDir = process.env.CARGO_TARGET_DIR ?? join(hostRoot, 'build.nosync/app/target')
+const hostBin = process.env.GAMS_HOST_BIN
+assert.ok(hostBin, 'GAMS_HOST_BIN must point at a built external Host binary')
 const args = process.argv.slice(2)
 const generateDecoder = args.includes('--generate-decoder')
 const check = args.includes('--check')
@@ -38,8 +39,7 @@ function emit(path, contents) {
 }
 
 function invoke(plugin, target, args) {
-  const result = spawnSync('cargo', [
-    'run', '--quiet', '--manifest-path', 'cmd/app/src-tauri/Cargo.toml', '--',
+  const result = spawnSync(hostBin, [
     'run', '--plug', plugin, target, JSON.stringify(args),
   ], {
     cwd: hostRoot,
@@ -49,7 +49,6 @@ function invoke(plugin, target, args) {
       ...process.env,
       GAMS_APP_CWD: projectRoot,
       GAMS_WASMTIME_CACHE_DIR: join(projectRoot, 'build.nosync/wasmtime-cache-e2e'),
-      CARGO_TARGET_DIR: cargoTargetDir,
     },
   })
   assert.equal(result.status, 0, `${target} failed\n${result.stderr}\n${result.stdout}`)

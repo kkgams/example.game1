@@ -21,19 +21,18 @@ for (const pluginPath of bridgePluginPaths) {
 }
 const pluginArgs = bridgePluginPaths.flatMap((path) => ['--plug', path])
 
-const cargoTargetDir = process.env.CARGO_TARGET_DIR ?? join(hostRoot, 'build.nosync/app/target')
+const hostBin = process.env.GAMS_HOST_BIN
+assert.ok(hostBin && existsSync(hostBin), 'GAMS_HOST_BIN must point at a built external Host binary')
 const baseEnv = {
   ...process.env,
   GAMS_APP_CWD: stationRoot,
   GAMS_WASMTIME_CACHE_DIR: join(stationRoot, 'build.nosync/wasmtime-cache-integration'),
-  CARGO_TARGET_DIR: cargoTargetDir,
 }
 if (process.env.HOST_CC !== undefined) baseEnv.CC = process.env.HOST_CC
 if (process.env.HOST_CXX !== undefined) baseEnv.CXX = process.env.HOST_CXX
 
 function invoke(target, args) {
-  const result = spawnSync('cargo', [
-    'run', '--quiet', '--manifest-path', 'cmd/app/src-tauri/Cargo.toml', '--',
+  const result = spawnSync(hostBin, [
     'run', ...pluginArgs,
     target, JSON.stringify(args),
   ], {
