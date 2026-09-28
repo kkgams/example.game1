@@ -8,6 +8,9 @@ This is a desktop Host development Project using the Host's present config shape
 not a released Project Config contract.
 
 Keep the `gams` Host alongside this repository (or set `HOST_ROOT` to its path).
+Build its release binary first with `nix develop --command make app-build-release`
+from the Host root; example integration and fixture checks invoke that binary
+through `GAMS_HOST_BIN`, not a second debug Cargo build.
 The local ecosystem workspace's `repositories.json` and built sibling Project
 Units are required for `make setup-local`; this explicitly copies assets into
 this Project, never into the Host. Build each sibling Unit first. The Host reads
@@ -28,7 +31,8 @@ fetch the pinned Sokol source/tool archives described in `game/THIRD_PARTY.md`.
 `make run` opens the Host with this Project. For a Host outside `../gams`, set
 `HOST_ROOT=/absolute/path/to/gams` (also accepted by the Node scripts as
 `GAMS_HOST_ROOT`). `CARGO_TARGET_DIR` may be set to reuse another Cargo target.
-The default is the sibling Host's `build.nosync/app/target`.
+The default is the sibling Host's `build.nosync/app/target`; `HOST_BIN` selects
+its release binary if built at a different path.
 
 The original root README contained monorepo symlink, build and test instructions
 which do not apply to this independent repository. The adapted `content/README.md`
