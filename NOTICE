@@ -1,0 +1,15 @@
+example.game1 — station example source notices
+
+GAMS-authored station Project, Director content, game code and tooling:
+Apache-2.0; see LICENSE. This applies only to portions the owner authored or
+has rights to redistribute. Original authorship of some inherited game
+infrastructure is not independently recorded; it requires owner review before
+this repository can be pushed publicly. This does not relicense third-party materials. The source game
+Makefile downloads pinned sokol-odin (zlib) and sokol-tools-bin (MIT) during
+build; versions, digests, modifications, and license text locations are listed
+in game/THIRD_PARTY.md and game/THIRD_PARTY_LICENSES/. No Sokol files or
+compiled visitor game are included in this source snapshot. Some game
+infrastructure originated in an earlier demo with incomplete independent
+provenance; see game/THIRD_PARTY.md. Built game distribution needs separate
+linked-output notice and provenance review. The Host and sibling Units are
+separate repositories with their own notices.
