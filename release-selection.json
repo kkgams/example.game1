@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "units": [
+    {
+      "name": "plugin.director-compiler",
+      "kind": "component",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "published-observed"
+    },
+    {
+      "name": "plugin.fs",
+      "kind": "component",
+      "version": "0.1.1",
+      "tag": "v0.1.1",
+      "status": "published-observed"
+    },
+    {
+      "name": "plugin.layout",
+      "kind": "component",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "published-observed"
+    },
+    {
+      "name": "plugin.lua",
+      "kind": "component",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "published-observed"
+    },
+    {
+      "name": "plugin.respack",
+      "kind": "component",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "published-observed"
+    },
+    {
+      "name": "theme.the98",
+      "kind": "theme",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "ui-service.context",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "ui-service.keys",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "ui-service.layout",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "ui-service.popup",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "ui-service.toast",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "ui-service.tooltip",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "view.code",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "view.files",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "view.files-default",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "view.files-rename",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "view.ng",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    },
+    {
+      "name": "view.ng-node",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "status": "planned-not-ready"
+    }
+  ]
+}

@@ -9,7 +9,11 @@ HOST_BIN ?= $(CARGO_TARGET_DIR)/release/gams
 HOST_CC ?= $(shell command -v clang || command -v cc)
 HOST_CXX ?= $(shell command -v clang++ || command -v c++)
 
-.PHONY: setup-local require-local-assets test web integration run
+.PHONY: setup-local setup-releases require-local-assets test web integration run
+# Published consumption is separate from sibling development assembly.
+setup-releases:
+	python3 scripts/install-releases.py install --lock release-lock.json
+
 setup-local:
 	python3 scripts/setup-local.py --workspace ..
 

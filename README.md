@@ -7,6 +7,17 @@ The historical monorepo tests, built Units and export artifacts are not shipped.
 This is a desktop Host development Project using the Host's present config shape,
 not a released Project Config contract.
 
+## Published installation
+
+See [RELEASE-INSTALL.md](RELEASE-INSTALL.md) for checksum-pinned installation of
+all 18 Project Units and opening this Project with the released GAMS Host. The
+installer needs only Python 3; it never builds from sibling repositories or
+selects a moving latest version. A complete `release-lock.json` can be collected
+once all selected UI releases exist. Until then, the selection is a plan, not an
+installable lock. Existing component releases are publicly available.
+
+## Source/development workflow
+
 Keep the `gams` Host alongside this repository (or set `HOST_ROOT` to its path).
 Build its release binary first with `nix develop --command make app-build-release`
 from the Host root; example integration and fixture checks invoke that binary
