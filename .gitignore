@@ -9,4 +9,8 @@
 /game/room.glsl.odin
 /game/station.rspk
 /game/sokol/
+/dist/
+__pycache__/
+*.pyc
+node_modules/
 .DS_Store

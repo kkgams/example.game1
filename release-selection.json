@@ -41,91 +41,91 @@
       "kind": "theme",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "ui-service.context",
       "kind": "ui-service",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "ui-service.keys",
       "kind": "ui-service",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "ui-service.layout",
       "kind": "ui-service",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "ui-service.popup",
       "kind": "ui-service",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "ui-service.toast",
       "kind": "ui-service",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "ui-service.tooltip",
       "kind": "ui-service",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "view.code",
       "kind": "view",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "view.files",
       "kind": "view",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "view.files-default",
       "kind": "view",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "view.files-rename",
       "kind": "view",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "view.ng",
       "kind": "view",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     },
     {
       "name": "view.ng-node",
       "kind": "view",
       "version": "0.1.0",
       "tag": "v0.1.0",
-      "status": "planned-not-ready"
+      "status": "published-observed"
     }
   ]
 }

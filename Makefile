@@ -9,7 +9,22 @@ HOST_BIN ?= $(CARGO_TARGET_DIR)/release/gams
 HOST_CC ?= $(shell command -v clang || command -v cc)
 HOST_CXX ?= $(shell command -v clang++ || command -v c++)
 
-.PHONY: setup-local setup-releases require-local-assets test web integration run
+.PHONY: setup-local setup-releases require-local-assets test web integration run run-dev test-release release-install release-stage release-check
+
+# Packaging/game checks do not use a sibling Host or native game build.
+test-release:
+	python3 -m unittest discover -s test -p 'test_*.py'
+
+release-install:
+	python3 scripts/release.py install --lock release-lock.json
+
+release-stage:
+	python3 scripts/release.py stage --tag v0.1.0
+
+release-check:
+	python3 scripts/release.py check --tag v0.1.0
+
+run-dev: run
 # Published consumption is separate from sibling development assembly.
 setup-releases:
 	python3 scripts/install-releases.py install --lock release-lock.json

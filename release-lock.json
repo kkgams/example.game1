@@ -1,0 +1,387 @@
+{
+  "schema": 1,
+  "units": [
+    {
+      "name": "plugin.director-compiler",
+      "kind": "component",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "plugins/director-compiler.comp.wasm"
+      ],
+      "assets": {
+        "director-compiler.wasm": {
+          "url": "https://github.com/kkgams/plugin.director-compiler/releases/download/v0.1.0/director-compiler.wasm",
+          "sha256": "7dcbbaa6b0cdcadfe598f7f6fadc7d62aefbc37b64cb7045ba54f71fa880fd6e"
+        },
+        "LICENSE": {
+          "url": "https://github.com/kkgams/plugin.director-compiler/releases/download/v0.1.0/LICENSE",
+          "sha256": "3c6415b3c0107393c82ac760129bc570b09e1a03d8ffeef22783345f76da6aa7"
+        },
+        "NOTICE": {
+          "url": "https://github.com/kkgams/plugin.director-compiler/releases/download/v0.1.0/NOTICE",
+          "sha256": "c7ffcfe6285d95eb714b2037548a1dd8a68f850dd66f3e563d2678e62a41adae"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/plugin.director-compiler/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "18e2fb473f73076a1f81db3146b40ea8c30ac6328c210e290ffde4c67a2bd389"
+        }
+      }
+    },
+    {
+      "name": "plugin.fs",
+      "kind": "component",
+      "version": "0.1.1",
+      "tag": "v0.1.1",
+      "files": [
+        "plugins/fs.comp.wasm"
+      ],
+      "assets": {
+        "plugin.fs.wasm": {
+          "url": "https://github.com/kkgams/plugin.fs/releases/download/v0.1.1/plugin.fs.wasm",
+          "sha256": "b7f2ea05beac359cfd7d15c2b198edb66e0437fffdf00e9e4d0250cfb226fc98"
+        },
+        "LICENSE": {
+          "url": "https://github.com/kkgams/plugin.fs/releases/download/v0.1.1/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        "NOTICE": {
+          "url": "https://github.com/kkgams/plugin.fs/releases/download/v0.1.1/NOTICE",
+          "sha256": "2d3ac85f8a3df5ff3a0e6e6c7da706d0ff4f18697fa68dc4a0b3ceaf3e05203c"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/plugin.fs/releases/download/v0.1.1/SHA256SUMS",
+          "sha256": "2e4a638d3d0ea5e8f68e16aa9100f62ae4045c3480814b5a6c7aa5dc546a4f1e"
+        }
+      }
+    },
+    {
+      "name": "plugin.layout",
+      "kind": "component",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "plugins/layout.comp.wasm"
+      ],
+      "assets": {
+        "plugin.layout.wasm": {
+          "url": "https://github.com/kkgams/plugin.layout/releases/download/v0.1.0/plugin.layout.wasm",
+          "sha256": "7d42e209ab30152d1c1396950ea4efb1d594d3c07a005b187c8eec6fa21f2a05"
+        },
+        "LICENSE": {
+          "url": "https://github.com/kkgams/plugin.layout/releases/download/v0.1.0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        "NOTICE": {
+          "url": "https://github.com/kkgams/plugin.layout/releases/download/v0.1.0/NOTICE",
+          "sha256": "2539d4324c10bce39bec109b54e30b0b43d184cd6dff9ee6ff81e693685cbb63"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/plugin.layout/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "381b63874bfb7b1269ff83031a03390a07c52ed8409648b9a59c3cf20421cdf1"
+        }
+      }
+    },
+    {
+      "name": "plugin.lua",
+      "kind": "component",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "plugins/lua.comp.wasm"
+      ],
+      "assets": {
+        "plugin.lua.wasm": {
+          "url": "https://github.com/kkgams/plugin.lua/releases/download/v0.1.0/plugin.lua.wasm",
+          "sha256": "6b428e1a44bfccbb7b19a1d4afa1c665b81a02d76fdbee06dd48920f9508ec0f"
+        },
+        "LICENSE": {
+          "url": "https://github.com/kkgams/plugin.lua/releases/download/v0.1.0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        "NOTICE": {
+          "url": "https://github.com/kkgams/plugin.lua/releases/download/v0.1.0/NOTICE",
+          "sha256": "6002ce0a5f76823bf8c26851f2b9e523e678b35d8d840deca658e1660cc72d08"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/plugin.lua/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "69544e2d53465c4213b79d99d57a188be77b78b13eaba90dd103a276e7a7b5c3"
+        }
+      }
+    },
+    {
+      "name": "plugin.respack",
+      "kind": "component",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "plugins/respack.comp.wasm"
+      ],
+      "assets": {
+        "plugin.respack.wasm": {
+          "url": "https://github.com/kkgams/plugin.respack/releases/download/v0.1.0/plugin.respack.wasm",
+          "sha256": "7662df8a5c4c59232a80b510e00bbde9d81145ca03f02976fd560cb546635cac"
+        },
+        "LICENSE": {
+          "url": "https://github.com/kkgams/plugin.respack/releases/download/v0.1.0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        "NOTICE": {
+          "url": "https://github.com/kkgams/plugin.respack/releases/download/v0.1.0/NOTICE",
+          "sha256": "b22d023fd1ebf250f722927c73284f6b8a2e0a56e97139f65e6baa3f281df08a"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/plugin.respack/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "81ee25e890eafda148261df885d3ded70f4c0e0305fc2899796a83f2049f1333"
+        }
+      }
+    },
+    {
+      "name": "theme.the98",
+      "kind": "theme",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "themes/the98.css"
+      ],
+      "assets": {
+        "theme.the98-0.1.0.zip": {
+          "url": "https://github.com/kkgams/theme.the98/releases/download/v0.1.0/theme.the98-0.1.0.zip",
+          "sha256": "8aedbc7a84b74b55b1c4e25deaf9f20630be81611bedb20fd983b528f6e7b655"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/theme.the98/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "39e5f361f746b96da02e5d2f79292ae765a599795987e267fa346d87c9c6f39e"
+        }
+      }
+    },
+    {
+      "name": "ui-service.context",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "ui-plugins/context.js"
+      ],
+      "assets": {
+        "ui-service.context-0.1.0.zip": {
+          "url": "https://github.com/kkgams/ui-service.context/releases/download/v0.1.0/ui-service.context-0.1.0.zip",
+          "sha256": "8b52036268cee388f98585c109319f0917a8f2cc71242c942a9ccffba953fe20"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/ui-service.context/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "cdb0724b356d9bf21f6e796e718e34a3dd91b2097cf76bfab1d2bf118b12cabf"
+        }
+      }
+    },
+    {
+      "name": "ui-service.keys",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "ui-plugins/keys.js"
+      ],
+      "assets": {
+        "ui-service.keys-0.1.0.zip": {
+          "url": "https://github.com/kkgams/ui-service.keys/releases/download/v0.1.0/ui-service.keys-0.1.0.zip",
+          "sha256": "d60fe13e6b9c23ab9423b5a76439b149f64f564098b8ab0410db94aa95d988e6"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/ui-service.keys/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "4d066d1dd2f35e8b47b5f721240cc1e4723f1deada6d881aa2d6deb8ef5d5a9b"
+        }
+      }
+    },
+    {
+      "name": "ui-service.layout",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "ui-plugins/layout.js"
+      ],
+      "assets": {
+        "ui-service.layout-0.1.0.zip": {
+          "url": "https://github.com/kkgams/ui-service.layout/releases/download/v0.1.0/ui-service.layout-0.1.0.zip",
+          "sha256": "d1df8885984798f85b5cd83111b18b2c94eb325061c1a51014dbc7253c2f7de7"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/ui-service.layout/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "40a587fe565be4d5305d9c2c4387efcd2746ba4f62861a1768a77a22469f84c1"
+        }
+      }
+    },
+    {
+      "name": "ui-service.popup",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "ui-plugins/popup.js"
+      ],
+      "assets": {
+        "ui-service.popup-0.1.0.zip": {
+          "url": "https://github.com/kkgams/ui-service.popup/releases/download/v0.1.0/ui-service.popup-0.1.0.zip",
+          "sha256": "99a137d2a64141cde81942faa0553d2ae2f1c213792b333c2f1d8d9ddb19f59d"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/ui-service.popup/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "bdc7073a611da6c801efe3e7781af207e786874799c93f323237e3a940a68d5e"
+        }
+      }
+    },
+    {
+      "name": "ui-service.toast",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "ui-plugins/toast.js"
+      ],
+      "assets": {
+        "ui-service.toast-0.1.0.zip": {
+          "url": "https://github.com/kkgams/ui-service.toast/releases/download/v0.1.0/ui-service.toast-0.1.0.zip",
+          "sha256": "068eb0a4029ae30ee1410313eafe4063ebd74645717ea836609ad0ee96bc3bb2"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/ui-service.toast/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "2b95522cf96b03697e736d450e294ee19eb11425ec107dbeb8aff399937c6aa7"
+        }
+      }
+    },
+    {
+      "name": "ui-service.tooltip",
+      "kind": "ui-service",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "ui-plugins/tooltip.js"
+      ],
+      "assets": {
+        "ui-service.tooltip-0.1.0.zip": {
+          "url": "https://github.com/kkgams/ui-service.tooltip/releases/download/v0.1.0/ui-service.tooltip-0.1.0.zip",
+          "sha256": "ee5ec69f17901434cbb7759c5850ccc723bdb32d0a26cab71505b10ef1ae3652"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/ui-service.tooltip/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "0d5c2b3b75e33fec0a8c963cb0a598bb3a700db3254b1ab1f26cca957d5bd504"
+        }
+      }
+    },
+    {
+      "name": "view.code",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "views/view-code.js"
+      ],
+      "assets": {
+        "view.code-0.1.0.zip": {
+          "url": "https://github.com/kkgams/view.code/releases/download/v0.1.0/view.code-0.1.0.zip",
+          "sha256": "865186746ac056730d6f13059f1b0740a42c3089ee055d4acf409505525e14be"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/view.code/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "808d17f0a1faf800aebc6ef5404a1ff5634deb44362ce29e74e231227019fe2c"
+        }
+      }
+    },
+    {
+      "name": "view.files",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "views/view-files.js"
+      ],
+      "assets": {
+        "view.files-0.1.0.zip": {
+          "url": "https://github.com/kkgams/view.files/releases/download/v0.1.0/view.files-0.1.0.zip",
+          "sha256": "3a88de074a3e468da5e27665109955afa83bf87027e8282a2f610268dbfb6f82"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/view.files/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "9ab6a53c3f77fa7552f74e7bf479efb2b5d9c21bd6805df42663b76702f61ef0"
+        }
+      }
+    },
+    {
+      "name": "view.files-default",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "views/files-default.js"
+      ],
+      "assets": {
+        "view.files-default-0.1.0.zip": {
+          "url": "https://github.com/kkgams/view.files-default/releases/download/v0.1.0/view.files-default-0.1.0.zip",
+          "sha256": "309aa7eab74501d74f117c455bd4e90d7fc4522f061d026a2e4de8cab63910a2"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/view.files-default/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "f29a0349f2c037183314871b2e3aed271d346260446f7ff3581ff9674dd534d3"
+        }
+      }
+    },
+    {
+      "name": "view.files-rename",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "views/files-rename.js"
+      ],
+      "assets": {
+        "view.files-rename-0.1.0.zip": {
+          "url": "https://github.com/kkgams/view.files-rename/releases/download/v0.1.0/view.files-rename-0.1.0.zip",
+          "sha256": "2fea130c70d6759a528cdb29dd7c2edcf1a96c4fbb4a91a7ca51005cca982e09"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/view.files-rename/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "4c06e1a911dd4340616bfab72883032fb30297094c25632f45c89a5a24735315"
+        }
+      }
+    },
+    {
+      "name": "view.ng",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "views/view-ng.js"
+      ],
+      "assets": {
+        "view.ng-0.1.0.zip": {
+          "url": "https://github.com/kkgams/view.ng/releases/download/v0.1.0/view.ng-0.1.0.zip",
+          "sha256": "9b19931b6034b399ff4a487c5488d137b0a3fded5692c70ca7b778be6fdce4a5"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/view.ng/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "8926bf923f7834fbf62be71d645a01d03e9954827b82c513c65f1d2bfb27a58c"
+        }
+      }
+    },
+    {
+      "name": "view.ng-node",
+      "kind": "view",
+      "version": "0.1.0",
+      "tag": "v0.1.0",
+      "files": [
+        "views/view-ng-node.js"
+      ],
+      "assets": {
+        "view.ng-node-0.1.0.zip": {
+          "url": "https://github.com/kkgams/view.ng-node/releases/download/v0.1.0/view.ng-node-0.1.0.zip",
+          "sha256": "429500d1542e4ffb9f4f2ee0d39645516a544d64b592fcad2f53ed8bb955af69"
+        },
+        "SHA256SUMS": {
+          "url": "https://github.com/kkgams/view.ng-node/releases/download/v0.1.0/SHA256SUMS",
+          "sha256": "b6be1ac9c307e5a2c3c7abaf34e64b5f1ecf6f4fd8356eb2ac4d23afc91de54b"
+        }
+      }
+    }
+  ]
+}

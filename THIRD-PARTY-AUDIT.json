@@ -1,0 +1,4592 @@
+{
+  "schema_version": 1,
+  "scope": "example.game1 game/source/link-notice audit",
+  "standing_assumption": "Owner grants Apache-2.0 for owner-controlled local code and has redistribution rights; identifiable external notices remain separate.",
+  "permission_blockers": [],
+  "built_artifact_review": false,
+  "build_performed": false,
+  "upstream_records": [
+    {
+      "file": "licenses/apache-2.0.txt",
+      "source": "/Users/gook/Repos/kkgams-local/example.game1/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "scope": "owner-controlled code only"
+    },
+    {
+      "source": "https://codeload.github.com/floooh/sokol-odin/tar.gz/9ea6ec125f002180d6cc6e7a009087ca0a019da4",
+      "archive_sha256": "0eebee1d50bb08f1bf44f5458d8c32d61e4c2069d73a2eddb9feeb7c04d185ba",
+      "archive_bytes": 774977,
+      "verified": true
+    },
+    {
+      "file": "licenses/sokol-odin.txt",
+      "source": "https://codeload.github.com/floooh/sokol-odin/tar.gz/9ea6ec125f002180d6cc6e7a009087ca0a019da4#LICENSE",
+      "sha256": "d5501d72378a0865c7896cc85cfbc8956189a0cdc3fd1e72350443cb1522f031",
+      "bytes": 897,
+      "revision": "9ea6ec125f002180d6cc6e7a009087ca0a019da4"
+    },
+    {
+      "file": "evidence/sokol-sokol_gfx.c",
+      "source": "https://codeload.github.com/floooh/sokol-odin/tar.gz/9ea6ec125f002180d6cc6e7a009087ca0a019da4#sokol/c/sokol_gfx.c",
+      "sha256": "4058f288375090a98d50987297a875ee3672aec6caa462ddd0c0e4947c5d4939",
+      "bytes": 98,
+      "revision": "9ea6ec125f002180d6cc6e7a009087ca0a019da4"
+    },
+    {
+      "file": "evidence/sokol-sokol_gfx.h",
+      "source": "https://codeload.github.com/floooh/sokol-odin/tar.gz/9ea6ec125f002180d6cc6e7a009087ca0a019da4#sokol/c/sokol_gfx.h",
+      "sha256": "fbf2640302b1b180be98ab8b0fe645a978260f7ab1509d78b2dcab3bc98f829e",
+      "bytes": 1310579,
+      "revision": "9ea6ec125f002180d6cc6e7a009087ca0a019da4"
+    },
+    {
+      "file": "licenses/sokol-gfx-header.txt",
+      "source": "https://codeload.github.com/floooh/sokol-odin/tar.gz/9ea6ec125f002180d6cc6e7a009087ca0a019da4#sokol/c/sokol_gfx.h",
+      "sha256": "2f21bbe44913559373d65a299fbf2b979992ed2aecd021fe1ad1dc35bf655b6c",
+      "bytes": 985,
+      "kind": "verbatim embedded notice slice"
+    },
+    {
+      "file": "evidence/sokol-gfx.odin",
+      "source": "https://codeload.github.com/floooh/sokol-odin/tar.gz/9ea6ec125f002180d6cc6e7a009087ca0a019da4#sokol/gfx/gfx.odin",
+      "sha256": "2ab55f70b349f2eaaef0102682db08e1835786160d87aaca026d0851e78f6c1b",
+      "bytes": 220848,
+      "revision": "9ea6ec125f002180d6cc6e7a009087ca0a019da4"
+    },
+    {
+      "check": "local sokol tree compared against verified archive; reverse only documented Odin foreign-import patch",
+      "compared": 46,
+      "mismatches": [],
+      "modifications": [
+        {
+          "path": "app/app.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "app/app.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "audio/audio.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "audio/audio.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "cmdbuf/cmdbuf.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "cmdbuf/cmdbuf.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "debugtext/debugtext.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "debugtext/debugtext.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "framebuffer/framebuffer.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "framebuffer/framebuffer.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "gfx/gfx.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "gfx/gfx.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "gl/gl.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "gl/gl.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "glue/glue.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "glue/glue.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "letterbox/letterbox.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "letterbox/letterbox.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "log/log.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "log/log.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "shape/shape.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "shape/shape.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        },
+        {
+          "path": "time/time.odin",
+          "scope": "station-demo",
+          "plainly_marked": false
+        },
+        {
+          "path": "time/time.odin",
+          "scope": "standalone",
+          "plainly_marked": true
+        }
+      ]
+    },
+    {
+      "source": "https://codeload.github.com/floooh/sokol-tools-bin/tar.gz/11d0cf678105d614d675e6d9bd2aaf3eeff12f8c",
+      "archive_sha256": "c18bc3d9a52d63f385fcff9d04461e0f1c58f84102a0386acf59b6747655d17d",
+      "archive_bytes": 18115314,
+      "verified": true
+    },
+    {
+      "file": "licenses/sokol-tools-bin.txt",
+      "source": "https://codeload.github.com/floooh/sokol-tools-bin/tar.gz/11d0cf678105d614d675e6d9bd2aaf3eeff12f8c#LICENSE",
+      "sha256": "d7bb344eb6e070a617d3b37b3bda6f4b3a08634dd0a413eca1a1b1d247859ee2",
+      "bytes": 1072,
+      "revision": "11d0cf678105d614d675e6d9bd2aaf3eeff12f8c"
+    },
+    {
+      "file": "licenses/odin.txt",
+      "source": "https://raw.githubusercontent.com/odin-lang/Odin/ea5175d865c2034b033ebf5653d83638f10bba54/LICENSE",
+      "sha256": "c28b9a4f5a6eb24038aa67c946804883713078ffc25b2c0829f29c03569f4bfa",
+      "bytes": 876,
+      "revision": "ea5175d865c2034b033ebf5653d83638f10bba54"
+    },
+    {
+      "file": "evidence/odin-emmalloc.odin",
+      "source": "https://raw.githubusercontent.com/odin-lang/Odin/ea5175d865c2034b033ebf5653d83638f10bba54/base/runtime/wasm_allocator.odin",
+      "sha256": "f3aead5f795ec661f50df8e9f84dae572fce091a2bca051ba89a51bc8448cc02",
+      "bytes": 30599,
+      "revision": "ea5175d865c2034b033ebf5653d83638f10bba54"
+    },
+    {
+      "file": "licenses/odin-emmalloc.txt",
+      "source": "https://raw.githubusercontent.com/odin-lang/Odin/ea5175d865c2034b033ebf5653d83638f10bba54/base/runtime/wasm_allocator.odin",
+      "sha256": "d4b8c66542f6db2c1135ceeb7df25c0358d54603e62fbee7f69b94a316cdecca",
+      "bytes": 1923,
+      "kind": "verbatim complete embedded license/header slice",
+      "source_sha256": "f3aead5f795ec661f50df8e9f84dae572fce091a2bca051ba89a51bc8448cc02"
+    },
+    {
+      "file": "evidence/odin-unicode.odin",
+      "source": "https://raw.githubusercontent.com/odin-lang/Odin/ea5175d865c2034b033ebf5653d83638f10bba54/core/unicode/generated.odin",
+      "sha256": "113a39aaa4a4367d6a367f7d847f905dc224a365c2986c3c612e979a4c13252d",
+      "bytes": 51878,
+      "revision": "ea5175d865c2034b033ebf5653d83638f10bba54"
+    },
+    {
+      "file": "licenses/odin-unicode.txt",
+      "source": "https://raw.githubusercontent.com/odin-lang/Odin/ea5175d865c2034b033ebf5653d83638f10bba54/core/unicode/generated.odin",
+      "sha256": "37d44dbc27519584458f0a0269904fbb3bf34abbd250912a7c7c4354419073d1",
+      "bytes": 2496,
+      "kind": "verbatim complete embedded license/header slice",
+      "source_sha256": "113a39aaa4a4367d6a367f7d847f905dc224a365c2986c3c612e979a4c13252d"
+    },
+    {
+      "file": "evidence/odin-cephes.odin",
+      "source": "https://raw.githubusercontent.com/odin-lang/Odin/ea5175d865c2034b033ebf5653d83638f10bba54/core/math/math_sincos.odin",
+      "sha256": "99cc7c6260264cad81cfa7d908df70f97a405b41933bbbde9921695fcd4d049b",
+      "bytes": 9988,
+      "revision": "ea5175d865c2034b033ebf5653d83638f10bba54"
+    },
+    {
+      "file": "licenses/odin-cephes.txt",
+      "source": "https://raw.githubusercontent.com/odin-lang/Odin/ea5175d865c2034b033ebf5653d83638f10bba54/core/math/math_sincos.odin",
+      "sha256": "833858fc3756c1f011688f8470443265b855a1db92579c8667711c5ee18cadba",
+      "bytes": 2653,
+      "kind": "verbatim complete embedded license/header slice",
+      "source_sha256": "99cc7c6260264cad81cfa7d908df70f97a405b41933bbbde9921695fcd4d049b"
+    },
+    {
+      "file": "evidence/odin-sun.odin",
+      "source": "https://raw.githubusercontent.com/odin-lang/Odin/ea5175d865c2034b033ebf5653d83638f10bba54/core/math/math_erf.odin",
+      "sha256": "5a0ec6e1198576e9f4eec6eb4250ef777ab2f2a7529823696b4d36fccc809e83",
+      "bytes": 12637,
+      "revision": "ea5175d865c2034b033ebf5653d83638f10bba54"
+    },
+    {
+      "file": "licenses/odin-sun.txt",
+      "source": "https://raw.githubusercontent.com/odin-lang/Odin/ea5175d865c2034b033ebf5653d83638f10bba54/core/math/math_erf.odin",
+      "sha256": "5b4c6a064badf329834047234b28c6da9b71f0fd046f2cc036425440cba0ef0f",
+      "bytes": 509,
+      "kind": "verbatim complete embedded license/header slice",
+      "source_sha256": "5a0ec6e1198576e9f4eec6eb4250ef777ab2f2a7529823696b4d36fccc809e83"
+    },
+    {
+      "file": "licenses/zig.txt",
+      "source": "https://codeberg.org/ziglang/zig/raw/commit/44d9672fed001115e674fd5ddb32747ef43a7af4/LICENSE",
+      "sha256": "5c537d6853e005298a285d508cff9ac7192cea23576c840d485b2b586a7ff177",
+      "bytes": 1080,
+      "revision": "44d9672fed001115e674fd5ddb32747ef43a7af4"
+    },
+    {
+      "file": "evidence/zig-compiler_rt.zig",
+      "source": "https://codeberg.org/ziglang/zig/raw/commit/44d9672fed001115e674fd5ddb32747ef43a7af4/lib/compiler_rt.zig",
+      "sha256": "8f518ff1a2d8de659d847c1e366d301d52fbc07cb60c4fb20129cb45a9c6a15e",
+      "bytes": 25527,
+      "revision": "44d9672fed001115e674fd5ddb32747ef43a7af4",
+      "installed_path": "/nix/store/8fbny795qwfafb1cbpjn88pgpf1c4hy0-zig-0.16.0/lib/zig/compiler_rt.zig"
+    },
+    {
+      "file": "evidence/zig-addf3.zig",
+      "source": "https://codeberg.org/ziglang/zig/raw/commit/44d9672fed001115e674fd5ddb32747ef43a7af4/lib/compiler_rt/addf3.zig",
+      "sha256": "21c91cf72cb255e6ec7c41e257682669ffb213cf4a704dafdb1ea34ad96598b6",
+      "bytes": 6364,
+      "revision": "44d9672fed001115e674fd5ddb32747ef43a7af4",
+      "installed_path": "/nix/store/8fbny795qwfafb1cbpjn88pgpf1c4hy0-zig-0.16.0/lib/zig/compiler_rt/addf3.zig"
+    },
+    {
+      "file": "evidence/zig-mulf3.zig",
+      "source": "https://codeberg.org/ziglang/zig/raw/commit/44d9672fed001115e674fd5ddb32747ef43a7af4/lib/compiler_rt/mulf3.zig",
+      "sha256": "eeec703926a227c02cf3918c1f242110faf7b04bbf7c4d967b6eeeeb569b51cd",
+      "bytes": 8424,
+      "revision": "44d9672fed001115e674fd5ddb32747ef43a7af4",
+      "installed_path": "/nix/store/8fbny795qwfafb1cbpjn88pgpf1c4hy0-zig-0.16.0/lib/zig/compiler_rt/mulf3.zig"
+    },
+    {
+      "file": "evidence/zig-divsf3.zig",
+      "source": "https://codeberg.org/ziglang/zig/raw/commit/44d9672fed001115e674fd5ddb32747ef43a7af4/lib/compiler_rt/divsf3.zig",
+      "sha256": "f62093617b9c69b2e10495387afe9b523fb7c496566b85434866cb3a520571be",
+      "bytes": 8402,
+      "revision": "44d9672fed001115e674fd5ddb32747ef43a7af4",
+      "installed_path": "/nix/store/8fbny795qwfafb1cbpjn88pgpf1c4hy0-zig-0.16.0/lib/zig/compiler_rt/divsf3.zig"
+    },
+    {
+      "file": "evidence/zig-powiXf2.zig",
+      "source": "https://codeberg.org/ziglang/zig/raw/commit/44d9672fed001115e674fd5ddb32747ef43a7af4/lib/compiler_rt/powiXf2.zig",
+      "sha256": "78b1c851be56d580a59672574afc0f9cb776183b0325d98130206a4a18d7ba05",
+      "bytes": 1602,
+      "revision": "44d9672fed001115e674fd5ddb32747ef43a7af4",
+      "installed_path": "/nix/store/8fbny795qwfafb1cbpjn88pgpf1c4hy0-zig-0.16.0/lib/zig/compiler_rt/powiXf2.zig"
+    },
+    {
+      "file": "evidence/zig-memcpy.zig",
+      "source": "https://codeberg.org/ziglang/zig/raw/commit/44d9672fed001115e674fd5ddb32747ef43a7af4/lib/compiler_rt/memcpy.zig",
+      "sha256": "04591b9808246a6904dddd26b131e4f26ad5e5ee8b365b70e63474a62fa05c9c",
+      "bytes": 6327,
+      "revision": "44d9672fed001115e674fd5ddb32747ef43a7af4",
+      "installed_path": "/nix/store/8fbny795qwfafb1cbpjn88pgpf1c4hy0-zig-0.16.0/lib/zig/compiler_rt/memcpy.zig"
+    },
+    {
+      "file": "evidence/zig-memmove.zig",
+      "source": "https://codeberg.org/ziglang/zig/raw/commit/44d9672fed001115e674fd5ddb32747ef43a7af4/lib/compiler_rt/memmove.zig",
+      "sha256": "5a053698229043b1ab458bed0c46180101d05b4b2cf6e05ffa6ac43b3eda5224",
+      "bytes": 7302,
+      "revision": "44d9672fed001115e674fd5ddb32747ef43a7af4",
+      "installed_path": "/nix/store/8fbny795qwfafb1cbpjn88pgpf1c4hy0-zig-0.16.0/lib/zig/compiler_rt/memmove.zig"
+    },
+    {
+      "file": "licenses/llvm-compiler-rt-add.txt",
+      "source": "https://raw.githubusercontent.com/llvm/llvm-project/02d85149a05cb1f6dc49f0ba7a2ceca53718ae17/compiler-rt/LICENSE.TXT",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+      "bytes": 16708,
+      "revision": "02d85149a05cb1f6dc49f0ba7a2ceca53718ae17",
+      "scope": "conditional Zig compiler_rt ports; not the whole LLVM tree"
+    },
+    {
+      "file": "licenses/llvm-compiler-rt-mul.txt",
+      "source": "https://raw.githubusercontent.com/llvm/llvm-project/2ffb1b0413efa9a24eb3c49e710e36f92e2cb50b/compiler-rt/LICENSE.TXT",
+      "sha256": "dd27f8c290bcdc8368549cd7cd98710a9dbdc34122f2e096a1edb97824ed4148",
+      "bytes": 4289,
+      "revision": "2ffb1b0413efa9a24eb3c49e710e36f92e2cb50b",
+      "scope": "conditional Zig compiler_rt ports; not the whole LLVM tree"
+    },
+    {
+      "file": "licenses/llvm-compiler-rt-div.txt",
+      "source": "https://raw.githubusercontent.com/llvm/llvm-project/d674d96bc56c0f377879d01c9d8dfdaaa7859cdb/compiler-rt/LICENSE.TXT",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+      "bytes": 16708,
+      "revision": "d674d96bc56c0f377879d01c9d8dfdaaa7859cdb",
+      "scope": "conditional Zig compiler_rt ports; not the whole LLVM tree"
+    },
+    {
+      "file": "licenses/llvm-compiler-rt-release80.txt",
+      "source": "https://raw.githubusercontent.com/llvm-mirror/compiler-rt/df52202e77b13320eb05f29519a0b4eed1d31349/LICENSE.TXT",
+      "sha256": "dd27f8c290bcdc8368549cd7cd98710a9dbdc34122f2e096a1edb97824ed4148",
+      "bytes": 4289,
+      "revision": "df52202e77b13320eb05f29519a0b4eed1d31349",
+      "scope": "conditional Zig powiXf2 port; release_80 resolved to immutable commit"
+    },
+    {
+      "file": "licenses/zig-musl.txt",
+      "source": "https://codeberg.org/ziglang/zig/raw/commit/44d9672fed001115e674fd5ddb32747ef43a7af4/lib/libc/musl/COPYRIGHT",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af",
+      "bytes": 6204,
+      "revision": "44d9672fed001115e674fd5ddb32747ef43a7af4",
+      "scope": "conditional Zig compiler_rt math ports; not a claim that libc is linked"
+    },
+    {
+      "file": "evidence/khronos-gl3.h",
+      "source": "https://raw.githubusercontent.com/KhronosGroup/OpenGL-Registry/1cdd228e34966dd6b95bd203e9f84faba0f371a1/api/GLES3/gl3.h",
+      "sha256": "a0e4880142bd059bd4d7446f257920b5020b8bbb0a86eb0149cbd1ea2fcf8cb0",
+      "bytes": 81600,
+      "revision": "1cdd228e34966dd6b95bd203e9f84faba0f371a1",
+      "scope": "comparison only; no proven copy of this revision"
+    },
+    {
+      "file": "evidence/khronos-xml-notice.txt",
+      "source": "https://raw.githubusercontent.com/KhronosGroup/OpenGL-Registry/1cdd228e34966dd6b95bd203e9f84faba0f371a1/xml/gl.xml",
+      "sha256": "594f0eaa69197bf1a3b7ef838100f57178635b12cf769611b1452f44303dd7de",
+      "bytes": 420,
+      "revision": "1cdd228e34966dd6b95bd203e9f84faba0f371a1",
+      "scope": "comparison only; XML not shipped"
+    },
+    {
+      "file": "evidence/emscripten-gl3.h",
+      "source": "https://raw.githubusercontent.com/emscripten-core/emscripten/b7dc6e5747465580df5984e723b9d1f10d8e804b/system/include/GLES3/gl3.h",
+      "sha256": "dbd72f53c24558d98bfb00e7b4e26ed9999f0afacd40340db18ef2b2da5a2fb2",
+      "bytes": 82666,
+      "revision": "b7dc6e5747465580df5984e723b9d1f10d8e804b",
+      "scope": "comparison only; copied origin unproved"
+    },
+    {
+      "file": "licenses/khronos-gles-header.txt",
+      "source": "https://raw.githubusercontent.com/emscripten-core/emscripten/b7dc6e5747465580df5984e723b9d1f10d8e804b/system/include/GLES3/gl3.h",
+      "sha256": "80afca6dc6caccc321ed2c1e5bec8701a44d3cfbc215acc08de09ebb37d6178a",
+      "bytes": 1146,
+      "revision": "b7dc6e5747465580df5984e723b9d1f10d8e804b",
+      "scope": "precautionary attribution for custom GLES API subset; not evidence of copying this revision"
+    },
+    {
+      "file": "evidence/emscripten-libwebgl.js",
+      "source": "https://raw.githubusercontent.com/emscripten-core/emscripten/b7dc6e5747465580df5984e723b9d1f10d8e804b/src/lib/libwebgl.js",
+      "sha256": "99d70e3ed68f7a6a0752ce3983092c173ca0d16b082575f5498cf2a23945a352",
+      "bytes": 174490,
+      "revision": "b7dc6e5747465580df5984e723b9d1f10d8e804b",
+      "scope": "comparison/reference only; Odin emmalloc uses its own embedded notice"
+    },
+    {
+      "file": "evidence/emscripten-LICENSE",
+      "source": "https://raw.githubusercontent.com/emscripten-core/emscripten/b7dc6e5747465580df5984e723b9d1f10d8e804b/LICENSE",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+      "bytes": 5093,
+      "revision": "b7dc6e5747465580df5984e723b9d1f10d8e804b",
+      "scope": "comparison/reference only; Odin emmalloc uses its own embedded notice"
+    },
+    {
+      "file": "evidence/emscripten-AUTHORS",
+      "source": "https://raw.githubusercontent.com/emscripten-core/emscripten/b7dc6e5747465580df5984e723b9d1f10d8e804b/AUTHORS",
+      "sha256": "56f7df65203d4858dac19cafe3a84a8c49abaff56b67d32d2d463d5fef6e440b",
+      "bytes": 28933,
+      "revision": "b7dc6e5747465580df5984e723b9d1f10d8e804b",
+      "scope": "comparison/reference only; Odin emmalloc uses its own embedded notice"
+    },
+    {
+      "file": "evidence/tool-environment.txt",
+      "source": "nix develop --no-write-lock-file --command sh -c printf \"odin root: \"; odin root; printf \"\\nodin version: \"; odin version; printf \"zig version: \"; zig version; command -v odin; command -v zig",
+      "sha256": "dd8b40ea3877a152f0ebda4bc386e9d1dfcf36dc3ccf94abcb6f0a3386d054ff",
+      "bytes": 271,
+      "cwd": "/Users/gook/Repos/kkgams-local/example.game1"
+    },
+    {
+      "file": "evidence/nixpkgs-package.nix",
+      "source": "nixpkgs d233902339c02a9c334e7e593de68855ad26c4cb/pkgs/by-name/od/odin/package.nix",
+      "sha256": "bdadc106365cbb38aff117084129d9ff4c5783c577d230436a6c2dfd29c319f2",
+      "bytes": 2728
+    },
+    {
+      "file": "evidence/nixpkgs-darwin-remove-impure-links.patch",
+      "source": "nixpkgs d233902339c02a9c334e7e593de68855ad26c4cb/pkgs/by-name/od/odin/darwin-remove-impure-links.patch",
+      "sha256": "2452cd732c39336fed552bbef4a84b60375c2f56807460d96157c1229588483b",
+      "bytes": 1018
+    },
+    {
+      "file": "evidence/nixpkgs-system-raylib.patch",
+      "source": "nixpkgs d233902339c02a9c334e7e593de68855ad26c4cb/pkgs/by-name/od/odin/system-raylib.patch",
+      "sha256": "a262bbad72d87c47f807cf3984faadca281c2f45903d948b919d3e7b1686cc95",
+      "bytes": 4667
+    },
+    {
+      "file": "evidence/nixpkgs-default.nix",
+      "source": "nixpkgs d233902339c02a9c334e7e593de68855ad26c4cb/pkgs/development/compilers/zig/default.nix",
+      "sha256": "a54a6a138afd0457703a953b75c04ac987265940889799184f3307702919ff6b",
+      "bytes": 981
+    },
+    {
+      "file": "evidence/nixpkgs-generic.nix",
+      "source": "nixpkgs d233902339c02a9c334e7e593de68855ad26c4cb/pkgs/development/compilers/zig/generic.nix",
+      "sha256": "3cc126863576214205ac9a840ff68e68676567125b3b1f116b070762b7e6dd7c",
+      "bytes": 5485
+    },
+    {
+      "file": "evidence/lineage-gl3.h",
+      "source": "local git 9990f9814245d8bab6f1301572c14cd3078bfa88:examples/demo/game/web/wasm-include/GLES3/gl3.h",
+      "sha256": "ba35fea2964f8c46ad2c84d1283e49b3dde29c13a11799bd172dfd58a08d7524",
+      "bytes": 14594,
+      "scope": "local lineage; no assertion of original authorship"
+    },
+    {
+      "file": "evidence/lineage-gl_funcs.h",
+      "source": "local git 9990f9814245d8bab6f1301572c14cd3078bfa88:examples/demo/game/web/wasm-include/gl_funcs.h",
+      "sha256": "9e4eff9a4762f30dc1d192391b24da4ab51792e1b816635683255d093f29d289",
+      "bytes": 23992,
+      "scope": "local lineage; no assertion of original authorship"
+    },
+    {
+      "file": "evidence/lineage-gl-bridge.js",
+      "source": "local git d6778f9d4603112d20ab6e01a85c5c8dd03be81a:cmd/browser/util/gl-bridge.js",
+      "sha256": "4e0301488f71176541adaeebeea2928c50dd7b8dc4c2636ba119b835743ebfff",
+      "bytes": 39417,
+      "scope": "local lineage; no assertion of original authorship"
+    },
+    {
+      "file": "evidence/local-lineage.txt",
+      "source": "local git path history; committer is not a copyright grant",
+      "sha256": "996d43759e3f370ab7f0d27d9183840accb5bd86b78d94c782c8239205ca6932",
+      "bytes": 1884
+    }
+  ],
+  "source_hashes": [
+    {
+      "scope": "standalone",
+      "path": ".gitignore",
+      "sha256": "ddb4068a6222f45492934459f6213ba554b4de3c2a635c50dcac09d08560b79f",
+      "bytes": 159,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "LICENSING.md",
+      "sha256": "e31dcec021cda1e2a149efa8c62a596e3416e6a6090dc6b5fa6b78055952b8fb",
+      "bytes": 715,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "Makefile",
+      "sha256": "719d931b63321ad6918ece9bca539574add557e7666471494f3dfae961226f11",
+      "bytes": 1523,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "NOTICE",
+      "sha256": "b42d4002076ee86e4a70103e0620830d715d59a5e1f014bc81487829f91f1071",
+      "bytes": 1020,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "README.md",
+      "sha256": "694b66fc2a1c6a6b21f466a0c2acf0cf0a110dcf0babbf3b605f4f14cb0c79fc",
+      "bytes": 2785,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "RELEASE-INSTALL.md",
+      "sha256": "448d867087b4bf9fa8605c4a5ad6df14104f486212791063e801597f150f960b",
+      "bytes": 9098,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "SOURCE.json",
+      "sha256": "00afe0e047ea1440f4802c09320abd3eacf38c464bc0343281b9697d794ff76f",
+      "bytes": 6852,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "build.ng.json",
+      "sha256": "b1aae658aee12ec868d42bb68d8d5d6cd41175bfd09d36173c4bbb698ef2e6a9",
+      "bytes": 5542,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/README.md",
+      "sha256": "06083290147f61886a1aefbc62fa592c43b239e8fca50f684baa1867abe6ff46",
+      "bytes": 4570,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/build.mjs",
+      "sha256": "7e3a63061ac92a50f04871286f76a6cf457538175bc08db29de34af18d61c577",
+      "bytes": 6839,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/director.rspk.json",
+      "sha256": "8ca4b96548b75c80eba5f22301e8ac39592441a7231cffd79126be1e54851068",
+      "bytes": 6688,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/generated/decoder.odin",
+      "sha256": "5b2025cf508657fecc3787c30d46c956fe603972d12bfb6903a2cf674e158b0a",
+      "bytes": 17824,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/generated/key.bindings.json",
+      "sha256": "448e280c2817ebbcd8d4b0a27e22eb2c40894b44f777ef063133b075b39782dd",
+      "bytes": 488,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/generated/key.director.json",
+      "sha256": "1be33dd855c3358ba627f4bbe5110aa5fd33fc5bcede131f2f093c6cdcfc930d",
+      "bytes": 3742,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/generated/key.rspk",
+      "sha256": "9e9bc4a49d8b98c306bb386c8c4800f1f969be43d5b527514e0f1909df340716",
+      "bytes": 673,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/generated/key.slots.json",
+      "sha256": "04c607f4783cea128673661ccfc854213bb04258c6e1df830a7cdfc417e468fb",
+      "bytes": 4759,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/generated/power.bindings.json",
+      "sha256": "448e280c2817ebbcd8d4b0a27e22eb2c40894b44f777ef063133b075b39782dd",
+      "bytes": 488,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/generated/power.director.json",
+      "sha256": "a2c4512d7dbbf421804c1c88e9b6d602127aced010cd3465cf2c50b5d1460155",
+      "bytes": 3742,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/generated/power.rspk",
+      "sha256": "60b434dda48c439837b8c10084b9d89b3d6f8e591212ab4c82eea50fee15e563",
+      "bytes": 673,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/generated/power.slots.json",
+      "sha256": "70ac722af09f61765641220501468ac5c9abb9dce8c9fa4b48201c309275d72c",
+      "bytes": 4759,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/key.director",
+      "sha256": "0552a70bf45bbe1af85813bdc7a23300529d43d9e0607e7bd1c4a58541458d89",
+      "bytes": 402,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "content/power.director",
+      "sha256": "9c96bfcc133fa898bb81ad167d2fe41897ec7261a6636ee04b149c8f5bc715eb",
+      "bytes": 373,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "flake.lock",
+      "sha256": "8f590f8de06dfd7d9780ccbd73a71258e20349c51cb73a0c6aaba129449df72f",
+      "bytes": 567,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "flake.nix",
+      "sha256": "6bb25c5e6162ca135c4b6dacf6c141f9fd2a7060abffbd2634aea617fc72e057",
+      "bytes": 640,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/.gitignore",
+      "sha256": "ad5085cf0e8205bf463d358dfa9db4d0b90183f33fa3b1cda49750e1ee3c7434",
+      "bytes": 60,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/CONTRACT.md",
+      "sha256": "1e2290b4a5f016a971536b5611ebe4b21c53e84a9a0e3959fc45a00e9a3eac8a",
+      "bytes": 4301,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/Makefile",
+      "sha256": "5a8384bbf63c09485989a8e6f9c93296d81843de46611829345775ddf10c7427",
+      "bytes": 4235,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/README.md",
+      "sha256": "0f6e1ae45bba757adde7ab1e08feeecf92c00ddb93ad1bedbc73b5c773220bc7",
+      "bytes": 2014,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/THIRD_PARTY.md",
+      "sha256": "98356d8a6e5ab597a5a2d4ecc2f82e9715edab453248fb8d2733d640486ed8d0",
+      "bytes": 1810,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/THIRD_PARTY_LICENSES/sokol-odin.txt",
+      "sha256": "d5501d72378a0865c7896cc85cfbc8956189a0cdc3fd1e72350443cb1522f031",
+      "bytes": 897,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/THIRD_PARTY_LICENSES/sokol-tools-bin.txt",
+      "sha256": "d7bb344eb6e070a617d3b37b3bda6f4b3a08634dd0a413eca1a1b1d247859ee2",
+      "bytes": 1072,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/build.nosync/web/gl-bridge.js",
+      "sha256": "5bc17292932241f5f511fb3e7cf87555c1255e08b700fd51e96e34f0d4c16551",
+      "bytes": 43261,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "game/build.nosync/web/index.html",
+      "sha256": "26e455904f0ff36b4a4aa5dc88c264aadec8fc610b7eec155cfc57b976d54cae",
+      "bytes": 8638,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "game/build.nosync/web/station-demo.wasm",
+      "sha256": "16d483164d6f6753aa02f68554409fbbd5367d86ae45d5c9f862f7d1f2dd3385",
+      "bytes": 518116,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "game/build.nosync/web/station.rspk",
+      "sha256": "60b434dda48c439837b8c10084b9d89b3d6f8e591212ab4c82eea50fee15e563",
+      "bytes": 673,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "game/content/README.md",
+      "sha256": "8e6989d824cb2c8eddee19eb441dadfc6110fe712b9dce72f156d0b690e0924f",
+      "bytes": 3137,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/content/decoder.odin",
+      "sha256": "51a22b3497e0fd65d7c54bad190ce0c66f6deec8077f55bd6b9ad5519bf0793f",
+      "bytes": 23144,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/content/decoder_test.odin",
+      "sha256": "7bb1a3207455064c970f4df78240756ca0ef1ab149d58793e03d6df91dd35b55",
+      "bytes": 5609,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/director/director.odin",
+      "sha256": "1e33eb5d9343093f0bb9f2b9d32125700fe0db323221c252cc898a7456e87de8",
+      "bytes": 24504,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/env.c",
+      "sha256": "576ddcfee255508cde5b9b7e380f3218c61daba6108216d1d4f9c486595a876e",
+      "bytes": 763,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/env.o",
+      "sha256": "b260c7282a4d922177aaf10fd262efb902fe4d96deba216abc89d4e6c29c4d46",
+      "bytes": 1495430,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "game/host/host.odin",
+      "sha256": "0f5687899b97267c2f93e6e73a629f3c738b8f748b25f1f1c3324b76c51b7460",
+      "bytes": 1832,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/host/host_wasm.odin",
+      "sha256": "915db9e2f955c395cbf4221abb4d16d141c6a24490626afae37f5a6432ba3e21",
+      "bytes": 4975,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/host/reset_temp_wasm.odin",
+      "sha256": "cdfbcf28f76743d1e370ea6e9e78342f490017bb10260ef5c2ebc2ff4834a5ef",
+      "bytes": 112,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/main.odin",
+      "sha256": "9f74bb48c9c57a926ef4e2886893f760e2dfeb38a728d5e6f56952dd4f2df432",
+      "bytes": 4175,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/main_wasm.odin",
+      "sha256": "497d87baeb9d5928a39868a862e58ef6e75c0d4e53af7313d061ae2a78145207",
+      "bytes": 2584,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/odinfmt.json",
+      "sha256": "d33d72dd286152230e63948712a7d1991eab37a6764dc3a055e10cddc7c189b7",
+      "bytes": 298,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/ols.json",
+      "sha256": "15670c0ad9375857db086d8fd009b60b994a1df526b7e2a8339196465c796098",
+      "bytes": 821,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/room.glsl",
+      "sha256": "d14bff250d09b456ea512da10c32e1f4027b63ac0235783ad1069a95d0f8554b",
+      "bytes": 300,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/room.glsl.odin",
+      "sha256": "94009f7016d38b339ed79697b09ea941a187b97121cf26d8dfa4c946f1037c0b",
+      "bytes": 9050,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/app/app.odin",
+      "sha256": "d1db571077732fdaa41b786d57402100b2dcdb59e8b80ab811f66631ac1df7b8",
+      "bytes": 91096,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/audio/audio.odin",
+      "sha256": "0fe06487faebd1d583a4aeb38188a1fcf182a9df49fabdcb0a2b55d9f2d95e69",
+      "bytes": 29757,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/build_clibs_linux.sh",
+      "sha256": "c8863ec48b4bec90972c4b92c9c9b1acb919e84b6242038167cc4f87de5b651a",
+      "bytes": 2835,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/build_clibs_macos.sh",
+      "sha256": "b48a5d37874f187f58091a40187c9b5f12e98b0048a2cc7c12b17cf3a5cb86e6",
+      "bytes": 10129,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/build_clibs_macos_dylib.sh",
+      "sha256": "e386f47847e745c99f6fe4a31bc05105a140e8cf766e055a35f61efb248acd36",
+      "bytes": 1921,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/build_clibs_wasm.bat",
+      "sha256": "404a88f5de27a23f23e10e059508fbd5b48907c9ae77ef20c44593ac031cc698",
+      "bytes": 516,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/build_clibs_wasm.sh",
+      "sha256": "402b5689a3abc8abbe847aca97c717d69ae19c795c005a903a515a7cb4491b67",
+      "bytes": 542,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/build_clibs_windows.cmd",
+      "sha256": "eca2e32506a28ef6e08291424425dc9523b6ffef33c70044b205fbc0b204afd7",
+      "bytes": 1517,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol.c",
+      "sha256": "a600c96501f232720f3aedaa5334c59ca772009dd828a9225d67ddc012abef52",
+      "bytes": 377,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_app.c",
+      "sha256": "8bde6fb32264e191239a544e350eac6b3e2fbbb5c9a15c0ad9a85f60973fdbc4",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_app.h",
+      "sha256": "42cc5b79f8f23b4d5b7e8454ef2649e09618bfe461969b0ef71cf0ccc02b0298",
+      "bytes": 602074,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_audio.c",
+      "sha256": "f565ffe21b51ed4ec4958009f80c516836e41dc8b3ec9a0f9b759a1a21ca1df4",
+      "bytes": 102,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_audio.h",
+      "sha256": "e527091b2bc0c4ccbeb3f145489c0dbdbe74869247e30942c1e22bd580e2c4c7",
+      "bytes": 103164,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_cmdbuf.c",
+      "sha256": "73776ff4ecd0277e91caf710952e51f9a124c230bddf483a03084f4978df5b1b",
+      "bytes": 127,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_cmdbuf.h",
+      "sha256": "c53a638cb5ea3617534cf4e6906b0a9ffa653d2894b9515465a4f718ea828a3b",
+      "bytes": 50604,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_debugtext.c",
+      "sha256": "b3afa723c2e0b8dfca4d1b2f6d07c4f845b947a742678cd385f454854fc0ae89",
+      "bytes": 133,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_debugtext.h",
+      "sha256": "0dbdd4b635d016b68cdfe8624b864a19ca6b44a0c5bba28eadbc85566e066a47",
+      "bytes": 266707,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_defines.h",
+      "sha256": "e8373c34023098e3b6d2510b6adf81a981f830368689c3ac2509b2aa2b31da69",
+      "bytes": 258,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_framebuffer.c",
+      "sha256": "add540b9eabaac5983b522f96359fc509687e4f2eeba1703574e2069a324ecff",
+      "bytes": 137,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_framebuffer.h",
+      "sha256": "7334f0140b9fb5029abb54c820437830b21e52dc374a87e1dffd8ccd98a68bd4",
+      "bytes": 394252,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_gfx.c",
+      "sha256": "4058f288375090a98d50987297a875ee3672aec6caa462ddd0c0e4947c5d4939",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_gfx.h",
+      "sha256": "fbf2640302b1b180be98ab8b0fe645a978260f7ab1509d78b2dcab3bc98f829e",
+      "bytes": 1310579,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_gl.c",
+      "sha256": "ea48364dcddd0540fe950bcea893fa04f92794c83a24ad0405c39fe192edc6b5",
+      "bytes": 119,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_gl.h",
+      "sha256": "5d85b5ee5edcb2c00d4de304e37d1834f4eb0a7cafbf56a05ba907583558cee3",
+      "bytes": 230783,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_glue.c",
+      "sha256": "cf9bc32c344f737ac473b0d2468da5072475d5acdf655031c220d40f6ed62909",
+      "bytes": 146,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_glue.h",
+      "sha256": "6207d08f7ea5da43154f980c7fe314429eafb75922c6b41108ce2936f8240753",
+      "bytes": 7516,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_letterbox.c",
+      "sha256": "46eea492cc95f27f171b5bef207e94150cf20b1703c58b25404234be758bf9f1",
+      "bytes": 110,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_letterbox.h",
+      "sha256": "031f7bcdc8f63e4ad9f86f685a092a938aa49e6ec74b6ecfd0520371a184ac34",
+      "bytes": 7177,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_log.c",
+      "sha256": "01da60d2a8a7428580218882f0f1b1d71f84c0a23c39996285ddd5144a03a2d7",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_log.h",
+      "sha256": "a8d55de21694410740e752ea8e57c4103d5951d20339ba9712e24232adef9a42",
+      "bytes": 11950,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_shape.c",
+      "sha256": "935f6f3e011b8812319ca96cb165b5338b4f0b88ad00c242044046300a851f62",
+      "bytes": 125,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_shape.h",
+      "sha256": "8daac726b6581380b571f3633c518839f2c0d0e8f88551b1f670d2bafbe87b51",
+      "bytes": 60837,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_time.c",
+      "sha256": "c4f604de77d91a2b20099530cdaef2a484d747f86bad2d6075b0bcb5be7a61d2",
+      "bytes": 100,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/c/sokol_time.h",
+      "sha256": "0eeb8c1bc9ac2ec4438090f68e2ab0eb85d1daf10643158dec11383a8e8b1872",
+      "bytes": 11054,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/cmdbuf/cmdbuf.odin",
+      "sha256": "5cd2d1707a4952551330735d6ad8113cf5b28b9dadeb198d09db5b529def76ca",
+      "bytes": 18101,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/debugtext/debugtext.odin",
+      "sha256": "4c3408493490f2c973327a337b618c2348cabb7f010029809d97d1def32ada46",
+      "bytes": 28731,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/framebuffer/framebuffer.odin",
+      "sha256": "ed14cd153e9d5dfc9c66927931b752bded52e9dc250a78fc4747fcee333d5fda",
+      "bytes": 21330,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/gfx/gfx.odin",
+      "sha256": "5d65d27296a57f52cc521dd17992499a784d81fdaa2ce7801aa7142f01a578d5",
+      "bytes": 220943,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/gl/gl.odin",
+      "sha256": "38157f52bca064b10d7f4fd5d6b29754e6c5c7cab6f84f8e3e9b59edbcc37111",
+      "bytes": 38825,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/glue/glue.odin",
+      "sha256": "4c1e0de75997475f98e69745a60f74af4472e15486271250155097549a027f61",
+      "bytes": 7273,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/helpers/allocator.odin",
+      "sha256": "f7088c0b66fd08759c14dc1387db7e9681bbbfac0e9123ebc44d5dd919ffce1c",
+      "bytes": 1083,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/helpers/logger.odin",
+      "sha256": "ea1212b1b2ccd07ef376b6ab39b2a7c2257fcda43d80607024b6f8c65d6e48f2",
+      "bytes": 1360,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/letterbox/letterbox.odin",
+      "sha256": "171022400995031620ea9757dc8d40fa388efce206681c94bad1818ccbeebdbb",
+      "bytes": 8932,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/log/log.odin",
+      "sha256": "daf6a782675f659c603b6f6349d3dcbe46a8c8373503f43d185b2cc8cbc203a2",
+      "bytes": 8840,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/shape/shape.odin",
+      "sha256": "d6c663f254dee6bc9bfd23336d402b6bea60b6fa5c4d458288d13e03f52ebff0",
+      "bytes": 22232,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/sokol/time/time.odin",
+      "sha256": "9aea054f8136123c8241e66c283f76bf0756ab6c5b6337eab3baa270d122c111",
+      "bytes": 9260,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/station/station.odin",
+      "sha256": "70d47213b6f635d19ffb2577bd63ef9508b72994f9dad2aa342b1f2fa8e0719a",
+      "bytes": 4966,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/station/station_test.odin",
+      "sha256": "d3d4d8105d0cdbde4c651c4988ed170e8029e9b08a5dfd1847fe525bdc3b63be",
+      "bytes": 4262,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/station.rspk",
+      "sha256": "60b434dda48c439837b8c10084b9d89b3d6f8e591212ab4c82eea50fee15e563",
+      "bytes": 673,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/tools/make_fixture.py",
+      "sha256": "37b3989f341355c01ab4262b8f6ecc5d3bdf286ae237ba92d96e24b1c458652e",
+      "bytes": 3674,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/web/gl-bridge.js",
+      "sha256": "5bc17292932241f5f511fb3e7cf87555c1255e08b700fd51e96e34f0d4c16551",
+      "bytes": 43261,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/web/index.html",
+      "sha256": "26e455904f0ff36b4a4aa5dc88c264aadec8fc610b7eec155cfc57b976d54cae",
+      "bytes": 8638,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/web/wasm-include/GLES3/gl3.h",
+      "sha256": "02cf45c42486c5fb8da0a9814c2852787c44305870560ffe2310d191466b8ba6",
+      "bytes": 14679,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/web/wasm-include/assert.h",
+      "sha256": "960d0f5a819068ebb5977e6dbdcdc6900ca4b054c800c62514b964bf11712674",
+      "bytes": 28,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/web/wasm-include/gl_funcs.h",
+      "sha256": "9e4eff9a4762f30dc1d192391b24da4ab51792e1b816635683255d093f29d289",
+      "bytes": 23992,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/web/wasm-include/stdio.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/web/wasm-include/stdlib.h",
+      "sha256": "5ab69da7aa2fd88eff0154ac0feaaceac5c0168c5de80476e7470bc92d19f981",
+      "bytes": 1651,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "game/web/wasm-include/string.h",
+      "sha256": "9198cc219b4697b7be0e194862cfab225334073a60309f544a3d74421bc92f65",
+      "bytes": 1895,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "gams.json",
+      "sha256": "46a1b4297f89a7d55a4ee34755940d10be187e5fe611b735188bf3e496949ec2",
+      "bytes": 8913,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ng/compile-graph.lua",
+      "sha256": "660a93647fd3e17331488b921ac176179ffd7db14c552e278450875f3d34bc32",
+      "bytes": 41839,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ng/presets/director-compile.lua",
+      "sha256": "42eb5857ac5b6e74d4c9b2f202864f5654f942f867ecfa278782ebe75ab84f06",
+      "bytes": 623,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ng/presets/ensure-directory.lua",
+      "sha256": "54b330569c26b31dc3230a67c1f92107e1a6e70639610cd9b124b3bfe0134590",
+      "bytes": 656,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ng/presets/export-station-web.lua",
+      "sha256": "1aea022f4a74a263ddc55b9fecc267a5254b50194dfe30de960da829018955f2",
+      "bytes": 2685,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ng/presets/read-text.lua",
+      "sha256": "91320355dd0677cd8d6fe453b6600ec1c1e029449925b9e69c47d74add9f93f6",
+      "bytes": 287,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ng/presets/respack-content-save.lua",
+      "sha256": "3d0bb01e78ce1fe657f50d8409c8bfd236335452de02001ca68f4fdf23862105",
+      "bytes": 883,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ng/presets/station-bindings.lua",
+      "sha256": "4d6849b4d74f2c2feefec539ca2356baafcccaa740bfebed21c849a835c6fd5a",
+      "bytes": 1233,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "plugins/director-compiler.comp.wasm",
+      "sha256": "6f42ccc8163c64765eec357894148956991554c25c8c2d0a1f597c9fa6dd7e5b",
+      "bytes": 104084,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "plugins/fs.comp.wasm",
+      "sha256": "b7f2ea05beac359cfd7d15c2b198edb66e0437fffdf00e9e4d0250cfb226fc98",
+      "bytes": 55491,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "plugins/layout.comp.wasm",
+      "sha256": "7d42e209ab30152d1c1396950ea4efb1d594d3c07a005b187c8eec6fa21f2a05",
+      "bytes": 83860,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "plugins/lua.comp.wasm",
+      "sha256": "6b428e1a44bfccbb7b19a1d4afa1c665b81a02d76fdbee06dd48920f9508ec0f",
+      "bytes": 366294,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "plugins/respack.comp.wasm",
+      "sha256": "b6d0d52d8fbfe8552b6706cf616c81b06d7ac26f89632e3d219d1ce95fa36b87",
+      "bytes": 366364,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "standalone",
+      "path": "release-selection.json",
+      "sha256": "39c32326456198580a21f02c841faf693825ae343687c41bb60a5e00082a766c",
+      "bytes": 2840,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "scripts/check-local.py",
+      "sha256": "d0a43eb0bc172d3fa96f0d5163105ce03794c4b6832f19e7b0863e826d930624",
+      "bytes": 834,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "scripts/install-releases.py",
+      "sha256": "8c9b22ba51be0abe30b1fc452fbf0550f995ef4247b61854b4a3a279b9fab441",
+      "bytes": 14659,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "scripts/integration.mjs",
+      "sha256": "c9cb54b44850516d06b2326fa890b1bdb25ccc0d5d1ec7702ce6985ef44b9c80",
+      "bytes": 4154,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "scripts/setup-local.py",
+      "sha256": "64be5dbb68ddf82403089fb7abfa773550814eacbe14f0feed6e73995cd592e3",
+      "bytes": 3009,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "themes/the98.css",
+      "sha256": "f50db6b86ee61471fb48443e823cb3781553ee84e203fee018d77a31eb96bc4d",
+      "bytes": 56000,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ui-plugins/context.js",
+      "sha256": "8954e25dc1f63d0b50c67f09498aa58e4da7a2b0943e6f8933889a16b3918979",
+      "bytes": 1925,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ui-plugins/keys.js",
+      "sha256": "73116c1574790814228b9eebb40f92ab85c1cdee7f380f396e02a0759e801f57",
+      "bytes": 5650,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ui-plugins/layout.js",
+      "sha256": "c07cc2b45e3912a658ed0660797bff60f1aa4d64a1ae9dcfc838350cb41ddbb9",
+      "bytes": 26492,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ui-plugins/popup.js",
+      "sha256": "93eb1b9fe6e7b41c743b82f138584d945976837fbd57ade27dc5fd5f0c9b03ea",
+      "bytes": 13290,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ui-plugins/toast.js",
+      "sha256": "66ea36af0b3f0574148a4ef97e47bf1fb4f5d116681fa6733fb2e1857d77a3f8",
+      "bytes": 24541,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "ui-plugins/tooltip.js",
+      "sha256": "1622fbc5d8c51fbaff9a9bfb162d8cbdd84f4330d5fb68080819651a668bb3d0",
+      "bytes": 20431,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "views/files-default.js",
+      "sha256": "313497a661ada365c46f4e74f4e7db3bec89aa7bbc8a76db4f2369c91762d577",
+      "bytes": 3995,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "views/files-rename.js",
+      "sha256": "c807cfafa7ffa83d517da4abb8035f5b90494db04610e79ec85135b712fc9516",
+      "bytes": 8813,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "views/view-code.js",
+      "sha256": "53ce6a4796497c25c9b7fd63bd9614053daf285f0a67896bedfbda5d5efcc7da",
+      "bytes": 5932,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "views/view-files.js",
+      "sha256": "e4ad8d01a353ebdc7ed9bcaef5c9535563878caf4e5bd3d68cb1472c8844b11a",
+      "bytes": 40989,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "views/view-ng-node.js",
+      "sha256": "579287eb118796c5d1d3ee7046e576563fb6e7e25e89067ca690351c5a72ded9",
+      "bytes": 40237,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "standalone",
+      "path": "views/view-ng.js",
+      "sha256": "362b69de42fa77e4287bf2f2e8cbcbed9989d45a8e3e06e79c452f36a63b991f",
+      "bytes": 77429,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": ".gitignore",
+      "sha256": "267e0976d2a24ef291a295b454db0b762755c122752cb5ca885bc5328a08e52b",
+      "bytes": 34,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "README.md",
+      "sha256": "187b95c25c17c4ad61afd72d25b7e44592c78623dc06cb445b2232144571092a",
+      "bytes": 7647,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "build.ng.json",
+      "sha256": "b1aae658aee12ec868d42bb68d8d5d6cd41175bfd09d36173c4bbb698ef2e6a9",
+      "bytes": 5542,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/README.md",
+      "sha256": "901c4d59afe1a6aa9858312434bca4b8e9e4f34901167c03bf42386613cfb180",
+      "bytes": 6293,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/build.mjs",
+      "sha256": "d851f757557738e0f477c1f66979c56738515e0d140bf90b6580cbf64a2c5fe8",
+      "bytes": 6856,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/director.rspk.json",
+      "sha256": "8ca4b96548b75c80eba5f22301e8ac39592441a7231cffd79126be1e54851068",
+      "bytes": 6688,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/generated/decoder.odin",
+      "sha256": "5b2025cf508657fecc3787c30d46c956fe603972d12bfb6903a2cf674e158b0a",
+      "bytes": 17824,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/generated/key.bindings.json",
+      "sha256": "448e280c2817ebbcd8d4b0a27e22eb2c40894b44f777ef063133b075b39782dd",
+      "bytes": 488,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/generated/key.director.json",
+      "sha256": "1be33dd855c3358ba627f4bbe5110aa5fd33fc5bcede131f2f093c6cdcfc930d",
+      "bytes": 3742,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/generated/key.rspk",
+      "sha256": "9e9bc4a49d8b98c306bb386c8c4800f1f969be43d5b527514e0f1909df340716",
+      "bytes": 673,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/generated/key.slots.json",
+      "sha256": "04c607f4783cea128673661ccfc854213bb04258c6e1df830a7cdfc417e468fb",
+      "bytes": 4759,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/generated/power.bindings.json",
+      "sha256": "448e280c2817ebbcd8d4b0a27e22eb2c40894b44f777ef063133b075b39782dd",
+      "bytes": 488,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/generated/power.director.json",
+      "sha256": "a2c4512d7dbbf421804c1c88e9b6d602127aced010cd3465cf2c50b5d1460155",
+      "bytes": 3742,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/generated/power.rspk",
+      "sha256": "60b434dda48c439837b8c10084b9d89b3d6f8e591212ab4c82eea50fee15e563",
+      "bytes": 673,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/generated/power.slots.json",
+      "sha256": "70ac722af09f61765641220501468ac5c9abb9dce8c9fa4b48201c309275d72c",
+      "bytes": 4759,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/key.director",
+      "sha256": "0552a70bf45bbe1af85813bdc7a23300529d43d9e0607e7bd1c4a58541458d89",
+      "bytes": 402,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "content/power.director",
+      "sha256": "9c96bfcc133fa898bb81ad167d2fe41897ec7261a6636ee04b149c8f5bc715eb",
+      "bytes": 373,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "export/web/gl-bridge.js",
+      "sha256": "5bc17292932241f5f511fb3e7cf87555c1255e08b700fd51e96e34f0d4c16551",
+      "bytes": 43261,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "export/web/index.html",
+      "sha256": "26e455904f0ff36b4a4aa5dc88c264aadec8fc610b7eec155cfc57b976d54cae",
+      "bytes": 8638,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "export/web/station-demo.wasm",
+      "sha256": "e8bbbaf744c139d441ee636d0a79ceedd4c5fcdb0523521a0ec6d70df085e4e5",
+      "bytes": 516438,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "station-demo",
+      "path": "export/web/station.rspk",
+      "sha256": "60b434dda48c439837b8c10084b9d89b3d6f8e591212ab4c82eea50fee15e563",
+      "bytes": 673,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/.gitignore",
+      "sha256": "ad5085cf0e8205bf463d358dfa9db4d0b90183f33fa3b1cda49750e1ee3c7434",
+      "bytes": 60,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/CONTRACT.md",
+      "sha256": "1e2290b4a5f016a971536b5611ebe4b21c53e84a9a0e3959fc45a00e9a3eac8a",
+      "bytes": 4301,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/Makefile",
+      "sha256": "5a8384bbf63c09485989a8e6f9c93296d81843de46611829345775ddf10c7427",
+      "bytes": 4235,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/README.md",
+      "sha256": "3bcc736347c98b19f4e4fef38272f549b56b787864d3766b6ae59828b517321d",
+      "bytes": 2028,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/THIRD_PARTY.md",
+      "sha256": "98356d8a6e5ab597a5a2d4ecc2f82e9715edab453248fb8d2733d640486ed8d0",
+      "bytes": 1810,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/THIRD_PARTY_LICENSES/sokol-odin.txt",
+      "sha256": "d5501d72378a0865c7896cc85cfbc8956189a0cdc3fd1e72350443cb1522f031",
+      "bytes": 897,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/THIRD_PARTY_LICENSES/sokol-tools-bin.txt",
+      "sha256": "d7bb344eb6e070a617d3b37b3bda6f4b3a08634dd0a413eca1a1b1d247859ee2",
+      "bytes": 1072,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/build.nosync/web/gl-bridge.js",
+      "sha256": "5bc17292932241f5f511fb3e7cf87555c1255e08b700fd51e96e34f0d4c16551",
+      "bytes": 43261,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/build.nosync/web/index.html",
+      "sha256": "26e455904f0ff36b4a4aa5dc88c264aadec8fc610b7eec155cfc57b976d54cae",
+      "bytes": 8638,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/build.nosync/web/station-demo.wasm",
+      "sha256": "e8bbbaf744c139d441ee636d0a79ceedd4c5fcdb0523521a0ec6d70df085e4e5",
+      "bytes": 516438,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/build.nosync/web/station.rspk",
+      "sha256": "60b434dda48c439837b8c10084b9d89b3d6f8e591212ab4c82eea50fee15e563",
+      "bytes": 673,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/content/README.md",
+      "sha256": "c76dfc38726639aa78266968152f36a0fc2849e4df4242fac6c4f4fbc5770fec",
+      "bytes": 3188,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/content/decoder.odin",
+      "sha256": "51a22b3497e0fd65d7c54bad190ce0c66f6deec8077f55bd6b9ad5519bf0793f",
+      "bytes": 23144,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/content/decoder_test.odin",
+      "sha256": "7bb1a3207455064c970f4df78240756ca0ef1ab149d58793e03d6df91dd35b55",
+      "bytes": 5609,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/director/director.odin",
+      "sha256": "1e33eb5d9343093f0bb9f2b9d32125700fe0db323221c252cc898a7456e87de8",
+      "bytes": 24504,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/env.c",
+      "sha256": "576ddcfee255508cde5b9b7e380f3218c61daba6108216d1d4f9c486595a876e",
+      "bytes": 763,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/env.o",
+      "sha256": "30904dd0bebae5d0bc0d11101c74a5c82fb31c1dffaf90402fd363d66fcef2a2",
+      "bytes": 1495420,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/host/host.odin",
+      "sha256": "0f5687899b97267c2f93e6e73a629f3c738b8f748b25f1f1c3324b76c51b7460",
+      "bytes": 1832,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/host/host_wasm.odin",
+      "sha256": "915db9e2f955c395cbf4221abb4d16d141c6a24490626afae37f5a6432ba3e21",
+      "bytes": 4975,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/host/reset_temp_wasm.odin",
+      "sha256": "cdfbcf28f76743d1e370ea6e9e78342f490017bb10260ef5c2ebc2ff4834a5ef",
+      "bytes": 112,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/main.odin",
+      "sha256": "9f74bb48c9c57a926ef4e2886893f760e2dfeb38a728d5e6f56952dd4f2df432",
+      "bytes": 4175,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/main_wasm.odin",
+      "sha256": "497d87baeb9d5928a39868a862e58ef6e75c0d4e53af7313d061ae2a78145207",
+      "bytes": 2584,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/odinfmt.json",
+      "sha256": "d33d72dd286152230e63948712a7d1991eab37a6764dc3a055e10cddc7c189b7",
+      "bytes": 298,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/ols.json",
+      "sha256": "15670c0ad9375857db086d8fd009b60b994a1df526b7e2a8339196465c796098",
+      "bytes": 821,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/room.glsl",
+      "sha256": "d14bff250d09b456ea512da10c32e1f4027b63ac0235783ad1069a95d0f8554b",
+      "bytes": 300,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/room.glsl.odin",
+      "sha256": "94009f7016d38b339ed79697b09ea941a187b97121cf26d8dfa4c946f1037c0b",
+      "bytes": 9050,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/app/app.odin",
+      "sha256": "b2c0f807b4f56cc2ba8cf20b6b8383aa7b6ec4dce075ebccf82a26ba8c8c133b",
+      "bytes": 91007,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/audio/audio.odin",
+      "sha256": "abadd7bc86d0c9e4050e842008ed7b01542c46a7a0f6d3a53bfcb8b64decde66",
+      "bytes": 29668,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/build_clibs_linux.sh",
+      "sha256": "c8863ec48b4bec90972c4b92c9c9b1acb919e84b6242038167cc4f87de5b651a",
+      "bytes": 2835,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/build_clibs_macos.sh",
+      "sha256": "b48a5d37874f187f58091a40187c9b5f12e98b0048a2cc7c12b17cf3a5cb86e6",
+      "bytes": 10129,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/build_clibs_macos_dylib.sh",
+      "sha256": "e386f47847e745c99f6fe4a31bc05105a140e8cf766e055a35f61efb248acd36",
+      "bytes": 1921,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/build_clibs_wasm.bat",
+      "sha256": "404a88f5de27a23f23e10e059508fbd5b48907c9ae77ef20c44593ac031cc698",
+      "bytes": 516,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/build_clibs_wasm.sh",
+      "sha256": "402b5689a3abc8abbe847aca97c717d69ae19c795c005a903a515a7cb4491b67",
+      "bytes": 542,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/build_clibs_windows.cmd",
+      "sha256": "eca2e32506a28ef6e08291424425dc9523b6ffef33c70044b205fbc0b204afd7",
+      "bytes": 1517,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol.c",
+      "sha256": "a600c96501f232720f3aedaa5334c59ca772009dd828a9225d67ddc012abef52",
+      "bytes": 377,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_app.c",
+      "sha256": "8bde6fb32264e191239a544e350eac6b3e2fbbb5c9a15c0ad9a85f60973fdbc4",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_app.h",
+      "sha256": "42cc5b79f8f23b4d5b7e8454ef2649e09618bfe461969b0ef71cf0ccc02b0298",
+      "bytes": 602074,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_audio.c",
+      "sha256": "f565ffe21b51ed4ec4958009f80c516836e41dc8b3ec9a0f9b759a1a21ca1df4",
+      "bytes": 102,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_audio.h",
+      "sha256": "e527091b2bc0c4ccbeb3f145489c0dbdbe74869247e30942c1e22bd580e2c4c7",
+      "bytes": 103164,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_cmdbuf.c",
+      "sha256": "73776ff4ecd0277e91caf710952e51f9a124c230bddf483a03084f4978df5b1b",
+      "bytes": 127,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_cmdbuf.h",
+      "sha256": "c53a638cb5ea3617534cf4e6906b0a9ffa653d2894b9515465a4f718ea828a3b",
+      "bytes": 50604,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_debugtext.c",
+      "sha256": "b3afa723c2e0b8dfca4d1b2f6d07c4f845b947a742678cd385f454854fc0ae89",
+      "bytes": 133,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_debugtext.h",
+      "sha256": "0dbdd4b635d016b68cdfe8624b864a19ca6b44a0c5bba28eadbc85566e066a47",
+      "bytes": 266707,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_defines.h",
+      "sha256": "e8373c34023098e3b6d2510b6adf81a981f830368689c3ac2509b2aa2b31da69",
+      "bytes": 258,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_framebuffer.c",
+      "sha256": "add540b9eabaac5983b522f96359fc509687e4f2eeba1703574e2069a324ecff",
+      "bytes": 137,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_framebuffer.h",
+      "sha256": "7334f0140b9fb5029abb54c820437830b21e52dc374a87e1dffd8ccd98a68bd4",
+      "bytes": 394252,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_gfx.c",
+      "sha256": "4058f288375090a98d50987297a875ee3672aec6caa462ddd0c0e4947c5d4939",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_gfx.h",
+      "sha256": "fbf2640302b1b180be98ab8b0fe645a978260f7ab1509d78b2dcab3bc98f829e",
+      "bytes": 1310579,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_gl.c",
+      "sha256": "ea48364dcddd0540fe950bcea893fa04f92794c83a24ad0405c39fe192edc6b5",
+      "bytes": 119,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_gl.h",
+      "sha256": "5d85b5ee5edcb2c00d4de304e37d1834f4eb0a7cafbf56a05ba907583558cee3",
+      "bytes": 230783,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_glue.c",
+      "sha256": "cf9bc32c344f737ac473b0d2468da5072475d5acdf655031c220d40f6ed62909",
+      "bytes": 146,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_glue.h",
+      "sha256": "6207d08f7ea5da43154f980c7fe314429eafb75922c6b41108ce2936f8240753",
+      "bytes": 7516,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_letterbox.c",
+      "sha256": "46eea492cc95f27f171b5bef207e94150cf20b1703c58b25404234be758bf9f1",
+      "bytes": 110,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_letterbox.h",
+      "sha256": "031f7bcdc8f63e4ad9f86f685a092a938aa49e6ec74b6ecfd0520371a184ac34",
+      "bytes": 7177,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_log.c",
+      "sha256": "01da60d2a8a7428580218882f0f1b1d71f84c0a23c39996285ddd5144a03a2d7",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_log.h",
+      "sha256": "a8d55de21694410740e752ea8e57c4103d5951d20339ba9712e24232adef9a42",
+      "bytes": 11950,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_shape.c",
+      "sha256": "935f6f3e011b8812319ca96cb165b5338b4f0b88ad00c242044046300a851f62",
+      "bytes": 125,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_shape.h",
+      "sha256": "8daac726b6581380b571f3633c518839f2c0d0e8f88551b1f670d2bafbe87b51",
+      "bytes": 60837,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_time.c",
+      "sha256": "c4f604de77d91a2b20099530cdaef2a484d747f86bad2d6075b0bcb5be7a61d2",
+      "bytes": 100,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/c/sokol_time.h",
+      "sha256": "0eeb8c1bc9ac2ec4438090f68e2ab0eb85d1daf10643158dec11383a8e8b1872",
+      "bytes": 11054,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/cmdbuf/cmdbuf.odin",
+      "sha256": "f962f1333b3376add5e38fc6ccf868b83d16f86693b145c2f8f64dc2acbe5e23",
+      "bytes": 18012,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/debugtext/debugtext.odin",
+      "sha256": "5c14a9715d3578862829e8ca6eb784176cb15efa3736e7a50a0f2981375e1685",
+      "bytes": 28642,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/framebuffer/framebuffer.odin",
+      "sha256": "fb84dd6d93be483c7f2efa4b6d17a28277ca14dc15bb2f3aef63bb28f53b8c64",
+      "bytes": 21241,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/gfx/gfx.odin",
+      "sha256": "a224b3c3ab57499ef1e63758e672beb9c4e1765c4b16fd3f49cefe6ac415365e",
+      "bytes": 220854,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/gl/gl.odin",
+      "sha256": "9d8ae12fc51c22c19a669bf1d4624e00da57ef0c05596816c06923246fccece1",
+      "bytes": 38736,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/glue/glue.odin",
+      "sha256": "c0bef0d1039f97985ecc407d08dd870c0e16c2c0505573871c789c381c4592da",
+      "bytes": 7184,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/helpers/allocator.odin",
+      "sha256": "f7088c0b66fd08759c14dc1387db7e9681bbbfac0e9123ebc44d5dd919ffce1c",
+      "bytes": 1083,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/helpers/logger.odin",
+      "sha256": "ea1212b1b2ccd07ef376b6ab39b2a7c2257fcda43d80607024b6f8c65d6e48f2",
+      "bytes": 1360,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/letterbox/letterbox.odin",
+      "sha256": "34db353c0a44b748efef30f6175fdb02820c2163e5b6ed1a1235d01d53cfa79d",
+      "bytes": 8843,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/log/log.odin",
+      "sha256": "ee4bae850cb873f574196e0ceb3319e64a0c43d7b0acf6c33f2685a576448df3",
+      "bytes": 8751,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/shape/shape.odin",
+      "sha256": "1cf5bb80e0ab90ae7877880a551de5ac9500e70c225ca9e90ac83cf40917980c",
+      "bytes": 22143,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/sokol/time/time.odin",
+      "sha256": "fdab4d3d68fc6b05ee9e87740f1408fb8f01e74af8e6b1d5a9f710ac1eec6fbe",
+      "bytes": 9171,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/station/station.odin",
+      "sha256": "70d47213b6f635d19ffb2577bd63ef9508b72994f9dad2aa342b1f2fa8e0719a",
+      "bytes": 4966,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/station/station_test.odin",
+      "sha256": "d3d4d8105d0cdbde4c651c4988ed170e8029e9b08a5dfd1847fe525bdc3b63be",
+      "bytes": 4262,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/station.rspk",
+      "sha256": "60b434dda48c439837b8c10084b9d89b3d6f8e591212ab4c82eea50fee15e563",
+      "bytes": 673,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/tools/make_fixture.py",
+      "sha256": "37b3989f341355c01ab4262b8f6ecc5d3bdf286ae237ba92d96e24b1c458652e",
+      "bytes": 3674,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/web/gl-bridge.js",
+      "sha256": "5bc17292932241f5f511fb3e7cf87555c1255e08b700fd51e96e34f0d4c16551",
+      "bytes": 43261,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/web/index.html",
+      "sha256": "26e455904f0ff36b4a4aa5dc88c264aadec8fc610b7eec155cfc57b976d54cae",
+      "bytes": 8638,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/web/wasm-include/GLES3/gl3.h",
+      "sha256": "02cf45c42486c5fb8da0a9814c2852787c44305870560ffe2310d191466b8ba6",
+      "bytes": 14679,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/web/wasm-include/assert.h",
+      "sha256": "960d0f5a819068ebb5977e6dbdcdc6900ca4b054c800c62514b964bf11712674",
+      "bytes": 28,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/web/wasm-include/gl_funcs.h",
+      "sha256": "9e4eff9a4762f30dc1d192391b24da4ab51792e1b816635683255d093f29d289",
+      "bytes": 23992,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/web/wasm-include/stdio.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/web/wasm-include/stdlib.h",
+      "sha256": "5ab69da7aa2fd88eff0154ac0feaaceac5c0168c5de80476e7470bc92d19f981",
+      "bytes": 1651,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "game/web/wasm-include/string.h",
+      "sha256": "9198cc219b4697b7be0e194862cfab225334073a60309f544a3d74421bc92f65",
+      "bytes": 1895,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "gams.json",
+      "sha256": "46a1b4297f89a7d55a4ee34755940d10be187e5fe611b735188bf3e496949ec2",
+      "bytes": 8913,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "ng/compile-graph.lua",
+      "sha256": "660a93647fd3e17331488b921ac176179ffd7db14c552e278450875f3d34bc32",
+      "bytes": 41839,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "ng/presets/director-compile.lua",
+      "sha256": "42eb5857ac5b6e74d4c9b2f202864f5654f942f867ecfa278782ebe75ab84f06",
+      "bytes": 623,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "ng/presets/ensure-directory.lua",
+      "sha256": "54b330569c26b31dc3230a67c1f92107e1a6e70639610cd9b124b3bfe0134590",
+      "bytes": 656,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "ng/presets/export-station-web.lua",
+      "sha256": "1aea022f4a74a263ddc55b9fecc267a5254b50194dfe30de960da829018955f2",
+      "bytes": 2685,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "ng/presets/read-text.lua",
+      "sha256": "91320355dd0677cd8d6fe453b6600ec1c1e029449925b9e69c47d74add9f93f6",
+      "bytes": 287,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "ng/presets/respack-content-save.lua",
+      "sha256": "3d0bb01e78ce1fe657f50d8409c8bfd236335452de02001ca68f4fdf23862105",
+      "bytes": 883,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "ng/presets/station-bindings.lua",
+      "sha256": "4d6849b4d74f2c2feefec539ca2356baafcccaa740bfebed21c849a835c6fd5a",
+      "bytes": 1233,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "tests/pipeline.e2e.mjs",
+      "sha256": "05191f389051c9e454dc1dbe2c985df3407663a6354d0223360dcf34d89c6f4c",
+      "bytes": 4080,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "tests/pipeline_test.odin",
+      "sha256": "4ace2324de4498197d0ebf7bbb020f62a910a955112accb90fc0d5ca81021c8e",
+      "bytes": 4492,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "tests/startup-results.md",
+      "sha256": "f79ebe31a1e5d07b46828c452a7b6bb9e5be340f0e51196ae9dd12ebd5f7fa16",
+      "bytes": 746,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "station-demo",
+      "path": "tests/startup.e2e.mjs",
+      "sha256": "7a99dd8f52a1b1736ddefb831ebe2a2c3c90a37d3e98ccfb2490a55000a96a78",
+      "bytes": 2053,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": ".DS_Store",
+      "sha256": "6b2cf420739c2add99cfd0577a33838aa44fbeb1531d25e305d3ca6054036726",
+      "bytes": 6148,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": ".gitignore",
+      "sha256": "012c34ccfa1087611cf724aa943c2009fa119701ccda5bce2c80d3884b6bd763",
+      "bytes": 156,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "Makefile",
+      "sha256": "39a1f01e2f36bfdada435c3feaaf762a3fb4c57d50b7e51d5a8f75d71920a479",
+      "bytes": 8803,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "TODO.md",
+      "sha256": "958ded8675dabbe294c3cfa23c561c0f04c9bc0fa029932324b4d79d8bbfccc3",
+      "bytes": 2887,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "Yonking.md",
+      "sha256": "a00dfac401137fd6cc9a46fb8b8fec467a7883906b1dd51100bddad458e1bd18",
+      "bytes": 1427,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "anim.rspk",
+      "sha256": "852ce2cea2ef7d26bfb95dedcb5417737bc662a6257f36ed718c26608683d48a",
+      "bytes": 3940496,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "build.nosync/web/anim.rspk",
+      "sha256": "852ce2cea2ef7d26bfb95dedcb5417737bc662a6257f36ed718c26608683d48a",
+      "bytes": 3940496,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "build.nosync/web/bullet.rspk",
+      "sha256": "39fa756191084da3c16edac6ce11bd6c4d49e95ca47d629d3201fd2ca9c73bcb",
+      "bytes": 182873,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "build.nosync/web/director.rspk",
+      "sha256": "10f8858561022b6bf9822b5200259503f8d2266ea8254c91754e224f27dcf56c",
+      "bytes": 5573,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "build.nosync/web/game2.wasm",
+      "sha256": "024849b30e5b9848510cadc481113e4a22e1efdf61699296eb27d4a482fa5f5d",
+      "bytes": 844788,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "build.nosync/web/gl-bridge.js",
+      "sha256": "5bc17292932241f5f511fb3e7cf87555c1255e08b700fd51e96e34f0d4c16551",
+      "bytes": 43261,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "build.nosync/web/index.html",
+      "sha256": "16162bf5e0228cf623f1fd402bbb49eebddfb547dd29abe07b698c01d69f6594",
+      "bytes": 11585,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "build.nosync/web/level.rspk",
+      "sha256": "889f6d2511c5633cd0308a433f10af57ee8a4ca54a689969938fb25ce746bc4b",
+      "bytes": 5224,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "build.nosync/web/ui.rspk",
+      "sha256": "daf17c4d76beb15d896bf420c3376dbdd078d197304ec39f33440793efe90437",
+      "bytes": 45778,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "bullet.rspk",
+      "sha256": "39fa756191084da3c16edac6ce11bd6c4d49e95ca47d629d3201fd2ca9c73bcb",
+      "bytes": 182873,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "data_anim/decoder.odin",
+      "sha256": "ad9789e578fd4f56e14515d8884f4f712e515e2fa89cd06c802514c1388e9c4d",
+      "bytes": 8977,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "data_bullet/decoder.odin",
+      "sha256": "7e55d9c3d4746d84a7b20edef8ac28831e1aaa067c741bc9a92e8cb37e5a5920",
+      "bytes": 16188,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "data_director/decoder.odin",
+      "sha256": "79d5391dfc0ab18a846ff7f25ac9689165debf29b6f9c572a9ac7f117b38c10e",
+      "bytes": 21324,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "data_level/decoder.odin",
+      "sha256": "e2463dbc2e07b5ca818cb381f41307105f2f4e00b389e0329dccefde9b310f5e",
+      "bytes": 28321,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "data_ui/decoder.odin",
+      "sha256": "a7e940eea6c8caec9275dba6e9173e8628db7b2cba5280f0eba3a327746d7aa7",
+      "bytes": 7701,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "director/director.odin",
+      "sha256": "1e33eb5d9343093f0bb9f2b9d32125700fe0db323221c252cc898a7456e87de8",
+      "bytes": 24504,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "director/director_test.odin",
+      "sha256": "af65b693e4cf466a5d7f7386e6aeb5d521b6d4bf31dd886a25996a6fc1fb6b2b",
+      "bytes": 11320,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "director/test_fixture.odin",
+      "sha256": "4a042802ccdce34dc1f7d5bc3756b1481fe4b69219b11e2567fe173a8335fe7e",
+      "bytes": 5562,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "director/tutorial.director.json",
+      "sha256": "4ab1b151d7bff592e19c790d91e5b080fbd6d04bf5454060ef77226a0db5f975",
+      "bytes": 12600,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "director.rspk",
+      "sha256": "10f8858561022b6bf9822b5200259503f8d2266ea8254c91754e224f27dcf56c",
+      "bytes": 5573,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "env.c",
+      "sha256": "576ddcfee255508cde5b9b7e380f3218c61daba6108216d1d4f9c486595a876e",
+      "bytes": 763,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "env.o",
+      "sha256": "fb92fba11276263c5f989c9c2823ac90d7329d4d139a927a4a63f0ac710a72b5",
+      "bytes": 1471963,
+      "built_output_inventory_only": true
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "game",
+      "sha256": "f72c549ab7ff157779060b597a72be21b15aaf382bf96353e38f80d682a18426",
+      "bytes": 7455160,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "host/host.odin",
+      "sha256": "0f5687899b97267c2f93e6e73a629f3c738b8f748b25f1f1c3324b76c51b7460",
+      "bytes": 1832,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "host/host_native.odin",
+      "sha256": "c5adcd2ab96cd9924f46a49082cb883a07e9a7b2b3dcb4982a0f2bd286dc784a",
+      "bytes": 3767,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "host/host_wasm.odin",
+      "sha256": "915db9e2f955c395cbf4221abb4d16d141c6a24490626afae37f5a6432ba3e21",
+      "bytes": 4975,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "host/reset_temp_wasm.odin",
+      "sha256": "cdfbcf28f76743d1e370ea6e9e78342f490017bb10260ef5c2ebc2ff4834a5ef",
+      "bytes": 112,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "level.rspk",
+      "sha256": "889f6d2511c5633cd0308a433f10af57ee8a4ca54a689969938fb25ce746bc4b",
+      "bytes": 5224,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "main.odin",
+      "sha256": "34669330eb39eeeb28daa3af1c6f9583fbf6073cd15001fd9a349cf078f578df",
+      "bytes": 12527,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "main_native.odin",
+      "sha256": "5c039564deef3ddf23933065abc9f86d3be534af67f23f5d876a7f32d7441540",
+      "bytes": 2583,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "main_wasm.odin",
+      "sha256": "497d87baeb9d5928a39868a862e58ef6e75c0d4e53af7313d061ae2a78145207",
+      "bytes": 2584,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "odinfmt.json",
+      "sha256": "d33d72dd286152230e63948712a7d1991eab37a6764dc3a055e10cddc7c189b7",
+      "bytes": 298,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "ols.json",
+      "sha256": "15670c0ad9375857db086d8fd009b60b994a1df526b7e2a8339196465c796098",
+      "bytes": 821,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "prototype-freight-terminal/PROTOTYPE.md",
+      "sha256": "9a808fbcb0f2d7bb2e86e4aa2553ed777ec53ee6dc9601f77b84dc029de1e09b",
+      "bytes": 1533,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "prototype-freight-terminal/index.html",
+      "sha256": "92d3454d6e3c7dd6f24b3c467748e6838f89a9ed8c0cc388aff182c2f3e8e1b2",
+      "bytes": 866,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "prototype-freight-terminal/prototype.js",
+      "sha256": "5b0930751259671db4e804497b4d8736ba43fd3a24e6165ca5e9e6b944f5d067",
+      "bytes": 19828,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/.DS_Store",
+      "sha256": "fecd457e889ebcbdfde21e7018967f0212a1df11003e0f9b3b04c4071dc893d2",
+      "bytes": 8196,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/app/app.odin",
+      "sha256": "85d912080af3d881ec8c29764d2e3310d4a7f92c960e82f75c955918f7b144a9",
+      "bytes": 90020,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/audio/audio.odin",
+      "sha256": "abadd7bc86d0c9e4050e842008ed7b01542c46a7a0f6d3a53bfcb8b64decde66",
+      "bytes": 29668,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/build_clibs_linux.sh",
+      "sha256": "384a72289a3dfb42b25cc87cc79a83de19cdae097320149278360bfa8f5dbee0",
+      "bytes": 2245,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/build_clibs_macos.sh",
+      "sha256": "124cbb13c4c8e8f1835fa27cb8f7c918a203c7b1d061b62d6f4ad76cc3aaff68",
+      "bytes": 7693,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/build_clibs_macos_dylib.sh",
+      "sha256": "e386f47847e745c99f6fe4a31bc05105a140e8cf766e055a35f61efb248acd36",
+      "bytes": 1921,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/build_clibs_wasm.bat",
+      "sha256": "404a88f5de27a23f23e10e059508fbd5b48907c9ae77ef20c44593ac031cc698",
+      "bytes": 516,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/build_clibs_wasm.sh",
+      "sha256": "18f6df3f269009cbd490203a821129bb8acf5dd0212b8eea5b754765dba0f443",
+      "bytes": 507,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/build_clibs_windows.cmd",
+      "sha256": "bad396d51baf6e44d03bdb0a615bbb8b2d2f50c553e35fc2434b70e64a70c30e",
+      "bytes": 1488,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol.c",
+      "sha256": "b46283709be799fd9e918fe8e97d344e111f8a07f6ac213f8db6eeb899307dc5",
+      "bytes": 291,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_app.c",
+      "sha256": "8bde6fb32264e191239a544e350eac6b3e2fbbb5c9a15c0ad9a85f60973fdbc4",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_app.h",
+      "sha256": "f734b7412ab7ee9501c4dcafe9b3c38a59e2bfaea6b5a275de5647c47e63bed1",
+      "bytes": 579550,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_audio.c",
+      "sha256": "f565ffe21b51ed4ec4958009f80c516836e41dc8b3ec9a0f9b759a1a21ca1df4",
+      "bytes": 102,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_audio.h",
+      "sha256": "ed926bdab46422d416afb417472d34a596e135f79ef9c1f4937e25389daf8ace",
+      "bytes": 102973,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_debugtext.c",
+      "sha256": "b3afa723c2e0b8dfca4d1b2f6d07c4f845b947a742678cd385f454854fc0ae89",
+      "bytes": 133,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_debugtext.h",
+      "sha256": "8a7827b1165d95e3f1ffe7e257067bff52fc32c29c7bc6c53ec8826eef883994",
+      "bytes": 266514,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_defines.h",
+      "sha256": "e8373c34023098e3b6d2510b6adf81a981f830368689c3ac2509b2aa2b31da69",
+      "bytes": 258,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_gfx.c",
+      "sha256": "4058f288375090a98d50987297a875ee3672aec6caa462ddd0c0e4947c5d4939",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_gfx.h",
+      "sha256": "568a04d615a9aa606b72e43ff130a7803811b1c304223046d924f59b9b658bbb",
+      "bytes": 1232840,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_gl.c",
+      "sha256": "ea48364dcddd0540fe950bcea893fa04f92794c83a24ad0405c39fe192edc6b5",
+      "bytes": 119,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_gl.h",
+      "sha256": "aeb690ffb0f86c8666fb6aa06e95fe276b1c9095f95e131cf2ec8e5afcf95b07",
+      "bytes": 230591,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_glue.c",
+      "sha256": "cf9bc32c344f737ac473b0d2468da5072475d5acdf655031c220d40f6ed62909",
+      "bytes": 146,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_glue.h",
+      "sha256": "5fe1ab5a9ab0b7dc8761e1da151cacafea338421d3799745067e7421e28af670",
+      "bytes": 7341,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_log.c",
+      "sha256": "01da60d2a8a7428580218882f0f1b1d71f84c0a23c39996285ddd5144a03a2d7",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_log.h",
+      "sha256": "b1bf1403c738b8f18b09819d9190ac160298dd590440c9df57cb9d90b77eb29d",
+      "bytes": 11859,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_shape.c",
+      "sha256": "935f6f3e011b8812319ca96cb165b5338b4f0b88ad00c242044046300a851f62",
+      "bytes": 125,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_shape.h",
+      "sha256": "814ad20c80a44289c7db789f3e65e3cabb10d935a87510e1fe07e39ef7f4d851",
+      "bytes": 56063,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_time.c",
+      "sha256": "c4f604de77d91a2b20099530cdaef2a484d747f86bad2d6075b0bcb5be7a61d2",
+      "bytes": 100,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/c/sokol_time.h",
+      "sha256": "0eeb8c1bc9ac2ec4438090f68e2ab0eb85d1daf10643158dec11383a8e8b1872",
+      "bytes": 11054,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/debugtext/debugtext.odin",
+      "sha256": "5c14a9715d3578862829e8ca6eb784176cb15efa3736e7a50a0f2981375e1685",
+      "bytes": 28642,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/gfx/gfx.odin",
+      "sha256": "769ff9057b1e86dbcf8b945baa64e19e491afe0a249024093027f6df792b4b34",
+      "bytes": 206122,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/gl/gl.odin",
+      "sha256": "9d8ae12fc51c22c19a669bf1d4624e00da57ef0c05596816c06923246fccece1",
+      "bytes": 38736,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/glue/glue.odin",
+      "sha256": "c0bef0d1039f97985ecc407d08dd870c0e16c2c0505573871c789c381c4592da",
+      "bytes": 7184,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/helpers/allocator.odin",
+      "sha256": "f7088c0b66fd08759c14dc1387db7e9681bbbfac0e9123ebc44d5dd919ffce1c",
+      "bytes": 1083,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/helpers/logger.odin",
+      "sha256": "ea1212b1b2ccd07ef376b6ab39b2a7c2257fcda43d80607024b6f8c65d6e48f2",
+      "bytes": 1360,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/log/log.odin",
+      "sha256": "ee4bae850cb873f574196e0ceb3319e64a0c43d7b0acf6c33f2685a576448df3",
+      "bytes": 8751,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/shape/shape.odin",
+      "sha256": "2e91a67d867b5a2ef74d25e57ce7ecc2c8bb5f5a359c5e1d7777232c2e178e7d",
+      "bytes": 20844,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "sokol/time/time.odin",
+      "sha256": "fdab4d3d68fc6b05ee9e87740f1408fb8f01e74af8e6b1d5a9f710ac1eec6fbe",
+      "bytes": 9171,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "third_party/qoi/qoi.odin",
+      "sha256": "413e6727970802c67c44b01b97ea9da291e22935b250f71c44d6368033242ca6",
+      "bytes": 3341,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "tools/sokol-shdc/linux/readme.txt",
+      "sha256": "3ac902f949eb6d4bc5dbff3640deb0c6721a5a44b528bbad7649ccda4e0d71bb",
+      "bytes": 68,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "tools/sokol-shdc/linux/sokol-shdc",
+      "sha256": "a83dc9836c1504ae882407b42d24f20a8249cdd6f45045f381e3276f8bc96328",
+      "bytes": 11589144,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "tools/sokol-shdc/linux_arm64/sokol-shdc",
+      "sha256": "8199d6df9734809644ca2f8ebf8ea56a01b7b7a09d50850814fecd1af05694d0",
+      "bytes": 11679216,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "tools/sokol-shdc/osx/readme.txt",
+      "sha256": "aef1ab182db104306cc1d7da2286d323f81d7416d119f68f13dd4fc87d45aaf5",
+      "bytes": 41,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "tools/sokol-shdc/osx/sokol-shdc",
+      "sha256": "9b5c6ad6b556a33f3ccd17a3a6bb1a41059cb600074e5dbbb916f70f68a40581",
+      "bytes": 12442512,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "tools/sokol-shdc/osx_arm64/sokol-shdc",
+      "sha256": "b8e0b757483ed9b832d5a936eafeca060963b403248f0c930832b9a5d8980a8c",
+      "bytes": 11686360,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "tools/sokol-shdc/win32/readme.txt",
+      "sha256": "453990aee91b3fd1d93def3196e58deed90a64890c7aef8e997e56c7a9b23d32",
+      "bytes": 52,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "tools/sokol-shdc/win32/sokol-shdc.exe",
+      "sha256": "87417e64c6ac2b1abff0da9d7565b5a765f2004a6b7ea3aed0cb0a95a9508c74",
+      "bytes": 8074240,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "triangle-sapp.glsl",
+      "sha256": "9467b244eb11c2f42b1e24cb5d963b6870023532438dbfd86a1e64c493689c67",
+      "bytes": 489,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "triangle-sapp.glsl.odin",
+      "sha256": "0c644efe4c8cf7d0b79bec723bd82a3c033d06ba61845c48c67cf8dccd51693d",
+      "bytes": 12086,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "ui.rspk",
+      "sha256": "daf17c4d76beb15d896bf420c3376dbdd078d197304ec39f33440793efe90437",
+      "bytes": 45778,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "web/gl-bridge.js",
+      "sha256": "5bc17292932241f5f511fb3e7cf87555c1255e08b700fd51e96e34f0d4c16551",
+      "bytes": 43261,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "web/index.html",
+      "sha256": "16162bf5e0228cf623f1fd402bbb49eebddfb547dd29abe07b698c01d69f6594",
+      "bytes": 11585,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "web/wasm-include/GLES3/gl3.h",
+      "sha256": "ba35fea2964f8c46ad2c84d1283e49b3dde29c13a11799bd172dfd58a08d7524",
+      "bytes": 14594,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "web/wasm-include/assert.h",
+      "sha256": "960d0f5a819068ebb5977e6dbdcdc6900ca4b054c800c62514b964bf11712674",
+      "bytes": 28,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "web/wasm-include/gl_funcs.h",
+      "sha256": "9e4eff9a4762f30dc1d192391b24da4ab51792e1b816635683255d093f29d289",
+      "bytes": 23992,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "web/wasm-include/stdio.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "web/wasm-include/stdlib.h",
+      "sha256": "d1cc3fec08eb530586085d52df12aedcd31d9df0fca5f71e42c1e6a2d0debe1d",
+      "bytes": 1663,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "web/wasm-include/string.h",
+      "sha256": "f60642b1e4f03f63f4da2211eeed9353b1b4ac91eb01b5f83e543a10f0cbda64",
+      "bytes": 1899,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/bloom.glsl",
+      "sha256": "f4aad57f6463e2b86aa5b2242589ee658b967043bc771309d5ec5f6820ec99f8",
+      "bytes": 1565,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/bullet/bullet.odin",
+      "sha256": "46fa54f632b97a636f291fa9a86c8039b0d1244baf144120bf43d198d65a17d2",
+      "bytes": 14571,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/bullet/bullet_test.odin",
+      "sha256": "56217059b5139cee57ab9b646199e0ed3fb83b0d622747cf2f75266a73214d29",
+      "bytes": 3761,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/debug_collision.glsl",
+      "sha256": "1f98b0d18d8ac12e70a6eca21551c4327c46057bcb95047462c393a0e8584d8f",
+      "bytes": 532,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/display.glsl",
+      "sha256": "5eadbce89efd81974b25cde2cbb15c06692f924ef103cfc1c58cc4d230b15123",
+      "bytes": 721,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/domain.odin",
+      "sha256": "2218fe1306853fcf206720ad146d18e556bed9bdc44f7b7026e1b18987ba0b52",
+      "bytes": 1045,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/ease/ease.odin",
+      "sha256": "990b06ed6415adfe20af22524e693d330895b55026e581b99827f8527cd9b860",
+      "bytes": 3726,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/ease/ease_test.odin",
+      "sha256": "a3de0ac0e78cefc4ca843732c21ef26ea183a360d0b266ad59ed9bae8e94ecb1",
+      "bytes": 1882,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__bloom.odin",
+      "sha256": "8b997a4018de27533f05f50f06b4165eac41ae76c1b678dd13ac83753590e4af",
+      "bytes": 28677,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__debug_collision.odin",
+      "sha256": "5023e7d756f9e427352d50bb4eb00d7f1400962d814da9b76b9c843d045e5c9d",
+      "bytes": 11254,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__display.odin",
+      "sha256": "159c2709e0e4a80f761031c8a9b0ceec5133134498046a1e3b364774ab9704d6",
+      "bytes": 13878,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__light.odin",
+      "sha256": "0b9f1a5cb6a8f4fc4eae7ffb5647464faf15c96abae41606cb2c9b6e07a95858",
+      "bytes": 44223,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__light_composite.odin",
+      "sha256": "6ca734b3d0cc6f919f0a069e6cd82424f985fd9aa7b039806b40c65991af7361",
+      "bytes": 27234,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__light_shadow.odin",
+      "sha256": "804bc32c9fe6f9cebc533f725c98b962eafa60951386f190c97fe9ff49f795cd",
+      "bytes": 26145,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__nine_patch.odin",
+      "sha256": "78cf2b7e42a24b744c964dd7c18ad14a15e564e2395e3b20ae0f19229a1608ad",
+      "bytes": 62995,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__sprite.odin",
+      "sha256": "ac294b8aea30aca2dab0ef7e2b8f5e9c8bff2c1603cc397297548822ed024984",
+      "bytes": 38648,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__sprite_normal.odin",
+      "sha256": "87459e333d2d6fc7fdef67f508ed8083d667059960b7ddd7b43604f9cb6cd93c",
+      "bytes": 40516,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__text.odin",
+      "sha256": "3539eb8ba8e36efa835eccfe4b59da463c65ccafb5424fea010f5fce28d08168",
+      "bytes": 19095,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__tile_edge.odin",
+      "sha256": "4f329cf5f5075d4b08eccc0898e845ce0d98301dde007e7e7cebae502cf65f00",
+      "bytes": 26103,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__tilemap.odin",
+      "sha256": "5b430b37c27eef47982c3a926934ae5003958a1055644c9ebef522c5ae522014",
+      "bytes": 64831,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/gen__tilemap_normal.odin",
+      "sha256": "b5ce4c7ca826b4b45c1923d3d3607ca11e26b13b73ae13600c5b4038810dd15f",
+      "bytes": 64274,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/grid/grid.odin",
+      "sha256": "3c8e0d3afde1b3b443405e649422de69bda57f0dc9dc569989721d8b2d81f709",
+      "bytes": 4501,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/light.glsl",
+      "sha256": "efd5cc77a429aceb88190bcc5333598f5520751d49115b51ca4f236fdf8f8e8f",
+      "bytes": 4204,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/light_composite.glsl",
+      "sha256": "9b5ee5079eab93f16d9049b2ad756723f0580767e63bcfdb8d1d7a3d143c3813",
+      "bytes": 1619,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/light_shadow.glsl",
+      "sha256": "6bce175cb6b468a50a429a436befb2588bb558326a7cbb6e73d7101a3d81f4c3",
+      "bytes": 1975,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/logic/logic.odin",
+      "sha256": "76a711b906c96f0e61c4af71ef9654d525c7774a0557ff3424bb51c274e9db90",
+      "bytes": 21368,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/nine_patch.glsl",
+      "sha256": "b9013b5734e91a00406df74d44fea24ee2eab44b4cc0a8f69d434b3bb7abfebf",
+      "bytes": 3524,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/platformer/air_jump/air_jump.odin",
+      "sha256": "c200fd01cd1ee53bd116a1b91d35b420b7bcfe3336894ec926bf38023a3e360d",
+      "bytes": 254,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/platformer/dash/dash.odin",
+      "sha256": "9d22ad78c760a6fe65b9310d85ff4ad3ee0cae6fe8971827974cf1e0d7bcd93d",
+      "bytes": 910,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/platformer/ladder/ladder.odin",
+      "sha256": "d8797c8ffcafc6aff762bd0aeb40e46143a3776587ed67d5139d54ce12a47a29",
+      "bytes": 98,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/platformer/slide/slide.odin",
+      "sha256": "d8e4023601edd0a8a31da40dc8a76fbd2a20425a7d2cc07a9111a2b8710938ad",
+      "bytes": 301,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/platformer/slope/slope.odin",
+      "sha256": "8ca1a4eb744a394dd540a32d831301d030cc79c9ec4eed94e1f390f51f276fba",
+      "bytes": 7052,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/platformer/wall/wall.odin",
+      "sha256": "21b279f6e2944e478688815738950bb47ede9d2cd7db24a2c1879525a8dd06cd",
+      "bytes": 802,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/platformer/water/water.odin",
+      "sha256": "c2cac4b39679fab1a9a980b77c67525c1b161fa8b1d84c403f7fbfe5ec8deef2",
+      "bytes": 374,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/render_canvas.odin",
+      "sha256": "e743a22893de7df1e276be0f9176f7a412c49c58785e97885a2a05b6ea088c67",
+      "bytes": 1858,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/shape/aabb.odin",
+      "sha256": "37a2b3ba0920a517a497dc14a0e34a36cfb4ef67b62109ab8b592bc5b362b213",
+      "bytes": 64,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/shape/capsule.odin",
+      "sha256": "c88a50ee2f3e24f24253107079d39e6c3099c14fce4d2c580fdb650e536f2ae5",
+      "bytes": 9849,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/shape/circle.odin",
+      "sha256": "7922d1114b4fbdcb5f7a516db4b2bcf0828ca4a4992834a3f007e630f78f082e",
+      "bytes": 2211,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/shape/integer_types_test.odin",
+      "sha256": "cb02d60222bc0f5de0dbb2ce8133afd03cc0dab746b0879bfada93fafeb06c06",
+      "bytes": 531,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/shape/sector.odin",
+      "sha256": "8f03ce370518ab27ec3e9667212e13e38d989cd5a9c66965e9542d2c9f30251c",
+      "bytes": 1684,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/shape/sector_test.odin",
+      "sha256": "31a119e1bd3572b76e1d67cf6185735a54ea854d403cb60dfc3ed69898a578c8",
+      "bytes": 1376,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/shape/segment.odin",
+      "sha256": "4674f30a77ec78c3ebfcc1b3438bba9b4f77cc0b16322b1db701411badd8a410",
+      "bytes": 2264,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/shape/shape.odin",
+      "sha256": "ae614a0b2157f85b33d242c863dbfc890bcb73a6cf077a216b64df646c65f747",
+      "bytes": 1982,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sprite.glsl",
+      "sha256": "b94cc69895e2861bf58edfd8f8dec75202adbfed55ef38513bd64205723bf249",
+      "bytes": 2068,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sprite_normal.glsl",
+      "sha256": "f8ce76bd96dd8b33b301266766fbf05cd6fa7e177d6252a63a3b8bfb2f36f16a",
+      "bytes": 2231,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_animation.odin",
+      "sha256": "5f466e8ea22a850cfa10f2c7228d0f6df222fff6fdd3f9fe35d9206053981b72",
+      "bytes": 5492,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_bloom.odin",
+      "sha256": "912acb5b9d0e85ba996794c6d042cadc2b1daaed94559cf6cb321a4ed2353488",
+      "bytes": 1968,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_brain.odin",
+      "sha256": "bdf93167f672c635349ad6e68ab24548ef3bbea697c79900227564b3376ece8e",
+      "bytes": 8473,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_brain_test.odin",
+      "sha256": "0c989b07d886830e949a05530a6b5c0b6210fc9fab560c58a2bb463126e1ae5a",
+      "bytes": 6928,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_bullet.odin",
+      "sha256": "d2df9667fe7e191b65b30b6232152c89fee5090875ffa83e12b0c880db7cb060",
+      "bytes": 7336,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_bullet_collision.odin",
+      "sha256": "4591e4063e92bd653e40fd75e1f66d6bb6611007f68601151187b4670a81023d",
+      "bytes": 3888,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_camera.odin",
+      "sha256": "df4ed30616d1875fea72fa92007b36b541ef56f9ab7de10411dae654fca06fb1",
+      "bytes": 12322,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_damage_test.odin",
+      "sha256": "2da95640f132a6258f934d1604f05af4b6499c5da1bdc279e84828bd49e87a48",
+      "bytes": 5278,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_debug_collision.odin",
+      "sha256": "f69e8eb0d86a2fbf4f78d98f98dc54d74f893e71060c4ed1e7d3eb7d37f17754",
+      "bytes": 14989,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_dialog.odin",
+      "sha256": "d40b156dc9b20a35e998384165efd327645518bd9ee5310f1b1b7f1e1cae11ee",
+      "bytes": 1516,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_dispaly.odin",
+      "sha256": "fddd8360ce062b7342ffb861eec90e9b113681e7bab4421646c28bd01da00cfe",
+      "bytes": 2523,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_display_debug.odin",
+      "sha256": "85e0834a43cabed161b21325846475021f190ff7092f34a02abcabb69a87c5b6",
+      "bytes": 3491,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_enemy_attack_area_test.odin",
+      "sha256": "aae723dcee0b9ca155b64770c03f8838ec59d2576bced77ae2b5b120d379169f",
+      "bytes": 6086,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_enemy_vision_test.odin",
+      "sha256": "369472ebc8448b586f6f0617d6c9648e8b1eb7e85da5d16db3452509b0274953",
+      "bytes": 6269,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_input.odin",
+      "sha256": "78d20b22f176434806adbbf59f48e91ed9a5c26e7127d1ac687843e1f02494ce",
+      "bytes": 2092,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_input_test.odin",
+      "sha256": "1e014475c7742d81d7f84bc9d610f927c609743ae2e40c96ade9d151b99e3124",
+      "bytes": 5641,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_light.odin",
+      "sha256": "5a5516fe341255305367e4e41de83da2f60ed3eb647b5acef0525c2b4cc76742",
+      "bytes": 13579,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_nine_patch.odin",
+      "sha256": "f8327c1d43b0780e953ac85d6fcc9f8b17d03d031c7e75f2ad03cc0ee230ad80",
+      "bytes": 3731,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_platformer.odin",
+      "sha256": "534855242f5c6166994f527b836f0eff839dd85d8989144a68f67d20c67be21c",
+      "bytes": 33770,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_platformer_anim.odin",
+      "sha256": "25584cb971d1abc7e578de9ad718f68fc520eb58eeedc2dcc278cc36634bebe5",
+      "bytes": 6213,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_platformer_test.odin",
+      "sha256": "be96525e56103968faf61363532b47bd6e2993fb8ffdb3805a50ca96ec8cb468",
+      "bytes": 61022,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_position.odin",
+      "sha256": "44441a0b6fc24b8bf8a0b7ab7d47b541007ec41694d8e9f95e01e22cb7a7ece3",
+      "bytes": 34,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_sprite.odin",
+      "sha256": "f55865cd67f9ad1649356d18d5b7824dccb532f98cf59e0db4f294af64894465",
+      "bytes": 4633,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_sprite_normal.odin",
+      "sha256": "edef18794a838ed3176f4b301f15b348409e67264d701dd3c4e431c040891914",
+      "bytes": 3924,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_target.odin",
+      "sha256": "d83ce6ab717d10007edfde485637968eda307baca063ee18f2b19ff4a1079259",
+      "bytes": 1156,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_target_test.odin",
+      "sha256": "fe547083aed09f200f7f235d5fd2d932e6c17feea101e1c1d5b566887b50bf76",
+      "bytes": 3133,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_text.odin",
+      "sha256": "6132c394f36cc7e98c41b00e6897199f9d6f7c708f67466b6de8d05b0daf0aa4",
+      "bytes": 3033,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_tile_edge.odin",
+      "sha256": "bf93e3cfb4566ae4bfa79d67f6f797b274ad4ceb0319e8a6506a7e3a61e3ee0b",
+      "bytes": 2148,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_tilemap.odin",
+      "sha256": "bc93c1e6e65f4b6de88bf5d29e1928e452f8d656f333f10e92383b1cfdffff0b",
+      "bytes": 4965,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_tilemap_normal.odin",
+      "sha256": "925d90337b3701969cd76149984264ef97fd5cb1130deccb8105d0dfe3466d9f",
+      "bytes": 4776,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_timer.odin",
+      "sha256": "a29411c99defb2764acbe1ea7c0611ec52e71c142de1635e42ed7f1d5b2057b8",
+      "bytes": 2873,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_trigger.odin",
+      "sha256": "e213350e2f627aaff95ff4dd539bc65459cf2ea2c64ba8b1aaa7a8a5b164af00",
+      "bytes": 8414,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_trigger_test.odin",
+      "sha256": "7de1564e774c884397680a300f7d6fe12d00d8dce34db89de51d049ef23ed71b",
+      "bytes": 9573,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_ui.odin",
+      "sha256": "5a3f986b188961bb9014339e97a149f229c21aeeba06c1da8ad320b46c51fb5b",
+      "bytes": 6807,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_velocity.odin",
+      "sha256": "a7cbf90fa30a136c812215752bef4be49c97f054483a0930d3c56ea54904ab02",
+      "bytes": 210,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/sys_weapon.odin",
+      "sha256": "740b45c4a63dc6d43f867a278137a5c36b37afdfd571f0a7ff38532e86ac92fb",
+      "bytes": 214,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/text.glsl",
+      "sha256": "0db70761161d0ae27d13bd4d60cf6c919cb22fead8109758da188d5f2df423ed",
+      "bytes": 893,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/tile_edge.glsl",
+      "sha256": "d8808cfb66b833ccc0ffb421d7713d65fd0a06093f99a1070313f82eb30a8388",
+      "bytes": 1442,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/tilemap.glsl",
+      "sha256": "6e3b7ac282ff5079484510a3d9ab9d09f30f6b57ce2f4b7ded0132a69ded2f14",
+      "bytes": 3685,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/tilemap_normal.glsl",
+      "sha256": "c2fbbe1aa249448530fd38bcf1c468d4251fafd340843d01e1996dea58839a86",
+      "bytes": 3449,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/ui/anim.odin",
+      "sha256": "a7e1e765b5f5c086e94d01c41cab074de668657c246486dd9996163c160a24f6",
+      "bytes": 707,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/ui/anim_test.odin",
+      "sha256": "6db435d4a7c89be174df14db94918b7816b9b848a1674302639fb7f047561f58",
+      "bytes": 1208,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/ui/shape_internal.odin",
+      "sha256": "63bfe068ce613cf27039ac54e724392cdf19fdb3c48994d5f5f187e605c2b047",
+      "bytes": 1475,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/ui/ui.odin",
+      "sha256": "7225f46c5deda53836ac5ae080eefe3d550d2ce3a15a9cc20d74d0fc0ecb4dc9",
+      "bytes": 1802,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "earlier-demo",
+      "path": "world/world.odin",
+      "sha256": "07046840a19449e36001690d2ea6a497075f420d9db864e5c2587236009050ad",
+      "bytes": 15400,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": ".github/workflows/release.yml",
+      "sha256": "968e94a81aa683406f473cba9f9687a84fc079f15b94833fa3ea57063527ef06",
+      "bytes": 4381,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": ".gitignore",
+      "sha256": "903c376c2781597267d9e28ae3df4c7f3e0f8a9bd8ba711eaf1129e5a4380c99",
+      "bytes": 199,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "LICENSING.md",
+      "sha256": "e31dcec021cda1e2a149efa8c62a596e3416e6a6090dc6b5fa6b78055952b8fb",
+      "bytes": 715,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "Makefile",
+      "sha256": "cd6d43268bf33207f088f2979c13aabb58943f05bcb1aeb7a2e2edae79e5c079",
+      "bytes": 1947,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "NOTICE",
+      "sha256": "b42d4002076ee86e4a70103e0620830d715d59a5e1f014bc81487829f91f1071",
+      "bytes": 1020,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "PUBLISHING.md",
+      "sha256": "8d08f72cf797304c63b02f82d23e984e534f419113b2b24b8e3344f7ba2f913d",
+      "bytes": 5860,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "README.md",
+      "sha256": "694b66fc2a1c6a6b21f466a0c2acf0cf0a110dcf0babbf3b605f4f14cb0c79fc",
+      "bytes": 2785,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "RELEASE-INSTALL.md",
+      "sha256": "448d867087b4bf9fa8605c4a5ad6df14104f486212791063e801597f150f960b",
+      "bytes": 9098,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "flake.lock",
+      "sha256": "8f590f8de06dfd7d9780ccbd73a71258e20349c51cb73a0c6aaba129449df72f",
+      "bytes": 567,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "flake.nix",
+      "sha256": "f6917253fcf2dcabcc4bfea72c111dfc35f4dd6f040993ce99e94536608ec542",
+      "bytes": 671,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "release-selection.json",
+      "sha256": "39c32326456198580a21f02c841faf693825ae343687c41bb60a5e00082a766c",
+      "bytes": 2840,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "release.json",
+      "sha256": "41dfb296912586e855bc5df026351882329973a7ba6b5638dbe163c2e5d668d9",
+      "bytes": 119,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "scripts/check-local.py",
+      "sha256": "d0a43eb0bc172d3fa96f0d5163105ce03794c4b6832f19e7b0863e826d930624",
+      "bytes": 834,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "scripts/install-releases.py",
+      "sha256": "8c9b22ba51be0abe30b1fc452fbf0550f995ef4247b61854b4a3a279b9fab441",
+      "bytes": 14659,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "scripts/integration.mjs",
+      "sha256": "c9cb54b44850516d06b2326fa890b1bdb25ccc0d5d1ec7702ce6985ef44b9c80",
+      "bytes": 4154,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "scripts/release.py",
+      "sha256": "27af18b5adb50c3497fab98c64c06ebae2aea06edbdc32e473b54d45f2cb83f6",
+      "bytes": 10493,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "scripts/setup-local.py",
+      "sha256": "64be5dbb68ddf82403089fb7abfa773550814eacbe14f0feed6e73995cd592e3",
+      "bytes": 3009,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "template",
+      "path": "test/test_release.py",
+      "sha256": "9b164dff5258a739a7c4f2bc3cef7f467ce2ba2aa0f1487e1ce6e523c1b06f98",
+      "bytes": 21406,
+      "built_output_inventory_only": false
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/core.odin",
+      "sha256": "ee1dae317e302d130868988e9549fd5d5450b73fd3c68f31c2880bafa6053eef",
+      "bytes": 20884
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/core_builtin.odin",
+      "sha256": "a4dd8a0b69ba443e5facf9eed0dd72d96db94448d9a7dd432f94eafcb109f8f4",
+      "bytes": 59262
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/core_builtin_soa.odin",
+      "sha256": "84ce0a3738bdb90f7aa598337cc32b77176f2cb6701aa60c686d0231d001c597",
+      "bytes": 21316
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/default_allocators_general.odin",
+      "sha256": "ed176545ae48a3aa12e4c8a8a3b51c883d53cfcbc1b0532c2511b9a540e09e9d",
+      "bytes": 539
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/default_allocators_nil.odin",
+      "sha256": "5a1636910019b9df9374923b24e2181e3fc1bc880cd630496ba6d07b7fd3a0c5",
+      "bytes": 2736
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/default_temp_allocator_arena.odin",
+      "sha256": "2d723befd3528b3f599b4461a50af372f5ce00945b5ba0cab39c9f01cf6209ac",
+      "bytes": 9752
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/default_temporary_allocator.odin",
+      "sha256": "e73036a3c3a953b12cda914907931c91be86a06f170e4b78958fe631394f1153",
+      "bytes": 3076
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/doc.odin",
+      "sha256": "6481d8d35fa2d9c680bc475b9392d9a08f13034df1c077cd63ba1c2919f71ca0",
+      "bytes": 6283
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/dynamic_array_internal.odin",
+      "sha256": "57d2fcf931c5d5d5ffe2ec64514759956d49c8aa2e2a78baf2cd9fc0e70752e7",
+      "bytes": 3829
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/dynamic_map_internal.odin",
+      "sha256": "989da3b9c96f1d9584a4b43f0155638ce79cbdc342ee0fdf01689095b66c6b27",
+      "bytes": 36754
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/entry_unix.odin",
+      "sha256": "5d70f71135190cc97a87d8468679eb120fe446c6b5df1d1ab052974aed797011",
+      "bytes": 2013
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/entry_wasm.odin",
+      "sha256": "7896f378a90df8d033db58ea67b3ed286db9ad68e828defa8da50a000ad20235",
+      "bytes": 904
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/entry_windows.odin",
+      "sha256": "cb4c49899f1036a1dd50dca417ab704cd6d45be04404f5b0cef884ab0c75ad14",
+      "bytes": 1818
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/error_checks.odin",
+      "sha256": "dd4667885c42b07af39153162d01a0d72061ce6ddf3586ab6a9b4e0ac6796040",
+      "bytes": 12771
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/heap_allocator.odin",
+      "sha256": "7d0d73082a2357cd28c70501d7a46302c58b9e2cde9ab0885600daebc458d890",
+      "bytes": 3573
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/heap_allocator_orca.odin",
+      "sha256": "5dc56ea4cd9aa946fd07c74f0cbbfbbde30a9881f779691c49cbd305ebf2dea1",
+      "bytes": 763
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/heap_allocator_other.odin",
+      "sha256": "7eb0ed3963807b1a451fed5d0ccfa0c29911fbda2da72c4b8c489c311a39713c",
+      "bytes": 621
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/heap_allocator_unix.odin",
+      "sha256": "c662041ffc71cee6a86fda59dd8dbd901ba2fcc23271dc5a6e028c369062c531",
+      "bytes": 1067
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/heap_allocator_windows.odin",
+      "sha256": "0e4a7196e55ccbc2a86ddc93b6f2a59617f3fa10a4bf5954f376ab15568f40b0",
+      "bytes": 1517
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/internal.odin",
+      "sha256": "222b06fcb22f46ac7540ca6462028e845ecda1cbe73ff9df07bb441f019782f7",
+      "bytes": 43098
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific.odin",
+      "sha256": "2646d628820cb5ec3051adb6ca0d48212456804c1f4e70acb6d9dfc12c4e9f7a",
+      "bytes": 412
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific_bsd.odin",
+      "sha256": "3de9420b9fd18f0b163d85fad6c614dfa20050f29efc8ccd442497b0f7b494cc",
+      "bytes": 960
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific_darwin.odin",
+      "sha256": "be29b5bd6f3a69489404099b17b110f08866b8f345c5a0a5de77f737df96eadd",
+      "bytes": 1206
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific_freestanding.odin",
+      "sha256": "4e798ec4889744568d7b6d44d55748ec573c28e8fb6dbab994d09803e2e56cfc",
+      "bytes": 258
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific_haiku.odin",
+      "sha256": "d8eeb91b676039c55aaa5f576ab9757fb78501a5ecc5a6aff5ba972ab7cc0987",
+      "bytes": 688
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific_js.odin",
+      "sha256": "5594bdaaeed10dccf9eb33262294ceb132e76a05859712178753b257a942823b",
+      "bytes": 677
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific_linux.odin",
+      "sha256": "c0265a98383e729f608defa616bfe039620ff485dfcc5e258415043f1c74b430",
+      "bytes": 2310
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific_orca.odin",
+      "sha256": "44a1a47768bebb2446ea9f5f57be8e8dd2c92803da1daa16c5d0a7e32a1ae7c1",
+      "bytes": 1378
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific_wasi.odin",
+      "sha256": "b791e4d7e4f359725c2769c9529d5840d0a49d7579f923f103e3561fda613f1a",
+      "bytes": 1417
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/os_specific_windows.odin",
+      "sha256": "558d84e0aeae19ef99e04e826349627cc839157c49416d6e1b666b79dd70f70c",
+      "bytes": 2642
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/print.odin",
+      "sha256": "c7b4cca6eaebe1987f7f4daabaa5bdce38267658e9e0894360aa331c7f30d4b1",
+      "bytes": 24547
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/procs.odin",
+      "sha256": "bd959ad6c6f401e9ccd1101fbb12baaa4059a0ebeca244316c7ab55cb4861b65",
+      "bytes": 2687
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/procs_darwin.odin",
+      "sha256": "ed65c0fceffd56243e37a904b9f0db58e6ccaa363edfcbd6f21eb161cfb27b38",
+      "bytes": 2433
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/procs_js.odin",
+      "sha256": "19b020f1b1d7dd96396886c3b67ac62264c16c32932d9b71a71fae16661e6b74",
+      "bytes": 330
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/procs_wasm.odin",
+      "sha256": "5522b94d3b3f13cc64877c8e8e47186164dd0721ea2289239beaeac83e2994e8",
+      "bytes": 1968
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/procs_windows_amd64.odin",
+      "sha256": "a77444dd7d6499003cd0c1b75aca7e99feb4438ba1e6ad290cc86c1a65df043f",
+      "bytes": 596
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/procs_windows_i386.odin",
+      "sha256": "c2340ab66bfbf34decc0083634627daa8c120487775a7b2f40a46a595f0f96c9",
+      "bytes": 772
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/random_generator.odin",
+      "sha256": "cb78f54fa4da95ea6fef21e55c3a2f2e8820f3b3ac2bb07385596ec1ffa3bbc3",
+      "bytes": 989
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/random_generator_chacha8.odin",
+      "sha256": "a1cc4a2538f711093c54436cb00936207e4c1bc7eb003b092e5d27f2732e1544",
+      "bytes": 4834
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/random_generator_chacha8_ref.odin",
+      "sha256": "db610dc7dfaeb73a0ef6fa6a7c489b1cd676de920b550708d23631463bca31f0",
+      "bytes": 4266
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/random_generator_chacha8_simd128.odin",
+      "sha256": "6e981c92311903ff9736ecdea092f2f970dda81d13fbfefe1d354b631b8ca8b3",
+      "bytes": 14068
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/random_generator_chacha8_simd256.odin",
+      "sha256": "cf8290185d06ea9131b1eee22e3dfdb88aa559cc688742d3419e06ddee3216d0",
+      "bytes": 8085
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/thread_management.odin",
+      "sha256": "153ea07436c919f54dd534a9e3d324c63773bc64fcc516f2f5fcc88e91629104",
+      "bytes": 1187
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/udivmod128.odin",
+      "sha256": "003d28ef539143a58c488141da4b94e7a09b2727bbb8422b2925afe0229ace8e",
+      "bytes": 3143
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/runtime/wasm_allocator.odin",
+      "sha256": "f3aead5f795ec661f50df8e9f84dae572fce091a2bca051ba89a51bc8448cc02",
+      "bytes": 30599
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/builtin/builtin.odin",
+      "sha256": "95b7f509887cb87b25f1ac26b69314ae4085cda797080bfc3e5eb8a0c9b28196",
+      "bytes": 11556
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "base/intrinsics/intrinsics.odin",
+      "sha256": "872753b97e82fb1eb9be54a1408802c07ac4b487d3f2645d04758f76a689efb9",
+      "bytes": 22523
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/c/c.odin",
+      "sha256": "7c05a4cc588732e1e6acdcbb4cb5180229fc21cab9929858b4f9f72e9145281a",
+      "bytes": 3324
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/fmt/doc.odin",
+      "sha256": "b26b0b545a44d02122a97c01238e26ad23619ff1653c5cef663997106469a9f3",
+      "bytes": 5695
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/fmt/example.odin",
+      "sha256": "09ab0529a24dfdd3ce575a8c85b43c7bd775c61a44bf929414a8a9073a1449da",
+      "bytes": 1405
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/fmt/fmt.odin",
+      "sha256": "ec796e8fa3f74fd87e8bb6610676d761f2496dbcbe266f863bc928789ea541eb",
+      "bytes": 97346
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/fmt/fmt_js.odin",
+      "sha256": "637ff884957f67d4d7e3ebc563aed0daa05650040aff94be8d9e6c55552e8cd8",
+      "bytes": 3513
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/fmt/fmt_os.odin",
+      "sha256": "31e4265deebf2e28a0f31caccd11706452edcd8df875b70a52030456f72ae7a9",
+      "bytes": 3756
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strings/ascii_set.odin",
+      "sha256": "33fa1c2b59363c4c1506983098f3fdfa54fe6a763fc3bb5d35ee0daca8dc22f4",
+      "bytes": 1223
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strings/builder.odin",
+      "sha256": "a36a99e4910befd47f442d77de5c37ac415872181fa011efd9ba6303124b59a3",
+      "bytes": 24736
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strings/conversion.odin",
+      "sha256": "4013937fc701c0288d9f46b7f21d7d96605d407d258346305c842bec96bc143c",
+      "bytes": 12791
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strings/intern.odin",
+      "sha256": "6bd7a6905313447dc9bb0e44273cb2b43372e0953fc99f7df3defdc970def6be",
+      "bytes": 4115
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strings/reader.odin",
+      "sha256": "57bd75e641b50644c1d2ead814f6be3346e9d82fcda05bea1981724839c44855",
+      "bytes": 7264
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strings/strings.odin",
+      "sha256": "89b8b85516d96f97b3c3c6c02209e1416bf1d076afba6ac15245d9087f294b27",
+      "bytes": 79815
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/math/math.odin",
+      "sha256": "e393516be88ea887be59bb441e1e46f89cc2119793dbe93763f335f278f1c80a",
+      "bytes": 85239
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/math/math_basic.odin",
+      "sha256": "a3b98d26007b2dbadd3b1533f29d3499c55e27b69432cfa761a7d04c9fc6c5f5",
+      "bytes": 7743
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/math/math_basic_js.odin",
+      "sha256": "6ca435619ffd508a64bcbc4862e5f17bdfd6c79ad0be070ecf56fe66fa378b11",
+      "bytes": 3226
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/math/math_erf.odin",
+      "sha256": "5a0ec6e1198576e9f4eec6eb4250ef777ab2f2a7529823696b4d36fccc809e83",
+      "bytes": 12637
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/math/math_gamma.odin",
+      "sha256": "6a229af4f5f1ff4d5ae40018fd7919054ed1e9c2e77e3c30030ba9d3e298a7b0",
+      "bytes": 6462
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/math/math_lgamma.odin",
+      "sha256": "ed6548da650058c97cdd8a9d95d2f116599b5e0f6dcd61e1e0e9a00382b74bd4",
+      "bytes": 10103
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/math/math_log1p.odin",
+      "sha256": "f4bb67eb8841e2ff5da6ea343d8d5e84871c10230d748c18e24263b4c7c9d959",
+      "bytes": 6587
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/math/math_sincos.odin",
+      "sha256": "99cc7c6260264cad81cfa7d908df70f97a405b41933bbbde9921695fcd4d049b",
+      "bytes": 9988
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/mem/alloc.odin",
+      "sha256": "7870775e293230cfdc6757914d6ee6713f5a33856d78596998be1a55c93d2ce7",
+      "bytes": 37907
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/mem/allocators.odin",
+      "sha256": "efcba69244c24e6cc9fd08077e0759a69ba22e59ec86d220bcc62d91ffc5d095",
+      "bytes": 79690
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/mem/doc.odin",
+      "sha256": "d1c839444fc09d92a61fca38dd2f1e942992065131c03b881500636eb4fd0cdb",
+      "bytes": 5174
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/mem/mem.odin",
+      "sha256": "544ab1d8f2d7a9af4a351b0116da0f0694a55be8e690666c14e551e3029d176e",
+      "bytes": 19582
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/mem/mutex_allocator.odin",
+      "sha256": "f22591a28d6104471d4e169f6a897247da03ea2209e2ee02025b622592e58bc5",
+      "bytes": 1181
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/mem/raw.odin",
+      "sha256": "838fe83078d9a7e021c5fd3c51b5f72326652393d3519ccc8a978c7df90d27dd",
+      "bytes": 2110
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/mem/rollback_stack_allocator.odin",
+      "sha256": "8e7d6ba4701d81c8566b155462a6d91fa35a3f58d1ee86fd0c2e638dfc73ba93",
+      "bytes": 15193
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/mem/tracking_allocator.odin",
+      "sha256": "d69407cdd095e526fc1d8183ada2aaef52ca91013adb460d4c37868bed54fdcd",
+      "bytes": 8415
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strconv/deprecated.odin",
+      "sha256": "6cb5148ba98dbe801189dcfecd3e95ecc9938a6a9d434eb6dfa9cdd3f15d9406",
+      "bytes": 629
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strconv/generic_float.odin",
+      "sha256": "6d19c18ab362f15398d4978035aa86f65dfa3163fc7822db70a8eb64fc9b53b0",
+      "bytes": 9681
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strconv/integers.odin",
+      "sha256": "ea8b770548b975e95752d9cf58a07ec9f09a2a76e4bd50cb3d72328fb8c43de1",
+      "bytes": 5265
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/strconv/strconv.odin",
+      "sha256": "814c0af3ebdcc1fd6e3e579c0463501ba9314d5a0321a7a518a199e8e2fc8a6c",
+      "bytes": 43406
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/unicode/doc.odin",
+      "sha256": "3d15ac3e0cda285f0463a7734fb8dcca7b86ca4c1a7d03bd4d67cc42e9d1ebe4",
+      "bytes": 83
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/unicode/fold.odin",
+      "sha256": "71393fb0e2829c3d07b4466d0c60286b8864447ee2539c88cb2a6d81194c4c1a",
+      "bytes": 3889
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/unicode/generated.odin",
+      "sha256": "113a39aaa4a4367d6a367f7d847f905dc224a365c2986c3c612e979a4c13252d",
+      "bytes": 51878
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/unicode/inrange.odin",
+      "sha256": "1a8c46dbf63c368790b2b6d75633f0880ebf9c80f606e20e5490f9e42affdd79",
+      "bytes": 1004
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/unicode/letter.odin",
+      "sha256": "169c8dd36e8ae4799577db94c86775ca9b85ff7511b1ceba1c527569ba978a5a",
+      "bytes": 13370
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/unicode/tables.odin",
+      "sha256": "c16176701dded068382ddbead93ae40bfc355060a51752430e3ca859866d1aad",
+      "bytes": 66557
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/unicode/utf8/grapheme.odin",
+      "sha256": "137bf152d091e3ffe44d96b1d89f5f801a0202fe8faef4b3b47590b9feef1d5d",
+      "bytes": 10630
+    },
+    {
+      "scope": "installed-odin-package",
+      "path": "core/unicode/utf8/utf8.odin",
+      "sha256": "5d4663e87148b1cdbc2436dfbefd0dd7254203d731fd95fbb867fe6bed75d001",
+      "bytes": 9265
+    }
+  ],
+  "bounds": [
+    "No perfect provenance certification",
+    "Existing wasm/object hashes are inventory only; no attestation of compiler, link closure, or exact emitted routines",
+    "Conditional notices may conservatively cover dead-stripped routines",
+    "Host and sibling plugin/theme release archives excluded"
+  ],
+  "tool_hashes": [
+    {
+      "path": "/nix/store/708y97i6z1rq921qjrilyk6jjs9d3sy7-odin-dev-2026-05/bin/.odin-wrapped",
+      "sha256": "a061f3624f885508181f90713cee8e5010103c0b906055907a89d681a89377b5",
+      "bytes": 3255728
+    },
+    {
+      "path": "/nix/store/708y97i6z1rq921qjrilyk6jjs9d3sy7-odin-dev-2026-05/bin/odin",
+      "sha256": "790fd7502aef794c702fe141c2b4524cd4012196b42d0fd259f1625d04b921ea",
+      "bytes": 50656
+    },
+    {
+      "path": "/nix/store/8fbny795qwfafb1cbpjn88pgpf1c4hy0-zig-0.16.0/bin/zig",
+      "sha256": "18123d5bc912878bef3d80e489d8a25fba50005113a7351fdbeb65e29db5fd53",
+      "bytes": 211071920
+    }
+  ],
+  "components": [
+    {
+      "name": "owner-controlled local source/content",
+      "license": "Apache-2.0",
+      "classification": "standing owner-rights grant; original local ancestry not certified"
+    },
+    {
+      "name": "sokol-odin / embedded sokol gfx",
+      "license": "Zlib",
+      "classification": "source/build linked gfx path"
+    },
+    {
+      "name": "Odin runtime/core",
+      "license": "Zlib plus separately identified embedded notices",
+      "classification": "source-level runtime dependencies"
+    },
+    {
+      "name": "Odin emmalloc",
+      "license": "MIT",
+      "classification": "explicit allocator use; Emscripten attribution required"
+    },
+    {
+      "name": "Unicode / Sun / Cephes notices",
+      "classification": "conservative imported-package coverage, not symbol-retention attestation"
+    },
+    {
+      "name": "Zig compiler_rt / LLVM ports / musl math ports",
+      "classification": "conditional notice coverage; actual runtime linkage not established"
+    },
+    {
+      "name": "Khronos GLES interfaces",
+      "classification": "precautionary attribution; specific copied upstream not established"
+    },
+    {
+      "name": "sokol-shdc / host compilers and SDKs",
+      "classification": "build tools, not claimed linked runtime"
+    }
+  ],
+  "compliance_followups": [
+    {
+      "scope": "station-demo vendored Sokol source redistribution",
+      "issue": "Altered ../../env.o imports lack adjacent modification marker; standalone has marker",
+      "kind": "source-notice compliance, not missing permission"
+    },
+    {
+      "scope": "source and web packages",
+      "issue": "Copy NOTICE/full licenses and bind to fresh build receipts",
+      "kind": "packaging integration, not missing permission"
+    }
+  ],
+  "deliverable_hashes": [
+    {
+      "path": "NOTICE.txt",
+      "sha256": "a47a7a62f5310406c531e69fb0955071dbaa8887e375a84d8833ae0b4adc744b",
+      "bytes": 2687
+    },
+    {
+      "path": "THIRD-PARTY-REVIEW.md",
+      "sha256": "a7bf41df149a6c9f2d30a021e63e43c3249fc11fc7327489d3f6bb93cdd00a23",
+      "bytes": 13275
+    },
+    {
+      "path": "collect.py",
+      "sha256": "6cb7d6cbbcf782e1115ab49dc051af5a2c011941949f5cab7c5d78a396535181",
+      "bytes": 13504
+    },
+    {
+      "path": "evidence/emscripten-AUTHORS",
+      "sha256": "56f7df65203d4858dac19cafe3a84a8c49abaff56b67d32d2d463d5fef6e440b",
+      "bytes": 28933
+    },
+    {
+      "path": "evidence/emscripten-LICENSE",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+      "bytes": 5093
+    },
+    {
+      "path": "evidence/emscripten-gl3.h",
+      "sha256": "dbd72f53c24558d98bfb00e7b4e26ed9999f0afacd40340db18ef2b2da5a2fb2",
+      "bytes": 82666
+    },
+    {
+      "path": "evidence/emscripten-libwebgl.js",
+      "sha256": "99d70e3ed68f7a6a0752ce3983092c173ca0d16b082575f5498cf2a23945a352",
+      "bytes": 174490
+    },
+    {
+      "path": "evidence/khronos-gl3.h",
+      "sha256": "a0e4880142bd059bd4d7446f257920b5020b8bbb0a86eb0149cbd1ea2fcf8cb0",
+      "bytes": 81600
+    },
+    {
+      "path": "evidence/khronos-xml-notice.txt",
+      "sha256": "594f0eaa69197bf1a3b7ef838100f57178635b12cf769611b1452f44303dd7de",
+      "bytes": 420
+    },
+    {
+      "path": "evidence/lineage-gl-bridge.js",
+      "sha256": "4e0301488f71176541adaeebeea2928c50dd7b8dc4c2636ba119b835743ebfff",
+      "bytes": 39417
+    },
+    {
+      "path": "evidence/lineage-gl3.h",
+      "sha256": "ba35fea2964f8c46ad2c84d1283e49b3dde29c13a11799bd172dfd58a08d7524",
+      "bytes": 14594
+    },
+    {
+      "path": "evidence/lineage-gl_funcs.h",
+      "sha256": "9e4eff9a4762f30dc1d192391b24da4ab51792e1b816635683255d093f29d289",
+      "bytes": 23992
+    },
+    {
+      "path": "evidence/local-lineage.txt",
+      "sha256": "996d43759e3f370ab7f0d27d9183840accb5bd86b78d94c782c8239205ca6932",
+      "bytes": 1884
+    },
+    {
+      "path": "evidence/nixpkgs-darwin-remove-impure-links.patch",
+      "sha256": "2452cd732c39336fed552bbef4a84b60375c2f56807460d96157c1229588483b",
+      "bytes": 1018
+    },
+    {
+      "path": "evidence/nixpkgs-default.nix",
+      "sha256": "a54a6a138afd0457703a953b75c04ac987265940889799184f3307702919ff6b",
+      "bytes": 981
+    },
+    {
+      "path": "evidence/nixpkgs-generic.nix",
+      "sha256": "3cc126863576214205ac9a840ff68e68676567125b3b1f116b070762b7e6dd7c",
+      "bytes": 5485
+    },
+    {
+      "path": "evidence/nixpkgs-package.nix",
+      "sha256": "bdadc106365cbb38aff117084129d9ff4c5783c577d230436a6c2dfd29c319f2",
+      "bytes": 2728
+    },
+    {
+      "path": "evidence/nixpkgs-system-raylib.patch",
+      "sha256": "a262bbad72d87c47f807cf3984faadca281c2f45903d948b919d3e7b1686cc95",
+      "bytes": 4667
+    },
+    {
+      "path": "evidence/odin-cephes.odin",
+      "sha256": "99cc7c6260264cad81cfa7d908df70f97a405b41933bbbde9921695fcd4d049b",
+      "bytes": 9988
+    },
+    {
+      "path": "evidence/odin-emmalloc.odin",
+      "sha256": "f3aead5f795ec661f50df8e9f84dae572fce091a2bca051ba89a51bc8448cc02",
+      "bytes": 30599
+    },
+    {
+      "path": "evidence/odin-sun.odin",
+      "sha256": "5a0ec6e1198576e9f4eec6eb4250ef777ab2f2a7529823696b4d36fccc809e83",
+      "bytes": 12637
+    },
+    {
+      "path": "evidence/odin-unicode.odin",
+      "sha256": "113a39aaa4a4367d6a367f7d847f905dc224a365c2986c3c612e979a4c13252d",
+      "bytes": 51878
+    },
+    {
+      "path": "evidence/research-scope.txt",
+      "sha256": "f741f57d59d7f5219559aaea6c0de52150e726e1daeea9e148256eef822d2429",
+      "bytes": 1819
+    },
+    {
+      "path": "evidence/sokol-gfx.odin",
+      "sha256": "2ab55f70b349f2eaaef0102682db08e1835786160d87aaca026d0851e78f6c1b",
+      "bytes": 220848
+    },
+    {
+      "path": "evidence/sokol-sokol_gfx.c",
+      "sha256": "4058f288375090a98d50987297a875ee3672aec6caa462ddd0c0e4947c5d4939",
+      "bytes": 98
+    },
+    {
+      "path": "evidence/sokol-sokol_gfx.h",
+      "sha256": "fbf2640302b1b180be98ab8b0fe645a978260f7ab1509d78b2dcab3bc98f829e",
+      "bytes": 1310579
+    },
+    {
+      "path": "evidence/tool-environment.txt",
+      "sha256": "dd8b40ea3877a152f0ebda4bc386e9d1dfcf36dc3ccf94abcb6f0a3386d054ff",
+      "bytes": 271
+    },
+    {
+      "path": "evidence/zig-addf3.zig",
+      "sha256": "21c91cf72cb255e6ec7c41e257682669ffb213cf4a704dafdb1ea34ad96598b6",
+      "bytes": 6364
+    },
+    {
+      "path": "evidence/zig-compiler_rt.zig",
+      "sha256": "8f518ff1a2d8de659d847c1e366d301d52fbc07cb60c4fb20129cb45a9c6a15e",
+      "bytes": 25527
+    },
+    {
+      "path": "evidence/zig-divsf3.zig",
+      "sha256": "f62093617b9c69b2e10495387afe9b523fb7c496566b85434866cb3a520571be",
+      "bytes": 8402
+    },
+    {
+      "path": "evidence/zig-memcpy.zig",
+      "sha256": "04591b9808246a6904dddd26b131e4f26ad5e5ee8b365b70e63474a62fa05c9c",
+      "bytes": 6327
+    },
+    {
+      "path": "evidence/zig-memmove.zig",
+      "sha256": "5a053698229043b1ab458bed0c46180101d05b4b2cf6e05ffa6ac43b3eda5224",
+      "bytes": 7302
+    },
+    {
+      "path": "evidence/zig-mulf3.zig",
+      "sha256": "eeec703926a227c02cf3918c1f242110faf7b04bbf7c4d967b6eeeeb569b51cd",
+      "bytes": 8424
+    },
+    {
+      "path": "evidence/zig-powiXf2.zig",
+      "sha256": "78b1c851be56d580a59672574afc0f9cb776183b0325d98130206a4a18d7ba05",
+      "bytes": 1602
+    },
+    {
+      "path": "licenses/apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "licenses/khronos-gles-header.txt",
+      "sha256": "80afca6dc6caccc321ed2c1e5bec8701a44d3cfbc215acc08de09ebb37d6178a",
+      "bytes": 1146
+    },
+    {
+      "path": "licenses/llvm-compiler-rt-add.txt",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+      "bytes": 16708
+    },
+    {
+      "path": "licenses/llvm-compiler-rt-div.txt",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+      "bytes": 16708
+    },
+    {
+      "path": "licenses/llvm-compiler-rt-mul.txt",
+      "sha256": "dd27f8c290bcdc8368549cd7cd98710a9dbdc34122f2e096a1edb97824ed4148",
+      "bytes": 4289
+    },
+    {
+      "path": "licenses/llvm-compiler-rt-release80.txt",
+      "sha256": "dd27f8c290bcdc8368549cd7cd98710a9dbdc34122f2e096a1edb97824ed4148",
+      "bytes": 4289
+    },
+    {
+      "path": "licenses/odin-cephes.txt",
+      "sha256": "833858fc3756c1f011688f8470443265b855a1db92579c8667711c5ee18cadba",
+      "bytes": 2653
+    },
+    {
+      "path": "licenses/odin-emmalloc.txt",
+      "sha256": "d4b8c66542f6db2c1135ceeb7df25c0358d54603e62fbee7f69b94a316cdecca",
+      "bytes": 1923
+    },
+    {
+      "path": "licenses/odin-sun.txt",
+      "sha256": "5b4c6a064badf329834047234b28c6da9b71f0fd046f2cc036425440cba0ef0f",
+      "bytes": 509
+    },
+    {
+      "path": "licenses/odin-unicode.txt",
+      "sha256": "37d44dbc27519584458f0a0269904fbb3bf34abbd250912a7c7c4354419073d1",
+      "bytes": 2496
+    },
+    {
+      "path": "licenses/odin.txt",
+      "sha256": "c28b9a4f5a6eb24038aa67c946804883713078ffc25b2c0829f29c03569f4bfa",
+      "bytes": 876
+    },
+    {
+      "path": "licenses/sokol-gfx-header.txt",
+      "sha256": "2f21bbe44913559373d65a299fbf2b979992ed2aecd021fe1ad1dc35bf655b6c",
+      "bytes": 985
+    },
+    {
+      "path": "licenses/sokol-odin.txt",
+      "sha256": "d5501d72378a0865c7896cc85cfbc8956189a0cdc3fd1e72350443cb1522f031",
+      "bytes": 897
+    },
+    {
+      "path": "licenses/sokol-tools-bin.txt",
+      "sha256": "d7bb344eb6e070a617d3b37b3bda6f4b3a08634dd0a413eca1a1b1d247859ee2",
+      "bytes": 1072
+    },
+    {
+      "path": "licenses/zig-musl.txt",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af",
+      "bytes": 6204
+    },
+    {
+      "path": "licenses/zig.txt",
+      "sha256": "5c537d6853e005298a285d508cff9ac7192cea23576c840d485b2b586a7ff177",
+      "bytes": 1080
+    }
+  ]
+}

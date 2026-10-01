@@ -1,28 +1,27 @@
-# Third-party origins
+# Game third-party build inputs
 
-The standalone game downloads build dependencies at immutable upstream commits
-and validates the fetched archives before extraction:
-
-| Dependency | Revision | Archive SHA-256 |
+| Dependency | Immutable revision | Archive SHA-256 |
 | --- | --- | --- |
-| [`sokol-odin`](https://github.com/floooh/sokol-odin) | `9ea6ec125f002180d6cc6e7a009087ca0a019da4` | `0eebee1d50bb08f1bf44f5458d8c32d61e4c2069d73a2eddb9feeb7c04d185ba` |
-| [`sokol-tools-bin`](https://github.com/floooh/sokol-tools-bin) | `11d0cf678105d614d675e6d9bd2aaf3eeff12f8c` | `c18bc3d9a52d63f385fcff9d04461e0f1c58f84102a0386acf59b6747655d17d` |
+| sokol-odin | 9ea6ec125f002180d6cc6e7a009087ca0a019da4 | 0eebee1d50bb08f1bf44f5458d8c32d61e4c2069d73a2eddb9feeb7c04d185ba |
+| sokol-tools-bin | 11d0cf678105d614d675e6d9bd2aaf3eeff12f8c | c18bc3d9a52d63f385fcff9d04461e0f1c58f84102a0386acf59b6747655d17d |
 
-`make deps` copies each upstream `LICENSE` into `THIRD_PARTY_LICENSES/` next to
-the downloaded files. `sokol-odin` uses the zlib license. The Makefile alters
-its WASM foreign-import lines to link the station game's local `../../env.o`;
-each altered location receives a `GAMS station demo modification` comment, as
-the license requires altered source to be plainly marked. No downloaded
-`sokol-tools-bin` file is modified except making the selected executable
-runnable.
+The Makefile validates each archive before extraction. Sokol Odin bindings and the
+embedded C gfx implementation are zlib-licensed. Modified WASM foreign imports
+carry explicit `GAMS station demo modification` markers for the ../../env.o path.
+Shader tools are build-time only, MIT-licensed, and are not distributed binaries.
 
-`web/gl-bridge.js`, `env.c`, `host/`, and `web/wasm-include/` were copied and
-adapted from this repository's `examples/demo/game` infrastructure. The earliest checked-in copies of these files in the original demo game
-appear in the local May 2026 game migration (commit `9990f981`, committed by
-Romāns Potašovs); earlier local `plugin:game2` history also contains the
-WebGL bridge. That Git record establishes a **local lineage**, not who wrote
-their earliest forms or whether any external source influenced them. No
-separate upstream origin or third-party license is recorded. They remain
-inherited local project code of **unconfirmed original authorship**; owner
-review must explicitly cover that uncertainty before distributing the optional
-example-source ZIP.
+The locked standalone environment selects Odin dev-2026-05 and Zig 0.16.0.
+Odin runtime/core use zlib terms; the actual WASM allocator preserves Emscripten
+emmalloc MIT terms. Unicode and conservative Sun/Cephes math notices are retained.
+Conditional Zig/LLVM compiler-rt/musl-derived helper terms are retained without a
+claim that all those routines, musl libc, or compiler executables ship in the WASM.
+
+Custom GLES headers and WebGL/host infrastructure have local demo lineage; earliest
+original authorship is not independently established. Standing owner rights cover
+local code absent an identified contrary restriction. A Khronos interface-header
+notice is retained conservatively, not as proof of implementation copying.
+
+Full terms: THIRD_PARTY_LICENSES/ and ../THIRD-PARTY-NOTICES.txt. See
+../THIRD-PARTY-REVIEW.md for upstream URLs, exact license receipts and bounds.
+Each release must record actual source/tool/build/output hashes; this source-level
+review is not an attestation that old generated binaries match reviewed inputs.

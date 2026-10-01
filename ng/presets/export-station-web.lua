@@ -37,6 +37,21 @@ if pack[1] ~= 82 or pack[2] ~= 83 or pack[3] ~= 80 or pack[4] ~= 75 then
 	error("generated station.rspk has invalid magic")
 end
 
+-- Licensing travels with every visitor export, not only the release ZIP.
+-- Read all required legal/support bytes before changing output files.
+local documents = {
+	{"LICENSE", "LICENSE"},
+	{"NOTICE", "NOTICE"},
+	{"THIRD-PARTY-NOTICES.txt", "THIRD-PARTY-NOTICES.txt"},
+	{"README.md", "BROWSER-README.md"},
+}
+for _, document in ipairs(documents) do
+	document[3] = host.call("fs/fs::read-text", document[2])
+	if type(document[3]) ~= "string" or document[3] == "" then
+		error("required export document is empty: " .. document[2])
+	end
+end
+
 local current = ""
 for part in string.gmatch(output_dir, "[^/]+") do
 	current = current == "" and part or (current .. "/" .. part)
@@ -55,11 +70,14 @@ end
 host.call("fs/fs::write-text", output_dir .. "/index.html", index_html)
 host.call("fs/fs::write-text", output_dir .. "/gl-bridge.js", gl_bridge)
 host.call("fs/fs::write-file", output_dir .. "/station-demo.wasm", wasm)
+for _, document in ipairs(documents) do
+	host.call("fs/fs::write-text", output_dir .. "/" .. document[1], document[3])
+end
 host.call("fs/fs::write-file", output_dir .. "/station.rspk", pack)
 
 outputs[1] = {
 	directory = output_dir,
-	files = {"index.html", "gl-bridge.js", "station-demo.wasm", "station.rspk"},
+	files = {"index.html", "gl-bridge.js", "station-demo.wasm", "station.rspk", "LICENSE", "NOTICE", "THIRD-PARTY-NOTICES.txt", "README.md"},
 	content_bytes = #pack,
 	wasm_bytes = #wasm,
 }

@@ -1,15 +1,10 @@
 {
-  "source_directory": "/Users/gook/Repos/gams3",
-  "snapshot_kind": "working-tree source snapshot; no Git history copied",
+  "bounds": "Source-level inventory, not certification of old binaries or exact retained compiler helper routines",
   "files_sha256": {
-    ".github/workflows/release.yml": "4f8728887ba5b858c256828cf8a60e0d74ea71af67f01ee4280b4d1743cfe5ac",
     ".gitignore": "903c376c2781597267d9e28ae3df4c7f3e0f8a9bd8ba711eaf1129e5a4380c99",
     "BROWSER-README.md": "786538a18be7d7fa19a4222666747bf7e023cff34b317e3019c79ad042ac1065",
-    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "LICENSING.md": "211b54388a0df5f8ee59200678a5c622f888d15f26d91090df77a8ddb0eb509a",
     "Makefile": "cd6d43268bf33207f088f2979c13aabb58943f05bcb1aeb7a2e2edae79e5c079",
-    "NOTICE": "3f7d18722f62d482479842402329f262946d2047c36c59eb1b37fac087f60169",
-    "NOTICE-EVIDENCE.json": "4bd267ce1ca1589bb0fe37effd7f8085ac962fccf29cb7631a77556288740e7d",
     "PUBLISHING.md": "7214f173b15e16fd66e8d6684449b9d269d3d067215009713da7c4017edae811",
     "README.md": "2327e3fc0beb231bf65c9f85fa46a8bbf9cbf4fbbac4ad2049a0daec12c9be2e",
     "RELEASE-INSTALL.md": "e97355cb7ccbad9ea2f3464769740e8558189dd5f3360d0b1314a4fc2c633be6",
@@ -96,5 +91,6 @@
     "scripts/release.py": "7bf08d9cb33f67c712c7eedc30f4d1dedc07d3d82c23130106700a0adc7143b4",
     "scripts/setup-local.py": "64be5dbb68ddf82403089fb7abfa773550814eacbe14f0feed6e73995cd592e3",
     "test/test_release.py": "70c09a1deec999082d8bda1e21d09187cccca79a32017ae66d75adc695dad3bf"
-  }
+  },
+  "scope": "Prepared Project source/build inputs, collected game licenses and reviewed public Unit lock"
 }

@@ -1,153 +1,68 @@
-# Run example.game1 with released Project Units
+# Published Project Unit installation
 
-This path installs packages into this **external Project**, not into GAMS and not
-from sibling source builds. It requires Python 3.10+ and public HTTPS access;
-no Nix, Node/npm, Cargo, Odin, shared SDK checkout, or sibling workspace is needed
-for package installation or opening the existing Project in the downloaded GUI.
-`make setup-local` remains the separate, unchanged source-development path.
+The complete release-lock.json records **18 public releases and 46 exact asset
+pins**. FS is v0.1.1; the other four WASM plugins and all thirteen UI Units are
+v0.1.0. These selected versions do not change automatically. Their GitHub release
+ZIP/component bytes, SHA256SUMS, metadata and notices were downloaded and verified
+before collecting this lock. Public URLs are a requirement; authenticated-only
+private-repository downloads are not a usable visitor dependency.
 
-## Publication readiness (public API observation)
+## Visitor
 
-The public `https://api.github.com/repos/kkgams/<repo>/releases` endpoints were
-queried during implementation. The explicit selections in `release-selection.json`
-record the observed component releases, **not** a mutable latest resolver:
+The Project ZIP already contains every installed Unit, per-Unit notice, an install
+receipt and the prebuilt game. Open its example.game1 folder with the separately
+released GAMS 2.0.3 app. No installation/build toolchain is needed for GUI edits.
 
-| Unit | Selected version/tag | Observed public assets |
-| --- | --- | --- |
-| plugin.fs | 0.1.1 / v0.1.1 | plugin.fs.wasm, LICENSE, NOTICE, SHA256SUMS |
-| plugin.layout | 0.1.0 / v0.1.0 | plugin.layout.wasm, LICENSE, NOTICE, SHA256SUMS |
-| plugin.lua | 0.1.0 / v0.1.0 | plugin.lua.wasm, LICENSE, NOTICE, SHA256SUMS |
-| plugin.respack | 0.1.0 / v0.1.0 | plugin.respack.wasm, LICENSE, NOTICE, SHA256SUMS |
-| plugin.director-compiler | 0.1.0 / v0.1.0 | director-compiler.wasm, LICENSE, NOTICE, SHA256SUMS |
-
-For all thirteen UI repositories (`view.files`, `view.code`, `view.ng`,
-`view.ng-node`, `view.files-rename`, `view.files-default`, `ui-service.context`,
-`ui-service.keys`, `ui-service.layout`, `ui-service.toast`, `ui-service.popup`,
-`ui-service.tooltip`, `theme.the98`), the public release API returned **404**.
-Their v0.1.0 selections are **planned-not-ready**; a source push, private repo,
-or CI candidate is not evidence of a public released asset. No complete
-`release-lock.json` or fake digests are shipped. Until these packages are public,
-the release installation path deliberately cannot complete. Recheck explicit
-selected tags with the review command after owner-approved publication.
-
-The compiler's currently published filename is `director-compiler.wasm`, unlike
-the other four `plugin.<slug>.wasm` assets. Its Project destination remains
-`plugins/director-compiler.comp.wasm`. Every component retains its original
-`plugins/<slug>.comp.wasm` destination. UI deployment filenames (including
-`views/files-rename.js` and `views/files-default.js`) are not repository/config ids.
-
-## Owner: generate and review a complete lock
-
-Review `LICENSING.md`, each Unit's LICENSE/NOTICE and release provenance first.
-Extraction/install code does not grant redistribution approval. In particular,
-UI licensing and theme embedded artwork require owner decisions; do not create
-releases merely to unblock this installer.
-
-Select explicit versions/tags in `release-selection.json`, then:
+For a source checkout or to refresh installed Units, Python 3.10+ and HTTPS suffice:
 
 ```sh
-python3 scripts/install-releases.py build-lock \
-  --selection release-selection.json --output release-lock.review.json
-```
-
-This separate command queries **only those explicit tags** through the public
-GitHub API, rejects drafts, prereleases, absent publication timestamps and duplicate
-asset names, requires every named release asset, downloads and hashes all assets,
-checks the sidecars, validates actual archives, and writes the lock only when the
-whole set succeeds. It never installs, publishes, tags, or changes credentials.
-It refuses an existing output. Review the resulting URLs, versions, digests,
-LICENSE/NOTICE and upstream provenance; only then rename the reviewed file to
-`release-lock.json` and distribute it with the Project. SHA256SUMS is an integrity
-cross-check, not an independent signature; the reviewed lock is the trust anchor.
-The selection `status` is an observation, not an approval bypass.
-
-Lock schema 1 contains exactly eighteen distinct `units`; each record contains:
-`name`, `kind`, distribution `version`, exact `tag` (`v` + version), `files` (the
-exact Project-relative deployment list), and `assets`. Each asset filename maps
-to `{ "url": "https://github.com/kkgams/<repo>/releases/download/<tag>/<asset>",
-"sha256": "<64 lowercase hexadecimal characters>" }`. This description is not
-a usable lock: placeholders, absent fields and incomplete sets fail installation.
-`SHA256SUMS` itself is pinned too. Arbitrary hosts, tags, source trees, API asset
-URLs, dynamic latest coordinates and mutable branch downloads are rejected.
-
-## Install and open the downloaded GUI
-
-After receiving a reviewed, complete lock alongside the example source:
-
-```sh
-cd /absolute/path/to/example.game1
 python3 scripts/install-releases.py install --lock release-lock.json
 ```
 
-Download **GAMS 2.0.3** from its public tagged release (if published):
-`https://github.com/kkgams/gams/releases/tag/v2.0.3`. Choose the supported platform
-package and verify its release checksum using the Host's published instructions;
-source version, a successful push or CI candidate is not proof of publication.
-On macOS install/open the downloaded `GAMS.app`; choose the example.game1 folder
-containing `gams.json` in its external-Project picker. Alternatively:
+The installer checks all downloads and archive metadata before changing Project
+files. It installs only the declared original Project-relative paths, retaining
+per-Unit LICENSE/NOTICE under notices/project-units/. It never downloads latest,
+substitutes sibling source, installs npm packages or copies Units into the Host.
+It refreshes owned files without deleting unrelated data. Individual writes are
+atomic, not a transaction against disk/OS failure. Use a trusted Project folder
+without concurrent filesystem edits.
+
+The compiler's asset is director-compiler.wasm; its deployed Project path remains
+plugins/director-compiler.comp.wasm. UI filenames/config ids also remain separate
+from repository names. All thirteen UI closures currently contain one entry each;
+future multi-file packages require an explicitly reviewed installer mapping change.
+
+## Maintainer: collect a new lock
+
+Change explicit release-selection.json versions only deliberately, then collect a
+new review file (existing output is never overwritten):
 
 ```sh
-GAMS_APP_CWD=/absolute/path/to/example.game1 \
-  /Applications/GAMS.app/Contents/MacOS/gams
+python3 scripts/install-releases.py build-lock --output release-lock.review.json
 ```
 
-No Project files or Units need copying into the app bundle. The Host supplies
-its own `/core`, `/util`, `/widgets`, DOM and font APIs; this installer adds no npm
-packages or invented shared SDK dependency. This installs the editing/content
-Project, **not** a built visitor game. Building/rebuilding game source (`make web`,
-Odin tests and related content pipelines) still requires the documented game
-compiler/toolchain and reviewed pinned Sokol downloads; package installation does
-not remove those toolchain requirements. Existing checked-in fixtures stay intact.
+Review the public tagged releases, bytes, notices, versions and hashes before
+replacing/committing release-lock.json. Lock collection is a separate review step,
+not trust-on-first-use during every install. SHA256SUMS is an integrity cross-check,
+not an independent signature; committed reviewed lock pins are the trust anchor.
+Drafts/prereleases/missing assets/API errors fail; no incomplete lock is written.
 
-## Archive and safety contract
+## Release builder
 
-A UI release has `<repo>-<version>.zip` and a `SHA256SUMS` sidecar covering that
-ZIP. Its ZIP contains only the deployed JS/CSS paths at its root (`src/` removed),
-`unit.json`, `LICENSE`, `NOTICE`, `README.md`. `unit.json` contains exactly `name`,
-`kind`, `version`, `entry`, `files` mapping each deployed path to its SHA-256, and
-`host`. The entry must equal the installer’s explicit Unit deployment mapping;
-`host` must contain exactly `target` (`2.0.3`) and a string `note`. This records a
-Host **source contract target**, not tested GUI compatibility or a minimum-version
-guarantee. Package-level downloaded-GUI validation remains an owner release gate.
-No parent archive wrapper, directory entries, extra source/dependency files or
-symlinks are accepted. Component release sidecars cover the WASM, LICENSE and
-NOTICE assets.
+`python3 scripts/release.py install --lock release-lock.json` preserves downloaded
+originals in build.nosync/release-assets/ for independent offline packaging checks.
+The CI build runs the locked game toolchain separately, packages the installed
+Units plus prebuilt export inputs, and keeps Host binaries out of both ZIPs.
+The source checkout's `make setup-local` is development-only and must not be used
+to assemble the published release.
 
-Installer schema v1 deliberately permits exactly one deployed entry per Unit.
-The current thirteen UI source closures each contain only that entry. Although the
-producer supports recursive local source closures, a future multi-file Unit must
-receive an explicit reviewed installer mapping/schema change before installation;
-archives cannot silently expand their allowed Project paths.
+Installer safety: exact known HTTPS asset URLs, all SHA pins and sidecars, bounded
+ZIP expansion/member counts, duplicate/traversal/symlink/special-file rejection,
+strict Unit metadata and mapped file hashes. Limits: 32 MiB/download or expanded
+ZIP, 128 members, 200:1 compression ratio, 256 MiB total staged bytes. Validated
+archives are read member-by-member, never extracted wholesale. No receipt or
+Project files are written on network/checksum/validation failure.
 
-All downloads and mapped file bytes are verified and staged in bounded memory
-before any Project mutation. ZIP names, duplicates, special files, encryption,
-compression/size limits, unit identity and exact deployment mappings are checked;
-untrusted archives are never extracted wholesale. Limits: 32 MiB per download
-and per expanded ZIP, 128 ZIP members, 200:1 compression ratio, 256 MiB overall
-staged payloads. Existing symlink destinations/parents and conflicting filesystem
-types fail preflight. Install into a trusted Project not being concurrently edited
-by another process. Repeat installation refreshes the owned paths; unrelated
-files are not deleted. Individual file replacements are atomic, but OS/disk
-failures during writing are **not** a whole-Project transaction; restore a backup
-or rerun after resolving such failures.
-
-Per-Unit licensing bytes remain under `notices/project-units/<repo>/`; UI README
-and unit metadata are retained there too. `build.nosync/release-install.json`
-records pinned URLs, source digests, versions/tags, canonical lock digest and all
-installed file hashes. Download/checksum/validation failures leave the Project
-unchanged (no receipt or notices written on failure).
-
-## Generator wiring
-
-`packaging/ecosystem/example_game1.py::prepare` already copies the entire template
-with `copy_real_tree(TEMPLATE, stage)`. The new script, selection and this document
-therefore land in generated example.game1 automatically; no generator, Makefile,
-existing README or setup-local edits are needed. A reviewed release-lock.json can
-be supplied with the distributed Project after publication review. Generator
-extraction tests verify these template bytes are retained. An offline integration
-regression generates the real thirteen UI repositories, stages each with its own
-release producer and exact-byte LICENSE/NOTICE digest approvals, then installs
-those actual archives alongside five WASM fixtures. It compares deployed UI
-bytes directly with monorepo sources and retained notices with generated originals,
-including the theme’s complete upstream MIT terms. This checks packaging and
-installation, not GUI behavior or public publication readiness.
+See README.md for the power-to-key edit/export/play walkthrough. Source game
+rebuilding still needs Odin/Zig/Nix; installing packages does not erase that
+requirement. The downloaded prebuilt Project is the toolchain-free editing path.
