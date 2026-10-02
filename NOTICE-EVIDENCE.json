@@ -1,10 +1,10 @@
 {
   "bounds": "Source-level inventory, not certification of old binaries or exact retained compiler helper routines",
   "files_sha256": {
-    ".gitignore": "903c376c2781597267d9e28ae3df4c7f3e0f8a9bd8ba711eaf1129e5a4380c99",
+    ".gitignore": "f0da219ad475b06d2b4a1a905f028edc45ab67a196c8fe1470a4f86bca79afc0",
     "BROWSER-README.md": "786538a18be7d7fa19a4222666747bf7e023cff34b317e3019c79ad042ac1065",
     "LICENSING.md": "211b54388a0df5f8ee59200678a5c622f888d15f26d91090df77a8ddb0eb509a",
-    "Makefile": "cd6d43268bf33207f088f2979c13aabb58943f05bcb1aeb7a2e2edae79e5c079",
+    "Makefile": "5aab6c1f258d26176dd4c705b419825257d7ff98281d391e193f52626c1d5b93",
     "PUBLISHING.md": "7214f173b15e16fd66e8d6684449b9d269d3d067215009713da7c4017edae811",
     "README.md": "2327e3fc0beb231bf65c9f85fa46a8bbf9cbf4fbbac4ad2049a0daec12c9be2e",
     "RELEASE-INSTALL.md": "e97355cb7ccbad9ea2f3464769740e8558189dd5f3360d0b1314a4fc2c633be6",
@@ -85,11 +85,13 @@
     "release-selection.json": "1e54c94a3428f298ee8b515dc85739b41e606bfff2705a63e4f2862cba28048e",
     "release.json": "41dfb296912586e855bc5df026351882329973a7ba6b5638dbe163c2e5d668d9",
     "scripts/build-receipt.py": "68251ee55adfae160c8bf8bf9eabc4aab06d66d30de79f4999ceaab890ed58c3",
+    "scripts/check-browser-wasm.mjs": "354a07e66bac1fc6579304b3dc424e56f09de66e0f5bacde49f4052667b4b79d",
     "scripts/check-local.py": "d0a43eb0bc172d3fa96f0d5163105ce03794c4b6832f19e7b0863e826d930624",
     "scripts/install-releases.py": "8c9b22ba51be0abe30b1fc452fbf0550f995ef4247b61854b4a3a279b9fab441",
     "scripts/integration.mjs": "c9cb54b44850516d06b2326fa890b1bdb25ccc0d5d1ec7702ce6985ef44b9c80",
     "scripts/release.py": "7bf08d9cb33f67c712c7eedc30f4d1dedc07d3d82c23130106700a0adc7143b4",
     "scripts/setup-local.py": "64be5dbb68ddf82403089fb7abfa773550814eacbe14f0feed6e73995cd592e3",
+    "test/check-export.mjs": "a1e13ea3f41398d7941392da67237989a57a9de4026f64ca194bfdff08b909f5",
     "test/test_release.py": "70c09a1deec999082d8bda1e21d09187cccca79a32017ae66d75adc695dad3bf"
   },
   "scope": "Prepared Project source/build inputs, collected game licenses and reviewed public Unit lock"

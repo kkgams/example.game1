@@ -34,6 +34,7 @@ jobs:
           nix develop --no-update-lock-file --command zig version | tee dist/proof/zig-version.txt
           nix develop --no-update-lock-file --command make --trace -C game test web 2>&1 | tee dist/proof/game-build.txt
           nix develop --no-update-lock-file --command python3 scripts/build-receipt.py dist/proof/build-receipt.json
+          nix develop --no-update-lock-file --command node scripts/check-browser-wasm.mjs | tee dist/proof/wasm-abi.json
           # Calls install-releases.py install API with an exact-byte cache transport.
           # This is the only Unit download phase; final staging/checking are offline.
           python3 scripts/release.py install --lock release-lock.json

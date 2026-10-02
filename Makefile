@@ -47,6 +47,7 @@ web:
 integration: require-local-assets
 	[[ -x "$(HOST_BIN)" ]] || { echo 'Build the external Host release binary first: make -C ../gams app-build-release' >&2; exit 1; }
 	GAMS_HOST_ROOT="$(HOST_ROOT)" GAMS_HOST_BIN="$(HOST_BIN)" HOST_CC="$(HOST_CC)" HOST_CXX="$(HOST_CXX)" node scripts/integration.mjs
+	GAMS_HOST_ROOT="$(HOST_ROOT)" GAMS_HOST_BIN="$(HOST_BIN)" node test/check-export.mjs
 
 run: require-local-assets
 	cd "$(HOST_ROOT)/cmd/app/src-tauri"
