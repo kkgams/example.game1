@@ -18,11 +18,14 @@ test-release:
 release-install:
 	python3 scripts/release.py install --lock release-lock.json
 
+# Resolve only for release recipes; a failed read/validation also aborts make -n.
+override RELEASE_TAG = $(shell python3 -c 'import json, re, sys; version = json.load(open("release.json"))["version"]; isinstance(version, str) and re.fullmatch(r"(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)", version) or sys.exit("invalid release version"); print("v" + version)')$(if $(filter 0,$(.SHELLSTATUS)),,$(error Cannot derive release tag from release.json))
+
 release-stage:
-	python3 scripts/release.py stage --tag v0.1.0
+	python3 scripts/release.py stage --tag $(RELEASE_TAG)
 
 release-check:
-	python3 scripts/release.py check --tag v0.1.0
+	python3 scripts/release.py check --tag $(RELEASE_TAG)
 
 run-dev: run
 # Published consumption is separate from sibling development assembly.

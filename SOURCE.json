@@ -137,5 +137,35 @@
     "version": "0.2.0"
   },
   "snapshot_kind": "working-tree source snapshot; no Git history copied",
-  "source_directory": "/Users/gook/Repos/gams3"
+  "source_directory": "/Users/gook/Repos/gams3",
+  "maintenance_followups": [
+    {
+      "previous_commit": "9cbeef14c67e2407b5c7ac19ef475bfabf8f3837",
+      "scope": "Follow-up root make release tag bugfix; runtime/game/locks/HTML and all upstream license bytes unchanged. Original extraction and coordinated maintenance records remain historical.",
+      "changed_files_sha256": {
+        "Makefile": {
+          "before": "5aab6c1f258d26176dd4c705b419825257d7ff98281d391e193f52626c1d5b93",
+          "after": "e50d6507e1ddc3d7f3abebfa1521b5307ce15b29caef60d0e3e450996603c460"
+        },
+        "test/test_release.py": {
+          "before": "70c09a1deec999082d8bda1e21d09187cccca79a32017ae66d75adc695dad3bf",
+          "after": "36def7a7e1e4a45181344f5b1854ab0dc62b54f0f37a449cdaacb9252ac5e2a1"
+        },
+        "NOTICE-EVIDENCE.json": {
+          "before": "6dec2786aa9abe02c0d4fb3d49bc362bb7e89db2eba69139e30321d6085dccf2",
+          "after": "a9053b28b2e2bab56b4b1b22c9db0af4c5b90d30a926ca71cfabbaf534db7e48"
+        },
+        "NOTICE": {
+          "before": "1463c525ddbe0c3253ef1046bf6e7d90abc90a2db5ae82d3c70d3a71b9e94a2c",
+          "after": "bbb2c720928d6a6eff4dfded0d85fccacaa0d3b7602c9e3a928207d2628efd97"
+        }
+      },
+      "legal": {
+        "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "notice_sha256": "bbb2c720928d6a6eff4dfded0d85fccacaa0d3b7602c9e3a928207d2628efd97",
+        "notice_evidence_sha256": "a9053b28b2e2bab56b4b1b22c9db0af4c5b90d30a926ca71cfabbaf534db7e48"
+      },
+      "hash_scope": "SOURCE.json excluded to avoid a self-hash; no resulting commit is predicted."
+    }
+  ]
 }

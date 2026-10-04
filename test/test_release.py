@@ -7,6 +7,7 @@ import os
 from unittest.mock import patch
 from pathlib import Path
 import stat
+import subprocess
 import tempfile
 import unittest
 import zipfile
@@ -15,6 +16,50 @@ HERE = Path(__file__).resolve().parent
 spec = importlib.util.spec_from_file_location('release_installer', HERE.parent / 'scripts/install-releases.py')
 installer = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(installer)
+
+
+class MakeReleaseTests(unittest.TestCase):
+    def dry_run(self, root, target):
+        return subprocess.run(
+            ['make', '--no-print-directory', '-n', target], cwd=root,
+            text=True, capture_output=True, check=False)
+
+    def test_real_make_targets_follow_release_version(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'Makefile').write_bytes((HERE.parent / 'Makefile').read_bytes())
+            config = json.loads((HERE.parent / 'release.json').read_text())
+            for version in (config['version'], '7.8.9'):
+                config['version'] = version
+                (root / 'release.json').write_text(json.dumps(config))
+                for command in ('stage', 'check'):
+                    with self.subTest(version=version, command=command):
+                        result = self.dry_run(root, 'release-' + command)
+                        self.assertEqual(result.returncode, 0, result.stderr)
+                        self.assertEqual(result.stdout.strip(),
+                                         f'python3 scripts/release.py {command} --tag v{version}')
+                self.assertEqual(sorted(p.name for p in root.iterdir()),
+                                 ['Makefile', 'release.json'])
+
+    def test_real_make_targets_reject_missing_or_invalid_version(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'Makefile').write_bytes((HERE.parent / 'Makefile').read_bytes())
+            for data in (None, '{', '{}', '{"version": null}',
+                         '{"version": ""}', '{"version": "01.2.3"}',
+                         '{"version": "1.2.3; touch bad"}'):
+                path = root / 'release.json'
+                if data is None:
+                    if path.exists():
+                        path.unlink()
+                else:
+                    path.write_text(data)
+                for command in ('stage', 'check'):
+                    with self.subTest(data=data, command=command):
+                        result = self.dry_run(root, 'release-' + command)
+                        self.assertNotEqual(result.returncode, 0)
+                        self.assertNotIn('scripts/release.py', result.stdout)
+                self.assertFalse((root / 'bad').exists())
 
 
 class ReleaseInstallTests(unittest.TestCase):

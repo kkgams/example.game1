@@ -4,7 +4,7 @@
     ".gitignore": "f0da219ad475b06d2b4a1a905f028edc45ab67a196c8fe1470a4f86bca79afc0",
     "BROWSER-README.md": "786538a18be7d7fa19a4222666747bf7e023cff34b317e3019c79ad042ac1065",
     "LICENSING.md": "211b54388a0df5f8ee59200678a5c622f888d15f26d91090df77a8ddb0eb509a",
-    "Makefile": "5aab6c1f258d26176dd4c705b419825257d7ff98281d391e193f52626c1d5b93",
+    "Makefile": "e50d6507e1ddc3d7f3abebfa1521b5307ce15b29caef60d0e3e450996603c460",
     "PUBLISHING.md": "54f64b972ffae18ffd1085dfb9afcc38e3e5acefe4bb871cdc6bdb34938828d2",
     "README.md": "ee56fd00049fe46371c074d3573f48198370585f2502a8bc240ca7ba0261ba7a",
     "RELEASE-INSTALL.md": "e97355cb7ccbad9ea2f3464769740e8558189dd5f3360d0b1314a4fc2c633be6",
@@ -92,7 +92,7 @@
     "scripts/release.py": "b9f41b0cefe482c7b549e7441930068c960d8fcb8cdcbeaf54d5a5a744a76084",
     "scripts/setup-local.py": "64be5dbb68ddf82403089fb7abfa773550814eacbe14f0feed6e73995cd592e3",
     "test/check-export.mjs": "a1e13ea3f41398d7941392da67237989a57a9de4026f64ca194bfdff08b909f5",
-    "test/test_release.py": "70c09a1deec999082d8bda1e21d09187cccca79a32017ae66d75adc695dad3bf"
+    "test/test_release.py": "36def7a7e1e4a45181344f5b1854ab0dc62b54f0f37a449cdaacb9252ac5e2a1"
   },
   "scope": "Prepared Project source/build inputs, collected game licenses and reviewed public Unit lock"
 }
