@@ -1,4 +1,10 @@
-# Publishing example.game1 v0.1.0
+## LOCAL v0.2.0 preparation
+
+Prospective own release only; no v0.2.0 assets are claimed public.
+Public Unit pins and Host v2.0.3 visitor guidance remain unchanged.
+Candidate stage/check requires separately authorized committed HEAD, exact NOTICE approval, pinned builds/receipt, cached original assets and interactive tests; all pending.
+
+# Publishing example.game1 v0.2.0
 
 Canonical repository: `kkgams/example.game1`. The publishing repository must exist;
 this template neither creates it nor performs Git operations on your behalf.
@@ -34,8 +40,8 @@ nix develop --no-update-lock-file --command odin version
 nix develop --no-update-lock-file --command make --trace -C game test web
 nix develop --no-update-lock-file --command python3 scripts/build-receipt.py dist/proof/build-receipt.json
 python3 scripts/release.py install --lock release-lock.json
-python3 scripts/release.py stage --tag v0.1.0
-python3 scripts/release.py check --tag v0.1.0
+python3 scripts/release.py stage --tag v0.2.0
+python3 scripts/release.py check --tag v0.2.0
 ```
 
 `release.py install` calls the stdlib `install-releases.py` installation API with
@@ -58,14 +64,14 @@ binary is used by release CI. Root `run` stays the developer Host command;
 
 ## Download layout
 
-- `example.game1-0.1.0-project.zip`: rooted `example.game1/`; committed Project
+- `example.game1-0.2.0-project.zip`: rooted `example.game1/`; committed Project
   source/tooling/readmes, release lock, installed Units/notices, exact installation
   receipt, `RELEASE-MANIFEST.json` with source/installed/web hashes, and
   `BUILD-RECEIPT.json` with actual selected tools/source/output hashes.
 - Its prebuilt content-only export inputs are exactly
   `game/build.nosync/web/{index.html,gl-bridge.js,station-demo.wasm,station.rspk}`.
   Project Config relative paths and source mappings are unchanged.
-- `example.game1-0.1.0-web.zip`: flat four web files, LICENSE, NOTICE, README.md,
+- `example.game1-0.2.0-web.zip`: flat four web files, LICENSE, NOTICE, README.md,
   with full `THIRD-PARTY-NOTICES.txt`, a browser-specific README, and bound
   NOTICE-EVIDENCE.json/individual game upstream license texts under `UPSTREAM-NOTICES/`. Serve the extracted folder with static HTTP hosting.
 - `SHA256SUMS` covers both ZIPs and the LICENSE/NOTICE release attachments.

@@ -207,7 +207,7 @@ if __name__ == '__main__':
     parser.add_argument('command', choices=['install', 'stage', 'check', 'branch', 'absent'])
     parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument('--out', type=Path, default=Path('dist/candidate'))
-    parser.add_argument('--tag', default='v0.1.0')
+    parser.add_argument('--tag', default='v0.2.0')
     parser.add_argument('--lock', default='release-lock.json')
     parser.add_argument('--offline', action='store_true')
     args = parser.parse_args()

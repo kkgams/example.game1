@@ -1,6 +1,6 @@
 {
+  "license": "Apache-2.0",
   "name": "example.game1",
-  "version": "0.1.0",
   "repository": "kkgams/example.game1",
-  "license": "Apache-2.0"
+  "version": "0.2.0"
 }

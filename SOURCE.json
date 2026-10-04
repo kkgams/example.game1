@@ -1,6 +1,4 @@
 {
-  "source_directory": "/Users/gook/Repos/gams3",
-  "snapshot_kind": "working-tree source snapshot; no Git history copied",
   "files_sha256": {
     ".github/workflows/release.yml": "413822aac0e0624bfade6f8b6e540b8f4c19f1ed1752c12d7e4ebf06a395e5a7",
     ".gitignore": "f0da219ad475b06d2b4a1a905f028edc45ab67a196c8fe1470a4f86bca79afc0",
@@ -98,5 +96,46 @@
     "scripts/setup-local.py": "64be5dbb68ddf82403089fb7abfa773550814eacbe14f0feed6e73995cd592e3",
     "test/check-export.mjs": "a1e13ea3f41398d7941392da67237989a57a9de4026f64ca194bfdff08b909f5",
     "test/test_release.py": "70c09a1deec999082d8bda1e21d09187cccca79a32017ae66d75adc695dad3bf"
-  }
+  },
+  "maintenance": {
+    "baseline_commit": "faaa8afb529779e29534edff360f52a682151fa7",
+    "baseline_drift": {},
+    "changed_files_sha256": {
+      "NOTICE": {
+        "after": "1463c525ddbe0c3253ef1046bf6e7d90abc90a2db5ae82d3c70d3a71b9e94a2c",
+        "before": "6423855ba1a948b73b2f82f3a788e241bf48484818031f34538fbcbe02286068"
+      },
+      "NOTICE-EVIDENCE.json": {
+        "after": "6dec2786aa9abe02c0d4fb3d49bc362bb7e89db2eba69139e30321d6085dccf2",
+        "before": "7b11aad3f1e2796bad9a39db3d8ebb2b12bad2f28cc42e55379676c6048eebd6"
+      },
+      "PUBLISHING.md": {
+        "after": "54f64b972ffae18ffd1085dfb9afcc38e3e5acefe4bb871cdc6bdb34938828d2",
+        "before": "7214f173b15e16fd66e8d6684449b9d269d3d067215009713da7c4017edae811"
+      },
+      "README.md": {
+        "after": "ee56fd00049fe46371c074d3573f48198370585f2502a8bc240ca7ba0261ba7a",
+        "before": "2327e3fc0beb231bf65c9f85fa46a8bbf9cbf4fbbac4ad2049a0daec12c9be2e"
+      },
+      "release.json": {
+        "after": "2740be8037c2ab8c8c6488a4c37ff258d4dd611fdc36c170c8f2288fc89718c1",
+        "before": "41dfb296912586e855bc5df026351882329973a7ba6b5638dbe163c2e5d668d9"
+      },
+      "scripts/release.py": {
+        "after": "b9f41b0cefe482c7b549e7441930068c960d8fcb8cdcbeaf54d5a5a744a76084",
+        "before": "7bf08d9cb33f67c712c7eedc30f4d1dedc07d3d82c23130106700a0adc7143b4"
+      }
+    },
+    "historical_snapshot": "Original extraction fields/files_sha256 preserved, not a current-tree certification.",
+    "legal": {
+      "evidence_sha256": "6dec2786aa9abe02c0d4fb3d49bc362bb7e89db2eba69139e30321d6085dccf2",
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_sha256": "1463c525ddbe0c3253ef1046bf6e7d90abc90a2db5ae82d3c70d3a71b9e94a2c"
+    },
+    "recipe_sha256": "818282f84635d8622b47d33e4bf87bac4d7e751256590bad65716d50c392fe3a",
+    "status": "metadata only; exact NOTICE approval and build/candidate validation pending",
+    "version": "0.2.0"
+  },
+  "snapshot_kind": "working-tree source snapshot; no Git history copied",
+  "source_directory": "/Users/gook/Repos/gams3"
 }

@@ -1,3 +1,9 @@
+## LOCAL v0.2.0 preparation
+
+Prospective own release only; no v0.2.0 assets are claimed public.
+Public Unit pins and Host v2.0.3 visitor guidance remain unchanged.
+Candidate stage/check requires separately authorized committed HEAD, exact NOTICE approval, pinned builds/receipt, cached original assets and interactive tests; all pending.
+
 # example.game1 — abandoned station
 
 One room, one locked exit, and a rule you can change. Play without GAMS, or open
@@ -6,11 +12,11 @@ initial one-room showcase slice, not the planned full multi-room game.
 
 ## Download
 
-The `v0.1.0` assets are created automatically after the owner pushes the reviewed
-tag and CI completes: https://github.com/kkgams/example.game1/releases/tag/v0.1.0
+The `v0.2.0` assets are created automatically after the owner pushes the reviewed
+tag and CI completes: https://github.com/kkgams/example.game1/releases/tag/v0.2.0
 
-- **Play:** `example.game1-0.1.0-web.zip` — standalone prebuilt browser game.
-- **Edit:** `example.game1-0.1.0-project.zip` — complete external Project, all 18
+- **Play:** `example.game1-0.2.0-web.zip` — standalone prebuilt browser game.
+- **Edit:** `example.game1-0.2.0-project.zip` — complete external Project, all 18
   pinned released Project Units, retained notices, prebuilt game and source.
 - Verify the downloaded ZIP against `SHA256SUMS` before extraction.
 
