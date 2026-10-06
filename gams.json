@@ -8,6 +8,11 @@
   "ui": {
     "keys": [
       {
+        "key": "mod+alt+s",
+        "call": ["project.save"],
+        "allowInput": true
+      },
+      {
         "key": "mod+s",
         "call": [
           "activeView.save"
