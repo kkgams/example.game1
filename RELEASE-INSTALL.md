@@ -1,5 +1,11 @@
 # Published Project Unit installation
 
+The current source `gams.json` now uses release URLs with the development Host;
+see [PROJECT-SOURCES.md](PROJECT-SOURCES.md). The Python installer below remains
+the separate CLI/packaging workflow and does not seed `gams_modules`. Its older
+preinstalled-Project/Host v2.0.3 visitor guidance requires migration before a new
+Project candidate can be published.
+
 The complete release-lock.json records **18 public releases and 46 exact asset
 pins**. FS is v0.1.1; the other four WASM plugins and all thirteen UI Units are
 v0.1.0. These selected versions do not change automatically. Their GitHub release

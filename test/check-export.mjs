@@ -5,13 +5,14 @@ import { createHash } from 'node:crypto'
 import { existsSync, readFileSync, rmSync } from 'node:fs'
 import { spawnSync } from 'node:child_process'
 import { join, resolve } from 'node:path'
+import { localPluginPaths } from '../scripts/local-plugin-paths.mjs'
 
 const root = resolve(import.meta.dirname, '..')
 const binary = process.env.GAMS_HOST_BIN
 const hostRoot = process.env.GAMS_HOST_ROOT
 assert.ok(binary && hostRoot && existsSync(binary), 'select the external released Host via GAMS_HOST_BIN/GAMS_HOST_ROOT')
 const config = JSON.parse(readFileSync(join(root, 'gams.json'), 'utf8'))
-const plugins = [join(root, 'plugins/fs.comp.wasm'), ...config.plugins.map(p => resolve(root, p))]
+const plugins = localPluginPaths(root, config)
 const source = readFileSync(join(root, 'ng/presets/export-station-web.lua'), 'utf8')
 const sha = data => createHash('sha256').update(data).digest('hex')
 const documents = ['LICENSE', 'NOTICE', 'THIRD-PARTY-NOTICES.txt']

@@ -1,7 +1,10 @@
 ## LOCAL v0.2.0 preparation
 
 Prospective own release only; no v0.2.0 assets are claimed public.
-Public Unit pins and Host v2.0.3 visitor guidance remain unchanged.
+Public Unit version pins remain unchanged. The current source Project now uses
+release URLs and requires the development Host with ZIP installation and
+configured UI Service loading; released Host v2.0.3 cannot open this config.
+The preinstalled visitor packaging workflow below has not yet been migrated.
 Candidate stage/check requires separately authorized committed HEAD, exact NOTICE approval, pinned builds/receipt, cached original assets and interactive tests; all pending.
 
 # example.game1 — abandoned station
@@ -10,7 +13,31 @@ One room, one locked exit, and a rule you can change. Play without GAMS, or open
 the Project and change the door condition with the released editor. This is the
 initial one-room showcase slice, not the planned full multi-room game.
 
-## Download
+## Current source Project
+
+`gams.json` now references tagged release ZIPs for all Views, UI Services and
+the theme, and direct release WASM files for the four configured plugins. The
+Host bootstraps pinned FS separately and installs missing Units into ignored
+`gams_modules/`. No `make setup-local` is needed for GUI startup. The first run
+needs network access; completed installations can be reused offline.
+
+From the sibling development Host:
+
+```sh
+cd ../gams
+nix develop --command make run GAMS_APP_CWD=../example.game1
+```
+
+See [PROJECT-SOURCES.md](PROJECT-SOURCES.md) for pins, checks and the separate
+CLI integration workflow. Source game/export inputs still require their normal
+build; downloading editor Units does not build the game.
+
+## Prepared release downloads — migration pending
+
+The following preinstalled-Project workflow describes the earlier Host v2.0.3
+packaging design, not the current URL-based source config. Do not distribute a
+new candidate using it until Host compatibility, packaging guidance and source
+NOTICE evidence have been reviewed and updated.
 
 The `v0.2.0` assets are created automatically after the owner pushes the reviewed
 tag and CI completes: https://github.com/kkgams/example.game1/releases/tag/v0.2.0
@@ -65,16 +92,19 @@ Full game-source changes still require rebuilding with the pinned developer tool
 ## Source checkout and release pins
 
 A source checkout does not contain downloaded Unit binaries or a prebuilt game.
-Python 3.10+ installs the exact reviewed public pins:
+The development Host installs GUI Units automatically from `gams.json`. For the
+separate CLI integration/packaging workflow, Python 3.10+ installs the exact
+reviewed public pins at their original Project-relative paths:
 
 ```sh
 python3 scripts/install-releases.py install --lock release-lock.json
 ```
 
 See [RELEASE-INSTALL.md](RELEASE-INSTALL.md). A source checkout requires the locked
-Odin/Zig development shell to build its prebuilt game; use the Project ZIP for the
-toolchain-free walkthrough. `make setup-local` and `make run`/`run-dev` are separate
-sibling-source development commands, not the published visitor workflow.
+Odin/Zig development shell to build its prebuilt game. `make setup-local` supplies
+sibling-built files for CLI checks only; GUI `make run`/`run-dev` uses the release
+sources in `gams.json`, not those local assembly copies. The prepared Project ZIP
+workflow still needs migration before a new toolchain-free walkthrough is published.
 
 Developer/release checks:
 

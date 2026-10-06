@@ -2,7 +2,8 @@
 import assert from 'node:assert/strict'
 import { spawnSync } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
-import { isAbsolute, join, resolve } from 'node:path'
+import { join, resolve } from 'node:path'
+import { localPluginPaths } from './local-plugin-paths.mjs'
 
 const stationRoot = resolve(import.meta.dirname, '..')
 const hostRoot = resolve(process.env.GAMS_HOST_ROOT ?? join(stationRoot, '../gams'))
@@ -12,12 +13,9 @@ const config = JSON.parse(readFileSync(configPath, 'utf8'))
 assert.ok(Array.isArray(config.plugins), 'gams.json plugins must be an array')
 assert.ok(config.plugins.length > 0, 'gams.json must register at least one plugin')
 
-const configuredPluginPaths = config.plugins.map((path) =>
-  isAbsolute(path) ? path : resolve(stationRoot, path)
-)
-const bridgePluginPaths = [join(stationRoot, 'plugins/fs.comp.wasm'), ...configuredPluginPaths]
+const bridgePluginPaths = localPluginPaths(stationRoot, config)
 for (const pluginPath of bridgePluginPaths) {
-  assert.ok(existsSync(pluginPath), `missing assembled plugin: ${pluginPath}; run make setup-local first`)
+  assert.ok(existsSync(pluginPath), `missing CLI plugin: ${pluginPath}; run make setup-releases or make setup-local first`)
 }
 const pluginArgs = bridgePluginPaths.flatMap((path) => ['--plug', path])
 

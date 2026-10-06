@@ -1,9 +1,9 @@
 {
   "plugins": [
-    "plugins/layout.comp.wasm",
-    "plugins/lua.comp.wasm",
-    "plugins/director-compiler.comp.wasm",
-    "plugins/respack.comp.wasm"
+    "https://github.com/kkgams/plugin.layout/releases/download/v0.1.0/plugin.layout.wasm",
+    "https://github.com/kkgams/plugin.lua/releases/download/v0.1.0/plugin.lua.wasm",
+    "https://github.com/kkgams/plugin.director-compiler/releases/download/v0.1.0/director-compiler.wasm",
+    "https://github.com/kkgams/plugin.respack/releases/download/v0.1.0/plugin.respack.wasm"
   ],
   "ui": {
     "keys": [
@@ -28,11 +28,26 @@
       }
     ],
     "theme": {
-      "path": "themes/the98.css"
+      "url": "https://github.com/kkgams/theme.the98/releases/download/v0.1.0/theme.the98-0.1.0.zip#themes/the98.css"
     },
     "services": {
+      "ui-context": {
+        "url": "https://github.com/kkgams/ui-service.context/releases/download/v0.1.0/ui-service.context-0.1.0.zip#ui-plugins/context.js"
+      },
+      "ui-keys": {
+        "url": "https://github.com/kkgams/ui-service.keys/releases/download/v0.1.0/ui-service.keys-0.1.0.zip#ui-plugins/keys.js"
+      },
+      "ui-toast": {
+        "url": "https://github.com/kkgams/ui-service.toast/releases/download/v0.1.0/ui-service.toast-0.1.0.zip#ui-plugins/toast.js"
+      },
+      "ui-popup": {
+        "url": "https://github.com/kkgams/ui-service.popup/releases/download/v0.1.0/ui-service.popup-0.1.0.zip#ui-plugins/popup.js"
+      },
+      "ui-tooltip": {
+        "url": "https://github.com/kkgams/ui-service.tooltip/releases/download/v0.1.0/ui-service.tooltip-0.1.0.zip#ui-plugins/tooltip.js"
+      },
       "ui-layout": {
-        "url": "ui-plugins/layout.js",
+        "url": "https://github.com/kkgams/ui-service.layout/releases/download/v0.1.0/ui-service.layout-0.1.0.zip#ui-plugins/layout.js",
         "config": {
           "layout": "<view-files data-root=\".\" /><view-code setup=\"0:h:65\" data-source=\"content/power.director\" /><view-ng setup=\"1:v:55\" data-source=\"build.ng.json\" />"
         }
@@ -40,7 +55,7 @@
     },
     "views": {
       "view-files": {
-        "url": "views/view-files.js",
+        "url": "https://github.com/kkgams/view.files/releases/download/v0.1.0/view.files-0.1.0.zip#views/view-files.js",
         "label": "Files",
         "group": "Project",
         "internal": false,
@@ -56,12 +71,12 @@
         }
       },
       "view-code": {
-        "url": "views/view-code.js",
+        "url": "https://github.com/kkgams/view.code/releases/download/v0.1.0/view.code-0.1.0.zip#views/view-code.js",
         "label": "Code",
         "internal": true
       },
       "view-ng": {
-        "url": "views/view-ng.js",
+        "url": "https://github.com/kkgams/view.ng/releases/download/v0.1.0/view.ng-0.1.0.zip#views/view-ng.js",
         "label": "Build & Export",
         "group": "Project",
         "internal": false,
@@ -182,7 +197,7 @@
         }
       },
       "view-ng-node": {
-        "url": "views/view-ng-node.js",
+        "url": "https://github.com/kkgams/view.ng-node/releases/download/v0.1.0/view.ng-node-0.1.0.zip#views/view-ng-node.js",
         "label": "Node Editor",
         "internal": true,
         "config": {
@@ -331,12 +346,12 @@
         }
       },
       "files-rename": {
-        "url": "views/files-rename.js",
+        "url": "https://github.com/kkgams/view.files-rename/releases/download/v0.1.0/view.files-rename-0.1.0.zip#views/files-rename.js",
         "label": "Rename File",
         "internal": true
       },
       "files-default": {
-        "url": "views/files-default.js",
+        "url": "https://github.com/kkgams/view.files-default/releases/download/v0.1.0/view.files-default-0.1.0.zip#views/files-default.js",
         "label": "File Info",
         "internal": true
       }

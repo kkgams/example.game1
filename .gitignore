@@ -1,4 +1,5 @@
 /build.nosync/
+/gams_modules/
 /export/
 /plugins/
 /ui-plugins/

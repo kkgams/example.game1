@@ -52,6 +52,7 @@ integration: require-local-assets
 	GAMS_HOST_ROOT="$(HOST_ROOT)" GAMS_HOST_BIN="$(HOST_BIN)" HOST_CC="$(HOST_CC)" HOST_CXX="$(HOST_CXX)" node scripts/integration.mjs
 	GAMS_HOST_ROOT="$(HOST_ROOT)" GAMS_HOST_BIN="$(HOST_BIN)" node test/check-export.mjs
 
-run: require-local-assets
+# GUI startup resolves released Units through the Host; no local assembly.
+run:
 	cd "$(HOST_ROOT)/cmd/app/src-tauri"
 	GAMS_APP_CWD="$(CURDIR)" CARGO_TARGET_DIR="$(CARGO_TARGET_DIR)" CC="$(HOST_CC)" CXX="$(HOST_CXX)" cargo tauri dev
