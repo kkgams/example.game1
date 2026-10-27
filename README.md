@@ -32,6 +32,17 @@ See [PROJECT-SOURCES.md](PROJECT-SOURCES.md) for pins, checks and the separate
 CLI integration workflow. Source game/export inputs still require their normal
 build; downloading editor Units does not build the game.
 
+## Open in GAMS
+
+```sh
+make open  # download GAMS if absent, then open this Project
+```
+
+Requires macOS Apple Silicon, Make, curl, Python 3 and `unzip`. Uses the latest
+published `kkgams/gams` release at `tools/gams.app`; existing apps are not updated.
+Remove that directory to download a newer release. The Host stays attached to the
+terminal for logs. Existing `make run` behavior is unchanged.
+
 ## Prepared release downloads — migration pending
 
 The following preinstalled-Project workflow describes the earlier Host v2.0.3
